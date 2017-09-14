@@ -1,0 +1,997 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			body{
+				background-image: url(img/04.jpg);
+			}
+			/*顶部白条*/
+			.top{
+				width: 100%;
+				height: 20px;
+				background-color: white;
+				margin: 0 auto;
+			}
+
+			#show-3 li{
+				width: 760px;
+				height: 300px;
+				background-color: burlywood;
+			    list-style: none;
+			    float: left;
+			}
+			.show-2{
+				width: 760px;
+				height: 300px;
+				background-color: red;
+				position: relative;
+				overflow: hidden;
+				margin-left: 105px;
+				
+			}
+			#show-3{
+			width: 3040px;
+			height: 300px;
+			position: absolute;
+			}
+			.show-4{
+				width: 760px;
+			    height: 25px;
+			    position: absolute;
+			    margin-top: 265px;
+			   
+			}
+			/*轮播中的三个标识(1,2,3)*/
+			.show-4-1{
+				width: 25px;
+				height: 25px;
+				background-color: white;
+				margin-left: 335px;
+				border-radius: 5px;
+			}
+			.show-4-2{
+				width: 25px;
+				height: 25px;
+				background-color: white;
+				margin: 0 auto;
+				margin-top: -25px;
+				border-radius: 5px;
+			}
+			.show-4-3{
+				width: 25px;
+				height: 25px;
+				background-color: white;
+				margin-top: -25px;
+				margin-left: 400px;
+				border-radius: 5px;
+			}
+			.show-4-1-1{
+				width: 25px;
+				height: 25px;
+				line-height: 25px;
+				text-decoration: none;
+				color: black;
+				display: block;
+				
+			}
+			/*鼠标事件字体背景变色*/
+			.show-4-1-1:hover{
+				color: white;
+				background-color: darkmagenta;
+				border-radius: 5px;
+			}
+			/*.show-4-1:hover{
+				
+				url:"img/01.jpg"
+				/*clearInterval*/
+			/*}*/
+			.show-5{
+				width: 310px;
+				height: 610px;
+				background-color: white;
+				position: absolute;
+				margin-left: 885px;
+				margin-top: -300px;
+				border: 1px solid gainsboro;
+			}
+			.show-5-1{
+				width: 310px;
+				height: 40px;
+				background-color: white;
+				border: 1px solid gainsboro;
+			}
+			.show-5-2{
+				position: absolute;
+				margin-left: 50px;
+				margin-top: -40px;
+				line-height: 35px;
+				font-family: "微软雅黑";
+			}
+			.show-5-3{
+
+				position: absolute;
+				margin-left: 15px;
+				margin-top: 23px;
+			}
+			.show-5-3 img:hover{
+				width: 105px;
+				height: 80px;
+			}
+			.show-5-4{
+				color: cadetblue;
+				text-decoration: none;
+				position: absolute;
+				margin-left: 125px;
+				margin-top: 25px;
+			   font-size: 15px;
+			}
+			.show-5-4:hover{
+				color: darkmagenta;
+			}
+			.show-5-5{
+				position: absolute;
+				margin-left: 15px;
+				margin-top: 114px;
+				
+			}
+			.show-5-5 img:hover{
+				width: 105px;
+				height: 80px;
+			}
+			.show-5-6{
+				color: cadetblue;
+				text-decoration: none;
+				position: absolute;
+				margin-left: 125px;
+				margin-top: 116px;
+				font-size: 15px;
+			}
+			.show-5-6:hover{
+				color: darkmagenta;
+			}
+			.show-5-7{
+				position: absolute;
+				margin-left: 15px;
+				margin-top: 205px;
+				
+			}
+			.show-5-7 img:hover{
+				width: 105px;
+				height: 80px;
+			}
+			.show-5-8{
+				color: cadetblue;
+				text-decoration: none;
+				position: absolute;
+				margin-left: 125px;
+				margin-top: 207px;
+				font-size: 15px;
+			}
+			.show-5-8:hover{
+				color: darkmagenta;
+			}
+			.show-5-9{
+				position: absolute;
+				margin-left: 15px;
+				margin-top: 296px;
+				
+			}
+			.show-5-9 img:hover{
+				width: 105px;
+				height: 80px;
+			}
+			.show-5-10{
+				color: cadetblue;
+				text-decoration: none;
+				position: absolute;
+				margin-left: 125px;
+				margin-top: 298px;
+				font-size: 15px;
+			}
+			.show-5-10:hover{
+				color: darkmagenta;
+			}
+			.show-5-11{
+				position: absolute;
+				margin-left: 15px;
+				margin-top: 387px;
+				
+			}
+			.show-5-11 img:hover{
+				width: 105px;
+				height: 80px;
+			}
+			.show-5-12{
+				color: cadetblue;
+				text-decoration: none;
+				position: absolute;
+				margin-left: 125px;
+				margin-top: 389px;
+				font-size: 15px;
+			}
+			.show-5-12:hover{
+				color: darkmagenta;
+			}
+			.show-5-13{
+				position: absolute;
+				margin-left: 15px;
+				margin-top: 478px;
+				
+			}
+			.show-5-13 img:hover{
+				width: 105px;
+				height: 80px;
+			}
+			.show-5-14{
+				color: cadetblue;
+				text-decoration: none;
+				position: absolute;
+				margin-left: 125px;
+				margin-top: 480px;
+				font-size: 15px;
+			}
+			.show-5-14:hover{
+				color: darkmagenta;
+			}
+			.show-6{
+				width: 760px;
+				height: 190px;
+				background-color: white;
+				margin-left: 105px;
+				margin-top: 10px;
+			    border: 1px solid gainsboro;;
+			}
+			.show-6-1{
+				width: 5px;
+				height: 25px;
+				background-color: red;
+				margin-top: 20px;
+			}
+			.show-6-2{
+				width: 200px;
+				height: 150px;
+				position: absolute;
+				margin-left: 20px;
+				margin-top: -25px;
+			}
+			.show-6-2 img:hover{
+				width: 205px;
+				height: 160px;
+			}
+			.show-6-3{
+				text-decoration: none;
+				position: absolute;
+				margin-left: 230px;
+				margin-top: -20px;
+				color: darkslategray;
+			}
+			.show-6-3:hover{
+				color: cornflowerblue;
+			}
+			.show-6-4{
+				width: 500px;
+				height: 65px;
+				margin-left: 230px;
+				margin-top: 10px;
+				font-size: 14px;
+				color: darkgrey;
+			}
+			.show-6-5{
+				width: 80px;
+				height: 30px;
+				background-color: darkslateblue;
+				float: right;
+				margin-top: 23px;
+			}
+			.show-6-5:hover{
+				background-color: darkslategray;
+			}
+			.show-6-5-1{
+				text-decoration: none;
+				color: white;
+				line-height: 30px;
+			}
+			.show-7{
+				width: 760px;
+				height: 190px;
+				background-color: white;
+				margin-left: 105px;
+				margin-top: 10px;
+			    border: 1px solid gainsboro;;
+			}
+			.show-7-1{
+				width: 5px;
+				height: 25px;
+				background-color: red;
+				margin-top: 20px;
+			}
+			.show-7-2{
+				width: 200px;
+				height: 150px;
+				position: absolute;
+				margin-left: 20px;
+				margin-top: -25px;
+			}
+			.show-7-2 img:hover{
+				width: 205px;
+				height: 160px;
+			}
+			.show-7-3{
+				text-decoration: none;
+				position: absolute;
+				margin-left: 230px;
+				margin-top: -20px;
+				color: darkslategray;
+			}
+			.show-7-3:hover{
+				color: cornflowerblue;
+			}
+			.show-7-4{
+				width: 500px;
+				height: 65px;
+				margin-left: 230px;
+				margin-top: 10px;
+				font-size: 14px;
+				color: darkgrey;
+			}
+			.show-7-5{
+				width: 80px;
+				height: 30px;
+				background-color: darkslateblue;
+				float: right;
+				margin-top: 23px;
+			}
+			.show-7-5:hover{
+				background-color: darkslategray;
+			}
+			.show-7-5-1{
+				text-decoration: none;
+				color: white;
+				line-height: 30px;
+			}
+			.show-8{
+				width: 180px;
+				height: 170px;
+				background-color: gray;
+				margin-left: 105px;
+				margin-top: 10px;
+				border: 1px solid lightgray;
+			}
+			.show-8-1-1{
+				width: 180px;
+				height: 25px;
+				background-color: black;
+				position: absolute;
+				margin-top: -29px;
+				opacity: 0.6;
+				
+				
+			}
+			.show-8-1-1 font:hover{
+				color: brown;
+			}
+			.show-9{
+				width: 180px;
+				height: 170px;
+				background-color: gray;
+				margin-left: 298px;
+				margin-top: -172px;
+				border: 1px solid lightgray;
+			}
+			.show-9-1-1{
+				width: 180px;
+				height: 25px;
+				background-color: black;
+				position: absolute;
+				margin-top: -29px;
+				opacity: 0.6;
+				
+			}
+			.show-9-1-1 font:hover{
+				color: brown;
+			}
+			.show-10{
+				width: 180px;
+				height: 170px;
+				background-color: gray;
+				margin-left: 492px;
+				margin-top: -172px;
+				border: 1px solid lightgray;
+			}
+			.show-10-1-1{
+				width: 180px;
+				height: 25px;
+				background-color: black;
+				position: absolute;
+				margin-top: -29px;
+				opacity: 0.6;
+				
+			}
+			.show-10-1-1 font:hover{
+				color: brown;
+			}
+			.show-11{
+				width: 180px;
+				height: 170px;
+				background-color: gray;
+				margin-left: 685px;
+				margin-top: -172px;
+				border: 1px solid lightgray;
+			}
+			.show-11-1-1{
+				width: 180px;
+				height: 25px;
+				background-color: black;
+				position: absolute;
+				margin-top: -29px;
+				opacity: 0.6;
+				
+			}
+			.show-11-1-1 font:hover{
+				color: brown;
+			}
+			.show-12{
+				width: 180px;
+				height: 170px;
+				background-color: gray;
+				margin-left: 105px;
+				margin-top: 10px;
+				border: 1px solid lightgray;
+			}
+			.show-12-1-1{
+				width: 180px;
+				height: 25px;
+				background-color: black;
+				position: absolute;
+				margin-top: -29px;
+				opacity: 0.6;
+				
+			}
+			.show-12-1-1 font:hover{
+				color: brown;
+			}
+			.show-13{
+				width: 180px;
+				height: 170px;
+				background-color: gray;
+				margin-left: 298px;
+				margin-top: -172px;
+				border: 1px solid lightgray;
+			}
+			.show-13-1-1{
+				width: 180px;
+				height: 25px;
+				background-color: black;
+				position: absolute;
+				margin-top: -29px;
+				opacity: 0.6;
+				
+			}
+			.show-13-1-1 font:hover{
+				color: brown;
+			}
+			.show-14{
+				width: 180px;
+				height: 170px;
+				background-color: gray;
+				margin-left: 492px;
+				margin-top: -172px;
+				border: 1px solid lightgray;
+			}
+			.show-14-1-1{
+				width: 180px;
+				height: 25px;
+				background-color: black;
+				position: absolute;
+				margin-top: -29px;
+				opacity: 0.6;
+				
+			}
+			.show-14-1-1 font:hover{
+				color: brown;
+			}
+			.show-15{
+				width: 180px;
+				height: 170px;
+				background-color: gray;
+				margin-left: 685px;
+				margin-top: -172px;
+				border: 1px solid lightgray;
+			}
+			.show-15-1-1{
+				width: 180px;
+				height: 25px;
+				background-color: black;
+				position: absolute;
+				margin-top: -29px;
+				opacity: 0.6;
+				
+			}
+			.show-15-1-1 font:hover{
+				color: brown;
+			}
+			.show-16{
+				width: 310px;
+				height: 255px;
+				background-color: white;
+				border: 1px solid gainsboro;
+				position: absolute;
+				margin-left: 885px;
+				margin-top: -446px;
+			}
+			.show-16-1{
+				width: 310px;
+				height: 40px;
+				background-color: white;
+				border: 1px solid gainsboro;
+			}
+			.show-16-1-1{
+				float: left;
+			}
+			.show-16-1-2{
+				position: absolute;
+				margin-left: 10px;
+				line-height: 40px;
+			}
+			.show-16-2{
+				position: absolute;
+				margin-top: 25px;
+				margin-left: -25px;
+			}
+			.show-16-3{
+				text-decoration: none;
+				position: absolute;
+				margin-top: 25px;
+				margin-left: 85px;
+				color: lightslategray;
+			}
+			.show-16-2 img:hover{
+				width: 105px;
+				height: 80px;
+			} 
+			.show-16-3:hover{
+				color: #8B008B;
+			}
+			.show-16-4{
+				width: 285px;
+				height: 100px;
+				background-color: white;
+			    margin-left: 15px;
+				margin-top: 110px;
+				border-top: 1px dashed gainsboro;
+			}
+			.show-16-4-1{
+				position: absolute;
+				margin-top: 10px;
+			}
+			.show-16-4-2{
+				text-decoration: none;
+				position: absolute;
+				margin-left: 110px;
+				margin-top: 10px;
+				color: lightslategray;
+			}
+			.show-16-4-1 img:hover{
+				width: 105px;
+				height: 80px;
+			} 
+			.show-16-4-2:hover{
+				color: #8B008B;
+			}
+			.show-17{
+				width: 760px;
+				height: 230px;
+				background-color: white;
+				margin-left: 105px;
+				margin-top: 10px;
+				border: 1px solid gainsboro;
+			}
+			.show-17-1{
+				width: 760px;
+				height: 40px;
+				background-color: white;
+				border: 1px solid gainsboro;
+			}
+			.show-17-1-1{
+				
+				position: absolute;
+				margin-left: 10px;
+				line-height: 40px;
+			}
+			.show-17-2{
+				position: absolute;
+				margin-left: 20px;
+				margin-top: 20px;
+			}
+			.show-17-2 img:hover{
+				width: 205px;
+				height: 155px;
+			}
+			.a{
+				list-style: none;
+				position: absolute;
+				margin-top: 20px;
+				margin-left: 230px;
+			}
+			.d{
+				margin-top: 10px;
+			}
+			.b{
+				text-decoration: none;
+				color: #3f3b38;
+				
+			}
+			.b:hover{
+				color: blueviolet;
+			}
+			.c{
+				text-decoration: none;
+				color: #3f3b38;
+			}
+			.c:hover{
+				color: blueviolet;
+			}
+			.show-18{
+				width: 760px;
+				height: 230px;
+				background-color: white;
+				margin-left: 105px;
+				margin-top: 10px;
+				border: 1px solid gainsboro;
+			}
+			.show-18-1{
+				width: 760px;
+				height: 40px;
+				background-color: white;
+				border: 1px solid gainsboro;
+			}
+			.show-18-1-1{
+				
+				position: absolute;
+				margin-left: 10px;
+				line-height: 40px;
+			}
+			.show-18-2{
+				position: absolute;
+				margin-left: 20px;
+				margin-top: 20px;
+			}
+			.show-18-2 img:hover{
+				width: 205px;
+				height: 155px;
+			}
+			.a{
+				list-style: none;
+				position: absolute;
+				margin-top: 20px;
+				margin-left: 230px;
+			}
+			.b{
+				text-decoration: none;
+				font-size: 15px;
+				color: #3f3b38;
+				
+			}
+			.b:hover{
+				color: blueviolet;
+			}
+			.c{
+				text-decoration: none;
+				font-size: 15px;
+				color: #3f3b38;
+			}
+			.c:hover{
+				color: blueviolet;
+			}
+			.show-19{
+				width: 310px;
+				height: 660px;
+				background-color: white;
+				border: 1px solid gainsboro;
+				position: absolute;
+				margin-left: 885px;
+				margin-top: -662px;
+			}
+			.show-19-1{
+				width: 310px;
+				height: 40px;
+				background-color: white;
+				border: 1px solid gainsboro;
+			}
+			.show-19-1-1{
+				position: absolute;
+				margin-left: 10px;
+				line-height: 40px;
+			}
+			.show-19-2{
+				position: absolute;
+				margin-left: 15px;
+				margin-top: 20px;
+			}
+			.show-19-2 img:hover{
+				width: 138px;
+				height: 148px;
+			}
+			.show-19-3{
+				position: absolute;
+				margin-left: 163px;
+				margin-top: 20px;
+			}
+			.show-19-3 img:hover{
+				width: 138px;
+				height: 148px;
+			}
+			.show-19-4{
+				position: absolute;
+				margin-left: 15px;
+				margin-top: 173px;
+			}
+			.show-19-4 img:hover{
+				width: 138px;
+				height: 148px;
+			}
+			.show-19-5{
+				position: absolute;
+				margin-left: 163px;
+				margin-top: 173px;
+			}
+			.show-19-5 img:hover{
+				width: 138px;
+				height: 148px;
+			}
+			.show-19-6{
+				position: absolute;
+				margin-left: 15px;
+				margin-top: 326px;
+			}
+			.show-19-6 img:hover{
+				width: 138px;
+				height: 148px;
+			}
+			.show-19-7{
+				position: absolute;
+				margin-left: 163px;
+				margin-top: 326px;
+			}
+			.show-19-7 img:hover{
+				width: 138px;
+				height: 148px;
+			}
+			.show-19-8{
+				position: absolute;
+				margin-left: 15px;
+				margin-top: 479px;
+			}
+			.show-19-8 img:hover{
+				width: 138px;
+				height: 148px;
+			}
+			.show-19-9{
+				position: absolute;
+				margin-left: 163px;
+				margin-top: 479px;
+			}
+			.show-19-9 img:hover{
+				width: 138px;
+				height: 148px;
+			}
+			
+			
+			
+			
+			/*底部白条*/
+			.v{
+				width: 100%;
+				height: 20px;
+				background-color: white;
+				margin: 0 auto;
+			}
+		</style>
+		<link rel="stylesheet" type="text/css" href="css/Home.css"/>
+	    <script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	    <script src="js/Home.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<!--<div>  </div>-->
+		
+		
+		<header id="header"></header>
+		<!--<div class="top"></div>-->
+		<!--<div class="show-1">-->
+		<div class="show-2">
+		<ul id="show-3">
+				<li><a href="javascript:;"><img src="img/01.jpg"/></a></li>
+				<li><a href="javascript:;"><img src="img/02.jpg"/></a></li>
+				<li><a href="javascript:;"><img src="img/03.jpg"/></a></li>
+				<li><a href="javascript:;"><img src="img/01.jpg"/></a></li>
+			</ul>
+			<div class="show-4">
+				<div class="show-4-1">
+					<p  align="center"><a class="show-4-1-1" href="javascript:;"><font size="3">1</font></a></p>
+				</div>
+				<div class="show-4-2">
+					<p  align="center"><a class="show-4-1-1" href="javascript:;"><font size="3">2</font></a></p>
+				</div>
+				<div class="show-4-3">
+					<p  align="center"><a class="show-4-1-1" href="javascript:;"><font size="3">3</font></a></p>
+				</div>
+			</div class="show-4">
+		</div>
+		<div class="show-5">
+			<div class="show-5-1">
+				<a><img src="img/05.jpg" /></a>
+				<p class="show-5-2"><a><font size="3">最近更新</font></a></p>
+			</div>
+			<a class="show-5-3" href="javascript:;"><img src="img/06.jpg"/></a>
+			<a class="show-5-4" href="javascript:;">春天养狗注意事项</a>
+			<a class="show-5-5" href="javascript:;"><img src="img/07.jpg"/></a>
+			<a class="show-5-6" href="javascript:;">春天狗狗需要注意什么</a>
+			<a class="show-5-7" href="javascript:;"><img src="img/08.jpg"/></a>
+			<a class="show-5-8" href="javascript:;">春季狗狗常见病</a>
+			<a class="show-5-9" href="javascript:;"><img src="img/09.jpg"/></a>
+			<a class="show-5-10" href="javascript:;">狗狗洗澡方式</a>
+			<a class="show-5-11" href="javascript:;"><img src="img/10.jpg"/></a>
+			<a class="show-5-12" href="javascript:;">雪橇犬的性格</a>
+			<a class="show-5-13" href="javascript:;"><img src="img/11.jpg"/></a>
+			<a class="show-5-14" href="javascript:;">阿拉斯加的训练</a>
+			</div>
+		   <div class="show-6">
+				<div class="show-6-1"></div>
+				<a class="show-6-2" href="javascript:;"><img src="img/12.jpg"/></a>
+			    <a class="show-6-3" href="javascript:;"><b>春天养狗需要注意事项</b></a>
+			    <div class="show-6-4">
+			    <a>春天万物复苏，一切被冬季掩藏了许久的生物都开始活跃起来，冬眠的动物，有害的病菌统统苏醒了。春天是一年的开始，然而在这个季节里养狗却要特别注意。我们知道春天是···</a>
+		        </div>
+		        <div class="show-6-5">
+		        	<p align="center"><a class="show-6-5-1" href="javascript:;">全文阅读</a></p>
+		        </div>
+		   </div>
+		   <div class="show-7">
+		   	<div class="show-7-1"></div>
+				<a class="show-7-2" href="javascript:;"><img src="img/13.jpg"/></a>
+			    <a class="show-7-3" href="javascript:;"><b>春天养狗需要注意什么</b></a>
+			    <div class="show-7-4">
+			    <a>在春季，狗狗的毛发需要面临的可不止换毛一个问题，温度和湿度都逐渐升高，利于万物生长的同时，也为细菌和寄生虫提供了非常有力的生长环境，作为极好的一个宿主，狗狗在春季···</a>
+		        </div>
+		        <div class="show-7-5">
+		        	<p align="center"><a class="show-7-5-1" href="javascript:;">全文阅读</a></p>
+		        </div>
+		   </div>
+		<div class="show-8">
+			<a class="show-8-1" href="javascript:;"><img src="img/14.jpg" title="哈士奇"/></a>
+			<div class="show-8-1-1">
+				<p align="center"><font color="white">哈士奇</font></p>
+			</div>
+		</div>
+		<div class="show-9">
+			<a class="show-9-1" href="javascript:;"><img src="img/15.jpg" title="泰迪犬"/></a>
+			<div class="show-9-1-1">
+				<p align="center"><font color="white">泰迪犬</font></p>
+			</div>
+		</div>
+		<div class="show-10">
+			<a class="show-10-1" href="javascript:;"><img src="img/16.jpg" title="柯基犬"/></a>
+			<div class="show-10-1-1">
+				<p align="center"><font color="white">柯基犬</font></p>
+			</div>
+		</div>
+		<div class="show-11">
+			<a class="show-11-1" href="javascript:;"><img src="img/17.jpg" title="阿拉斯加雪橇犬"/></a>
+			<div class="show-11-1-1">
+				<p align="center"><font color="white">阿拉斯加雪橇犬</font></p>
+			</div>
+		</div>
+		<div class="show-12">
+			<a class="show-12-1" href="javascript:;"><img src="img/18.jpg" title="挪威森林猫"/></a>
+			<div class="show-12-1-1">
+				<p align="center"><font color="white">挪威森林猫</font></p>
+			</div>
+		</div>
+		<div class="show-13">
+			<a class="show-13-1" href="javascript:;"><img src="img/19.jpg" title="日本短尾猫"/></a>
+			<div class="show-13-1-1">
+				<p align="center"><font color="white">日本短尾猫</font></p>
+			</div>
+		</div>
+		<div class="show-14">
+			<a class="show-14-1" href="javascript:;"><img src="img/20.jpg" title="斯可可猫"/></a>
+			<div class="show-14-1-1">
+				<p align="center"><font color="white">斯可可猫</font></p>
+			</div>
+		</div>
+		<div class="show-15">
+			<a class="show-15-1" href="javascript:;"><img src="img/21.jpg" title="土耳其梵猫"/></a>
+			<div class="show-15-1-1">
+				<p align="center"><font color="white">土耳其梵猫</font></p>
+			</div>
+		</div>
+		<div class="show-16">
+			<div class="show-16-1">
+				<a class="show-16-1-1"><img src="img/05.jpg"/></a>
+				<a class="show-16-1-2">爱宠心声</a>
+			</div>
+			<a class="show-16-2" href="javascript:;"><img src="img/22.jpg"/></a>
+			<a class="show-16-3" href="javascript:;"> 如何辨别泰迪的血统纯不纯</a>
+			<div class="show-16-4">
+			<a class="show-16-4-1" href="javascript:;"><img src="img/23.jpg"/></a>
+			<a class="show-16-4-2" href="javascript:;"> 怎样训练小狗打滚 </a>
+			</div>
+		</div>
+		<div class="show-17">
+		<div class="show-17-1">
+			<a><img src="img/05.jpg"/></a>
+			<a class="show-17-1-1"><font color="#45403d" >宠物养护</font></a>
+		</div>
+		<a class="show-17-2" href="javascript:;"><img src="img/24.jpg"/></a>
+		<ul class="a">
+			<li ><a class="c" href="javascript:;"><font >>春季养狗狗注意事项</font></a></li>
+			<li class="d"><a class="b" href="javascript:;"><font >>比熊狗什么牌子好 狗粮可补充所需的能量和营养</font></a></li>
+			<li class="d"><a class="b" href="javascript:;"><font >>吉娃娃娃吃什么好 不能吃什么</font></a></li>
+			<li class="d"><a class="b" href="javascript:;"><font >>吉娃娃不能吃什么 要谨慎</font></a></li>
+			<li class="d"><a class="b" href="javascript:;"><font >>泰迪犬可以吃米饭吗 狗狗也需要营养</font></a></li>
+		</ul>
+		</div>
+		<div class="show-18">
+		<div class="show-18-1">
+			<a><img src="img/05.jpg"/></a>
+			<a class="show-18-1-1"><font color="#45403d" >宠物训练</font></a>
+		</div>
+		<a class="show-18-2" href="javascript:;"><img src="img/25.jpg"/></a>
+		<ul class="a">
+			<li ><a class="c" href="javascript:;"><font >>阿拉斯加雪橇犬洗澡的方法</font></a></li>
+			<li class="d"><a class="b" href="javascript:;"><font >>阿拉斯加雪橇犬的习性 了解它的各种性格</font></a></li>
+			<li class="d"><a class="b" href="javascript:;"><font >>阿拉斯加雪橇犬的训练 20个养狗方法</font></a></li>
+			<li class="d"><a class="b" href="javascript:;"><font >>吉娃娃训练大小便</font></a></li>
+			<li class="d"><a class="b" href="javascript:;"><font >>吉娃娃如何训练 注重调教引导</font></a></li>
+		</ul>
+		</div>
+		<div class="show-19">
+			<div class="show-19-1">
+				<a><img src="img/05.jpg"/></a>
+			<a class="show-19-1-1"><font color="#45403d" >最新图片</font></a>
+			</div>
+			<a class="show-19-2" href="javascript:;"><img src="img/26.jpg"/></a>
+			<a class="show-19-3" href="javascript:;"><img src="img/31.jpg"/></a>
+			<a class="show-19-4" href="javascript:;"><img src="img/27.jpg"/></a>
+			<a class="show-19-5" href="javascript:;"><img src="img/28.jpg"/></a>
+			<a class="show-19-6" href="javascript:;"><img src="img/29.jpg"/></a>
+			<a class="show-19-7" href="javascript:;"><img src="img/30.jpg"/></a>
+			<a class="show-19-8" href="javascript:;"><img src="img/33.jpg"/></a>
+			<a class="show-19-9" href="javascript:;"><img src="img/34.jpg"/></a>
+		</div>
+		
+		
+		
+		<div class="v"></div>
+		<!--<div>  </div>-->
+	</body>
+	<script type="text/javascript">
+		window.onload=function()
+		{
+		var oUl = document.getElementById("show-3");
+		var timer = null;
+		function move(){
+			clearInterval
+			timer=setInterval(function(){
+		if(oUl.offsetLeft<-2270)
+		{
+			oUl.style.left = 0;
+		}
+		if(oUl.offsetLeft==-750||oUl.offsetLeft==-1510||oUl.offsetLeft==-2270)
+		{
+			clearInterval(timer);
+		}
+		oUl.style.left=oUl.offsetLeft-10+"px";
+		},1);
+		}
+		setInterval(move,3000);
+        move();
+		}
+</script>
+</html>

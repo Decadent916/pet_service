@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="../Location_css/login_register_1.css" />
+		<script src="../Location_js/jquery-1.8.0.min.js"></script>
+		<link rel="stylesheet" href="../../css/Home.css" />
+	</head>
+	<body>
+		<!--页面顶部引导栏-->
+			<header id="header">
+				
+			</header>
+		<!--中部的-->	
+			<div class="Location_register_box">
+				<!--上锚-->
+				<div class="LocRegBox_anchor_top anchor1"></div>
+				<!--下锚-->
+				<div class="LocRegBox_anchor_down anchor2"></div>
+				<!--上锚-->
+				<div class="LocRegBox_anchor_top anchor3"></div>
+				<!--下锚-->
+				<div class="LocRegBox_anchor_down anchor4"></div>
+				<!--上锚-->
+				<div class="LocRegBox_anchor_top anchor5"></div>
+				<!--下锚-->
+				<div class="LocRegBox_anchor_down anchor6"></div>
+				<!--上锚-->
+				<div class="LocRegBox_anchor_top anchor7"></div>
+				
+				
+				<!--注册表-->				
+				<div class="LocRegBox_register">
+					<!--Register-->
+					<p style="color: white;font-size: 50px;padding-left: 100px;letter-spacing:6px;">Sign In</p>	
+					<!--输入用户名-->
+					<input type="text" value="Username" id="registerInput_ID1" class="LocRegBox_register_input"/><font id="registerInput_ID1_font1"></font>
+					<!--输入密码-->
+					<input type="text" value="Password" id="registerInput_ID2" class="LocRegBox_register_input"/><!--<font id="registerInput_ID2_font2"></font>-->
+					<input style="display: none;" type="password" id="registerInput_ID2_2" class="LocRegBox_register_input"/><font id="registerInput_ID2_font2"></font>
+						
+					<!--确认密码-->
+					<input type="text" value="Confirm Password" id="registerInput_ID3" class="LocRegBox_register_input"/>
+					<input style="display: none;" type="password" id="registerInput_ID3_3" class="LocRegBox_register_input"/><font id="registerInput_ID3_font3"></font>
+						
+					<!--登录按钮-->
+					<button class="LocRegBox_register_btn">确定注册</button>
+									
+					
+				</div>
+				
+				
+				
+				
+				
+				
+				<!--水花-->
+				<div class="LocRegBox_spray">
+					<ul>
+						<li><img src="../Location_img/水花.png"></li>
+						<li><img src="../Location_img/水花.png"></li>
+					</ul>
+				</div>
+				
+				
+				
+			</div>
+			
+		
+			<footer id="footer">
+				
+			</footer>
+		
+	</body>
+	<script type="text/javascript" src="../Location_js/login_register_1.js" ></script>
+	<script type="text/javascript" src="../../js/Home_header_one.js" ></script>
+	<script type="text/javascript" src="../../js/Home_footer.js" ></script>
+</html>

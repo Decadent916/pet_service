@@ -1,0 +1,263 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+img{
+	margin: 0 3px -3px 0;
+}
+html{
+	overflow-x: hidden;
+					
+}
+body{
+	width: 1349px;	
+	height: 900px;
+	background-size: 100%;
+	background-image:url(../Location_img/E.jpg);
+	position: relative;
+	background-repeat:no-repeat;
+}
+.Location_box{
+	width: 1349px;	
+	height:900px;
+	background-color: rgba(255,255,255,0.2);
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+.Location_guide{
+	width: 1349px;
+	height: 38px;
+	background-color: #41A0CC;
+}
+.Location_frame{
+	width:500px;
+	height:450px;
+	background-color: white;
+	border-radius: 5px;
+	position: absolute;
+	left:-600px;
+	top:100px;
+	box-shadow: 1px 3px rgb(140,136,135);
+}
+.Location_frame_loge img{
+	width:90px;
+	height:50px;
+	margin-left: 5px;
+}
+.Location_frame_map{
+	width:500px;
+	height:350px;
+	background-color: gold;
+	position: absolute;
+	top: 65px;
+	border-radius: 5px;
+}
+.Location_ID input{
+	width:300px;
+	height: 35px;
+	color: gray;
+	/*border-color:rgb(236,162,65);*/
+	background-color:white;
+	border: 1px gray solid;	
+	position: absolute;
+	top: 10px;
+	left: 110px;
+}
+.Location_btn button{
+	width: 70px;
+	height: 37px;
+	color: white;
+	font-size: 20px;
+	background-color:rgb(51,136,255);
+	border: 1px gray solid;
+	position: absolute;
+	top: 10px;
+	left: 410px;
+}
+.Location_hint p{
+	color: red;
+	font-size:10px;
+	position: absolute;
+	top:48px;
+	left:115px;
+}
+.Location_buyNecklet{
+	position: absolute;
+	top:420px;
+	width: 500px;
+	height: 35px;
+	overflow: hidden;
+}
+.Location_buyNecklet ul{
+	position: absolute;
+	top:0px ;
+	list-style: none;
+
+	font-size: 13px;
+} 
+.Location_buyNecklet ul li{
+	line-height:30px;	
+	
+	
+}
+.Location_charShop{
+	width: 320px;
+	height: 200px;
+	background-color: rgba(255,255,255,0.8);
+	position: absolute;
+	top:190px;
+	left: 1350px;
+}
+
+.Location_forum{
+	width: 350px;
+	height: 110px;
+	background-color: rgba(255,255,255,0.8);
+	position: absolute;
+	top:400px;
+	left:1350px;
+}
+.Location_box_ballDownA{
+	position: absolute;
+	top:-200px;
+	left: 450px;
+}
+.Location_box_ballDownB{
+	position: absolute;
+	top:-200px;
+	left: 450px;
+}
+
+
+.Location_home{
+	width: 140px;
+	height: 50px;
+	border-radius: 15px 0 0 15px;
+	background-color:rgb(255,220,226);
+	position: absolute;
+	top: 100px;
+	right:-90px;
+}
+.Location_home a{
+	width: 50px;
+	height: 50px;
+	display: inline-block;
+	background-image: url(../Location_img/雪碧图.png);
+	overflow: hidden;
+	background-position: -10px -8px;
+}
+
+.Location_home p{
+	font-size:20px;
+	display: inline-block;
+	position: absolute;
+	left:55px;
+	top:10px;
+}
+
+.Location_show{
+	width: 140px;
+	height: 50px;
+	border-radius: 15px 0 0 15px;
+	background-color:rgb(245,218,228);
+	position: absolute;
+	top: 160px;
+	right:-90px;
+}
+.Location_show a{
+	width: 50px;
+	height: 50px;
+	display: inline-block;
+	background-image: url(../Location_img/雪碧图.png);
+	overflow: hidden;
+	background-position: -10px -142px;
+} 
+
+.Location_show p{
+	font-size:20px;
+	display: inline-block;
+	position: absolute;
+	left:55px;
+	top:10px;
+}
+
+.Location_face{
+	width: 140px;
+	height: 50px;
+	border-radius: 15px 0 0 15px;
+	background-color:rgb(220,223,228);
+	position: absolute;
+	top: 220px;
+	right:-90px;
+}
+.Location_face a{
+	width: 50px;
+	height: 50px;
+	display: inline-block;
+	background-image: url(../Location_img/雪碧图.png);
+	overflow: hidden;
+	background-position: -96px -75px;
+}
+.Location_face p{
+	font-size:20px;
+	display: inline-block;
+	position: absolute;
+	left:55px;
+	top:10px;
+}
+
+.Location_Loc{
+	width: 140px;
+	height: 50px;
+	border-radius: 15px 0 0 15px;
+	background-color:rgb(204,227,231);
+	position: absolute;
+	top:280px;
+	right:-90px;
+}
+.Location_Loc a {
+	width: 50px;
+	height: 50px;
+	display: inline-block;
+	background-image: url(../Location_img/雪碧图.png);
+	overflow: hidden;
+	background-position: -96px -10px;
+}
+.Location_Loc p{
+	font-size:20px;
+	display: inline-block;
+	position: absolute;
+	left:55px;
+	top:10px;
+}
+	
+.Location_shop{
+	width: 140px;
+	height: 50px;
+	border-radius: 15px 0 0 15px;
+	background-color:rgb(175,236,230);
+	position: absolute;
+	top: 340px;
+	right:-90px;
+}
+.Location_shop a{
+	width: 50px;
+	height: 50px;
+	border-radius: 15px 0 0 15px;
+	display: inline-block;
+	background-image: url(../Location_img/雪碧图.png);
+	overflow: hidden;
+	background-position: -263px -8px;
+}
+.Location_shop p{
+	font-size:20px;
+	display: inline-block;
+	position: absolute;
+	left:55px;
+	top:10px;
+}
+footer{
+	position: absolute;
+	top:750px ;
+}

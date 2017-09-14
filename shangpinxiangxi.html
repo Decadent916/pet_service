@@ -1,0 +1,1877 @@
+	<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			ul{
+				list-style-type: none;
+			}
+			a{
+				text-decoration: none;
+				color: #666666;
+			}
+			#shop-shangpin{
+				margin-top: 10px;
+				font-size: 12px;
+				color: black;
+				font-family: "微软雅黑";
+				overflow: auto;
+				margin-right: auto;
+				margin-left: auto;
+				width: 1190px;
+			}
+			
+			/*左侧信息*/
+			#shop-shangpin-left{
+				width: 360px;
+				height: 360px;
+				border: 1px solid #E6E6E6;
+				padding: 19px;
+				float: left;
+			}
+			#shop-shangpin-left img{
+				width: 360px;
+				height: 360px;
+				vertical-align: middle;
+			}
+			
+			
+			/*中间信息*/
+			#shop-shangpin-center{
+				width: 520px;
+				margin-left: 20px;
+				float: left;
+			}
+			#shop-shangpin-center1{
+				font-size: 20px;
+			}
+			#shop-shangpin-center2{
+				background: #fef8f6;
+				border-top: 1px solid #F3F3F3;
+				padding: 0 10px 10px;
+				top: 18px;
+				overflow: auto;
+			}
+			#shop-shangpin-center2 dl{
+				margin-top: 15px;
+				display: block;
+				overflow: auto;
+			}
+			#shop-shangpin-center21{
+				padding-top: 8px;
+				letter-spacing: 12px;
+				float: left;
+				width: 80px;
+				text-align: left;
+				color: #666;
+			}
+			#shop-shangpin-center22{
+				font-size: 30px;
+				color:#EE5533;
+				float: left;
+			}
+			#shop-shangpin-center23{
+				width: 80px;
+				text-align: left;
+				float: left;
+				color: #666666;
+			}
+			#shop-shangpin-center24{
+				font-size: 14px;
+				color:#999999;
+				text-decoration: line-through;
+				float: left;
+			}
+			#shop-shangpin-center3{
+				padding: 0 10px;
+				color: #666666;
+			}
+			#shop-shangpin-center3 dl{
+				width: 100%;
+				margin-top: 14px;
+				vertical-align: middle;
+				overflow: auto;
+			}
+			#shop-shangpin-center31{
+				float: left;
+				width: 87px;
+				text-align: left;
+				padding: 8px 0 0;
+			}
+			#shop-shangpin-center32{
+				float: left;
+			}
+			#shop-shangpin-center32 span{
+				width: 18px;
+				height: 23px;
+				font-size: 16px;
+				padding-top: 3px;
+				border: 1px solid #CCCCCC;
+				text-align: center;
+				float: left;
+			}
+			#shop-shangpin-center32 input{
+				width: 50px;
+				height: 26px;
+				line-height: 26px;
+				padding: 0 5px;
+				font-weight: bold;
+				border: 1px solid #CCCCCC;
+				border-left: none;
+				border-right: none;
+				text-align: center;
+				float: left;
+			}
+			#shop-shangpin-center33{
+				width: 410px;
+				float: left;
+				overflow: auto;
+			}
+			#shop-shangpin-center33 input{
+				width: 130px;
+				height: 40px;
+				background:#e53;
+				color: white;
+				font-size:16px ;
+				margin-right: 10px;
+				border: none;
+				float: left;
+			}
+			#shop-shangpin-center33 a{
+				width: 150px;
+				height: 40px;
+				background: url(img/btn.png) 0 0 no-repeat;
+				float: left;
+			}
+			#shop-shangpin-center33 input:hover{
+				background:#CC2200;
+			}
+			
+			/*右侧信息*/
+			#shop-shangpin-right{
+				width: 228px;
+				border: 1px solid #E6E6E6;
+				float: left;
+			}
+			#shop-shangpin-right1{
+				height: 100px;
+			}
+			#shop-shangpin-right1 li{
+				float: left;
+				width: 75px;
+				text-align: center;
+				color: #999999;
+				padding-top: 5px;
+			}
+			#shop-shangpin-right1 img{
+				vertical-align: middle;
+				border: none;
+			}
+			#shop-shangpin-right1 span{
+				display: block;
+			}
+			#shop-shangpin-right2{
+				border-top: 1px solid #E6E6E6;
+				padding: 10px;
+				color: #666666;
+			}
+			#shop-shangpin-right2 dl{
+				margin-top: 10px;
+				overflow: hidden;
+			}
+			#shop-shangpin-right2 dl dt{
+				float: left;
+				width: 60px;
+				text-align: right;
+				display: block;
+			}
+			#shop-shangpin-right2 dl dd{
+				float: left;
+				width: 145px;
+			}
+			#shop-shangpin-right2 dl dd a{
+				color: #08d;
+			}
+			.shop-shangpin-right2count1{
+				width: 16px;
+				height: 16px;
+				float:left ;
+				background: url(img/star-on.png) no-repeat 0 center;
+			}
+			.shop-shangpin-right2count2{
+				width: 15px;
+				height: 15px;
+				float:left ;
+				background: url(img/star-on5.png) no-repeat;
+			}
+			#shop-shangpin-right2pl{
+				padding: 5px 0 10px;
+			}
+			#shop-shangpin-right2pl a{
+				color: #08d;
+			}
+			
+			/*侧边购物车*/
+			#shop-righttitle{
+				width: 36px;
+				height: 100%;
+				background-color: black;
+				position: fixed;
+				right: 0;
+				top: 0;
+				opacity: 0.95;
+			}
+			#shop-righttitle-nav{
+				width: 36px;
+				height: 407px;
+				top: 50%;
+				margin-top: -168.5px;
+				position: absolute;
+				font-size: 12px;
+				font-family: "微软雅黑";
+			}
+			#shop-right-top{
+				width: 36px;
+				height: 57px;
+				bottom: 100px;
+				position: absolute;
+				font-size: 12px;
+				font-family: "微软雅黑";
+			}
+			#shop-right-top a{
+				border-bottom: 1px solid rgb(52,52,52);
+				border-top: 1px solid rgb(52,52,52);
+				color: #999;
+				display: block;
+			}
+			#shop-right-top i{
+				width: 36px;
+				height: 30px;
+				background: url(img/sbar_ico.png) 0 -288px no-repeat;
+				display: block;
+			}
+			#shop-right-top span{
+				text-align: center;
+				width: 70%;
+				padding-bottom: 9px;
+				margin:0 auto;
+				display: block;
+			}
+			#shop-rightli1{
+				width: 36px;
+				height: 36px;
+				border-top: 1px solid rgb(52,52,52);
+			}
+			#shop-rightli1 i{
+				background: url(img/sbar_ico.png) no-repeat;
+				width: 36px;
+				height: 36px;
+				margin: 0 auto;
+				display: block;
+			}
+			#shop-rightli2{
+				width: 36px;
+				height: 120px;
+				border-top: 1px solid rgb(52,52,52);
+			}
+			#shop-rightli2-1{
+				display: block;
+				width: 36px;
+				height: 36px;
+				background: url(img/sbar_ico.png) 0 -36px no-repeat;
+			}
+			#shop-rightli2 span{
+				width: 12px;
+				height: 48px;
+				font-size: 12px;
+				font-family: "微软雅黑";
+				margin-left: 12px;
+				margin-right: 12px;
+				text-align: center;
+				display: block;
+			}
+			#shop-rightli2-2{
+				width: 36px;
+				height: 36px;
+				display: block;
+				background: url(img/sbar_ico.png) 0 -249px no-repeat;
+				color: white;
+				font-size: 12px;
+				font-family: "微软雅黑";
+				line-height: 36px;
+				text-align: center;
+				font-style: normal;
+				font-weight: bold;
+			}
+			
+			/*商品详细信息*/
+			/*商品详细信息的菜单栏*/
+			#shop-shangpin-xiangxi{
+				overflow: hidden;
+				margin-top: 30px;
+				font: "微软雅黑";
+				font-size:12px ;
+				color: black;
+				width: 1190px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			#shop-shangpin-xiangxitop{
+				height: 40px;
+				background-color: #F3F3F3;
+				border: 1px solid #DDDDDD;
+				position: relative;
+			}
+			#shop-shangpin-xiangxitop a{
+				padding: 0 20px;
+				position: relative;
+				font: 14px/40px "微软雅黑";
+				color: #333333;
+				float: left;
+				border-right: 1px solid #DDDDDD;
+			}
+			#shop-shangpin-jieshao{
+				color: #e53;
+				border-top: 3px solid #e53;
+				top: -1px;
+				background-color: white;
+			}
+			/*商品详细信息的介绍*/
+			#shop-shangpin-xiangxip{
+				border: 1px solid #DDDDDD;
+				border-top: none;
+				padding: 10px 20px 20px;
+				display: block;
+			}
+			.shop-shangpin-xiangxip1{
+				margin-top: 40px;
+			}
+			.shop-shangpin-xiangxiptitle{
+				height: 30px;
+				overflow: hidden;
+			}
+			.shop-shangpin-xiangxiptitle span{
+				font: 24px/26px "微软雅黑";
+				color: #f50;
+			}
+			.shop-shangpin-xiangxiptitle em{
+				font: 18px/20px arial;
+				margin: 15px 0 0 10px;
+				color: #999999;
+			}
+			.shop-shangpin-xiangxipneitong{
+				margin-top: 15px;
+			}
+			.shop-shangpin-xiangxipneitong img{
+				border: none;
+				vertical-align: middle;
+			}
+			/*商品详细信息的评论*/
+			#shop-shangpin-xiangxipinglun{
+				border: 1px solid #DDDDDD;
+				padding: 10px 20px 20px;
+				margin-top: 10px;
+				display: none;
+			}
+			.shop-shangpin-xiangxipingluntitle{
+				height: 30px;
+				border-bottom: 2px solid #CCCCCC;
+			}
+			.shop-shangpin-xiangxipingluntitle h2{
+				font: 20px/30px "微软雅黑";
+				border-bottom: 2px solid #e53;
+				color: #e53;
+				display: inline-block;
+			}
+			#shop-shangpin-xiangxipinglunneirong1{
+				background: #F3F3F3;
+				border-bottom: 1px solid #E6E6E6;
+				height: 138px;
+				overflow: hidden;
+			}
+			#shop-shangpin-xiangxipinglunneirong1l{
+				width: 400px;
+				text-align: center;
+				float: left;
+			}
+			#shop-shangpin-xiangxipinglunneirong1l1{
+				margin-top: 10px;
+				color: #e53;
+				font-size: 16px;
+			}
+			#shop-shangpin-xiangxipinglunneirong1l2{
+				overflow: hidden;
+				padding: 2px 0 0 158px;
+			}
+			.shop-shangpin-pinglunxing1{
+				width: 16px;
+				height: 16px;
+				display: block;
+				float: left;
+				background: url(img/star-on.png) no-repeat 0px center;
+			}
+			.shop-shangpin-pinglunxing2{
+				width: 15px;
+				height: 15px;
+				display: block;
+				float: left;
+				background: url(img/star-on5.png) no-repeat 0px center;
+			}
+			#shop-shangpin-xiangxipinglunneirong1l3{
+				color: #666666;
+				margin-top: 10PX;
+			}
+			#shop-shangpin-xiangxipinglunneirong1c{
+				background: white;
+				border-left: 1px solid #E6E6E6;
+				border-right: 1px solid #E6E6E6;
+				height: 123px;
+				width: 516px;
+				padding: 15px 115px 0;
+				float: left;
+			}
+			#shop-shangpin-xiangxipinglunneirong1c dl{
+				margin-top: 17px;
+				overflow: hidden;
+			}
+			#shop-shangpin-xiangxipinglunneirong1c dt{
+				float: left;
+				width: 110px;
+				text-align: right;
+				color: #666666;
+			}
+			#shop-shangpin-xiangxipinglunneirong1c dd{
+				float: left;
+				width: 300px;
+			}
+			.shop-pinglunxian1{
+				width: 300px;
+				background-color: #E6E6E6;
+				height: 10px;
+				margin-top: 3px;
+			}
+			.shop-pinglunxian2{
+				background: #e53;
+				height: 10px;
+			}
+			#shop-shangpin-xiangxipinglunneirong2{
+				height: 30px;
+				border-bottom: 1px solid #E6E6E6;
+				margin-top: 10px;
+			}
+			#shop-shangpin-xiangxipinglunneirong2 span{
+				float: left;
+				padding: 0 20px;
+				font: 12px/30px arial;
+				color: #333333;
+			}
+			.shop-pinglunneitong{
+				overflow: hidden;
+				padding: 20px 0 5px;
+				border-bottom: 1px dashed #ccc;
+			}
+			.shop-pinglunneitong-l{
+				width: 60px;
+				/*height: 40px;*/
+				padding: 0 12px;
+				float: left;
+			}
+			.shop-pinglunneitong-l img{
+				width: 40px;
+				height: 40px;
+				border-radius: 40px;
+				border: none;
+				vertical-align: middle;
+			}
+			.shop-pinglunneitong-l p{
+				width: 40px;
+				text-align: center;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				white-space: nowrap;
+			}
+			.shop-pinglunneitong-r{
+				width: 836px;
+				float: left;
+				font-family: arial simsun; 
+			}
+			.shop-pinglunneitong-r dl{
+				overflow: hidden;
+				margin-bottom: 13px;
+				line-height: 22px;
+			}
+			.shop-pinglunneitong-r dl dt{
+				float: left;
+				color: #666666;
+				width: 36px;
+				text-align: right;
+			}
+			.shop-pinglunneitong-r dl dd{
+				float: left;
+				width: 800px;
+			}
+			/*商品详细信息的售后*/
+			#shop-shangpin-shouhou{
+				border: 1px solid #DDDDDD;
+				padding: 10px 20px 20px;
+				margin-top: 10px;
+				display: none;
+			}
+			#shop-shangpin-shouhouneirong dl{
+				padding: 20px;
+				border-bottom: 1px dashed #CCCCCC;
+				overflow: hidden;
+			}
+			#shop-shangpin-shouhoutubiao1{
+				background: url(img/btn.png) no-repeat 0 -243px;
+				width: 84px;
+				height: 84px;
+				float: left;
+				margin-right: 20px;
+			}
+			.shop-shangpin-shouhouneirong2{
+				color: #333333;
+				font: 16px/24px "微软雅黑";
+				padding-top: 10px;
+			}
+			.shop-shangpin-shouhouneirong1{
+				color: #ef5f3f;
+				font: 20px/24px "微软雅黑";
+				padding-top: 10px;
+			}
+			#shop-shangpin-shouhoutubiao2{
+				background: url(img/btn.png) no-repeat -97px -243px;
+				width: 84px;
+				height: 84px;
+				float: left;
+				margin-right: 20px;
+			}
+			#shop-shangpin-shouhoutubiao3{
+				background: url(img/btn.png) no-repeat -193px -243px;
+				width: 84px;
+				height: 84px;
+				float: left;
+				margin-right: 20px;
+			}
+		</style>
+		
+	</head>
+	<link rel="stylesheet" type="text/css" href="css/Home.css"/>
+	<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/jquery.tmpl.js"></script>
+	<script src="js/Shop_header.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/shopxiangxiyemian.js" type="text/javascript" charset="UTF-8"></script>
+	<script src="js/shopcommon.js" type="text/javascript" charset="UTF-8"></script>
+	<script type="text/x-jquery-tmpl" id="shoptmpl">
+		<!--商品左侧-->
+			<div id="shop-shangpin-left">
+				<img src="${img1}"/>
+			</div>
+			<!--商品中间-->
+			<div id="shop-shangpin-center">
+				<div id="shop-shangpin-center1">${name}</div>
+				<div id="shop-shangpin-center2">
+					<dl>
+						<dt id="shop-shangpin-center21">价钱：</dt>
+						<dd id="shop-shangpin-center22">￥<span id="shopdanjia">${price}</span></dd>
+					</dl>
+					<dl>
+						<dt id="shop-shangpin-center23">厂商指导价：</dt>
+						<dd id="shop-shangpin-center24">￥${zhidaojia}</dd>
+					</dl>
+				</div>
+				<div id="shop-shangpin-center3">
+					<dl>
+						<dt id="shop-shangpin-center31">购买数量：</dt>
+						<dd>
+							<div id="shop-shangpin-center32">
+								<span id="shop-shangpin-center32span1">-</span>
+								<input type="text" value="1" id="shop-shangpin-center32input"/>
+								<span id="shop-shangpin-center32span2">+</span>
+							</div>
+						</dd>
+					</dl>
+					<dl>
+						<dd id="shop-shangpin-center33">
+							<input type="button" value="立即购买" onclick="addtocart()"/>
+							<a title="加入购物车" onclick="addtocart()"></a>
+						</dd>
+					</dl>
+				</div>
+			</div>
+			<!--商品右侧-->
+			<div id="shop-shangpin-right">
+				<div id="shop-shangpin-right1">
+					<ul>
+						<li>
+							<img src="img/btn_z.jpg"/><span>100%<br/>正品保障</span>
+						</li>
+						<li>
+							<img src="img/btn_c.jpg"/><span>7省<br/>满59免运费</span>
+						</li>
+						<li>
+							<img src="img/btn_q.jpg"/><span>7天<br/>无忧退换</span>
+						</li>
+					</ul>
+				</div>
+				<div id="shop-shangpin-right2">
+					<dl>
+						<dt>所属品牌：</dt>
+						<dd><a href="">${pinpai}</a></dd>
+					</dl>
+					<dl>
+						<dt>商品编号：</dt>
+						<dd>${id}</dd>
+					</dl>
+					<dl>
+						<dt>已　　售：</dt>
+						<dd style="color: #e53;">${sale}件</dd>
+					</dl>
+					<dl>
+						<dt>满意指数：</dt>
+						<dd>
+							<div id="shop-shangpin-right2count">
+								<p>
+									<span class="shop-shangpin-right2count1"></span>
+									<span class="shop-shangpin-right2count1"></span>
+									<span class="shop-shangpin-right2count1"></span>
+									<span class="shop-shangpin-right2count1"></span>
+									<span class="shop-shangpin-right2count2"></span>
+								</p>
+								<em style="color: #e53;">4.5分</em>
+							</div>
+							<div id="shop-shangpin-right2pl"><a href="">已有15人评论</a></div>
+						</dd>
+					</dl>
+				</div>
+			</div>
+	</script>
+	<script type="text/x-jquery-tmpl" id="shoptmpl2">
+		产品名称：${name}<br />
+		适用范围：通用<br />
+		产品规格：${zhongliang}<br />
+		生产厂家：${pinpai}<br />  
+	</script>
+	<script type="text/x-jquery-tmpl" id="shoptmpl3">
+		<img src="${img2}" />
+		<img src="${img3}" />
+		<img src="${img4}" />
+		<img src="${img5}" />
+		<img src="${img6}" />
+		<img src="${img7}" />
+		<img src="${img8}" />
+		<img src="${img9}" />
+		<img src="${img10}" />
+		<img src="${img11}" />
+		<img src="${img12}" />
+		<img src="${img13}" />
+		<img src="${img14}" />
+		<img src="${img15}" />
+		<img src="${img16}" />
+		<img src="${img17}" />
+		<img src="${img18}" />
+	</script>
+	
+	
+	<script type="text/javascript">
+			window.onload=function(){
+//				TOP按钮的事件
+				var oShoprighttop=document.getElementById("shop-right-top");
+				oShoprighttop.onclick=function(){
+					document.documentElement.scrollTop = document.body.scrollTop =0;
+				};
+
+//商品数量按钮事件
+				var oShopcenter32=document.getElementById("shop-shangpin-center32");
+				var oShopcenter32span1=document.getElementById("shop-shangpin-center32span1");
+				var oShopcenter32span2=document.getElementById("shop-shangpin-center32span2");
+				var oShopcenter32input=document.getElementById("shop-shangpin-center32input");
+				$(document).on('click','#shop-shangpin-center32span1',function(){
+					var shopshangpinshuliang=document.getElementById("shop-shangpin-center32input").value;
+					if(shopshangpinshuliang==1){
+						document.getElementById("shop-shangpin-center32input").value="1";
+					}
+					else{
+						shopshangpinshuliang=shopshangpinshuliang-1;
+						document.getElementById("shop-shangpin-center32input").value=shopshangpinshuliang;
+					}
+				});
+				$(document).on('click','#shop-shangpin-center32span2',function(){
+					var shopshangpinshuliang=document.getElementById("shop-shangpin-center32input").value;
+					shopshangpinshuliang=parseInt(shopshangpinshuliang)+1;
+					document.getElementById("shop-shangpin-center32input").value=shopshangpinshuliang;
+				});
+//				oShopcenter32span1.onclick=function(){
+//					var shopshangpinshuliang=oShopcenter32input.value;
+//					alert(shopshangpinshuliang);
+//				}
+
+//				商品详细信息菜单按钮的事件
+				var oShopshangpinxiangxitop=document.getElementById("shop-shangpin-xiangxitop");
+				var oShopshangpinxiangxitoparr=oShopshangpinxiangxitop.getElementsByTagName("a");
+				var oShopshangpinxiangxiall=document.getElementById("shop-shangpin-xiangxiall");
+				var oShopshangpinxiangxiarr1=oShopshangpinxiangxiall.getElementsByClassName("shop-shangpin-xiangxiarr1");
+				for(var i=0;i<oShopshangpinxiangxitoparr.length;i++){
+					oShopshangpinxiangxitoparr[i].index=i;
+					oShopshangpinxiangxitoparr[i].onmouseover=function(){
+						oShopshangpinxiangxitoparr[this.index].style.color="#e53";
+					}
+					oShopshangpinxiangxitoparr[i].onmouseout=function(){
+						oShopshangpinxiangxitoparr[this.index].style.color="#333";
+					}
+					oShopshangpinxiangxitoparr[i].onclick=function(){
+						for(var j=0;j<oShopshangpinxiangxitoparr.length;j++){
+							oShopshangpinxiangxitoparr[j].style.color="#333";
+							oShopshangpinxiangxitoparr[j].style.borderTop="none";
+							oShopshangpinxiangxitoparr[j].style.top="0px";
+							oShopshangpinxiangxitoparr[j].style.backgroundColor="#F3F3F3";
+							oShopshangpinxiangxiarr1[j].style.display="none";
+						}
+						oShopshangpinxiangxiarr1[this.index].style.display="block";
+						oShopshangpinxiangxitoparr[this.index].style.color="#e53";
+						oShopshangpinxiangxitoparr[this.index].style.borderTop="3px solid #e53";
+						oShopshangpinxiangxitoparr[this.index].style.top="-1px";
+						oShopshangpinxiangxitoparr[this.index].style.backgroundColor="white";
+					}
+				}
+				
+				
+//				评论区按钮点击事件
+				var oShopshangpinxiangxipinglunneirong2=document.getElementById("shop-shangpin-xiangxipinglunneirong2");
+				var oShopshangpinxiangxipinglunneirong2arr1=oShopshangpinxiangxipinglunneirong2.getElementsByTagName("span");
+				var oShopshangpinxiangxipinglunneirong3arr1=document.getElementsByClassName("shop-shangpin-xiangxipinglunneirong3");
+				for(var p=0;p<oShopshangpinxiangxipinglunneirong2arr1.length;p++){
+					oShopshangpinxiangxipinglunneirong2arr1[p].index=p;
+					oShopshangpinxiangxipinglunneirong2arr1[p].onclick=function(){
+						for(var l=0;l<oShopshangpinxiangxipinglunneirong3arr1.length;l++){
+							oShopshangpinxiangxipinglunneirong3arr1[l].style.display="none";
+						};
+						oShopshangpinxiangxipinglunneirong3arr1[this.index].style.display="block";
+					}
+				}
+			}
+			function addtocart(){
+				if(document.cookie.length>0){
+//					获取商品数量
+					var shuliang=$("#shop-shangpin-center32input").val();
+					console.log(shuliang);
+//					获取用户id
+					var users=JSON.parse(document.cookie);
+					console.log(users);
+//					获取商品id
+					var str=location.search;
+					str=str.substr(str.indexOf("?id=")+4);
+					console.log(str);
+//					获取商品单价
+					var danjia=$("#shopdanjia").html();
+					console.log(danjia);
+					
+					var data = {};
+					data.userId = users.user_ID;
+					data.shangpinId=str;
+//					console.log(data);
+					var jsonStr=JSON.stringify(data);
+					$.ajax({
+						type:"post",
+						url:"php/shoppingcart.php",
+						async:true,
+						contentType:'application/json',
+						dataType:'json',
+						data:jsonStr,
+						success:function(datas){
+							//判断是否存在
+							if(datas.length > 0) {
+								data.dingdanId = datas[0].dingdanid;
+								//判断是删除添加
+//								if(data[0].isDelete != 1) {
+//									joinshoppingcart(JSON.stringify(data), "lexianService/addshoppingCart1.php");
+//								}
+								//还是数量添加
+//								else {
+									data.shuliang = parseInt(datas[0].shuliang) + parseInt(shuliang);
+									joinshoppingcart(JSON.stringify(data), "php/addshoppingcart.php");
+//								}
+							} else {
+								data.shuliang=parseInt(shuliang);
+								data.danjia=parseFloat(danjia);
+								console.log(data);
+								joinshoppingcart(JSON.stringify(data),"php/joinshoppingcart.php");
+							}
+						}
+					});
+				}else{
+					alert("请先登录哦！登录享受更多特权");
+				}
+			}
+				
+			function joinshoppingcart(jsonstr, url) {
+//				alert("aaa");
+				var users=JSON.parse(document.cookie);
+				$.ajax({
+					url:url,
+					contentType: 'application/json',
+					data: jsonstr,
+					dataType: 'json',
+					type: 'post',
+					success: function(data) {
+//						alert("写入数据成功");
+						getCartTotal(users.user_ID);
+						shoppingCartDetail(users.user_ID);
+					}
+				});
+			}
+			
+//			购物车按钮事件
+			function shopgouwucheanniu(){
+				if(document.cookie.length>0){
+					location.href="shoppingcart.html";
+				}else{
+					alert("请先登录哦！登录享受更多特权");
+				}
+			}
+		</script>
+ 	<body>
+		<!--头部-->
+		<header id="header"></header>
+		
+		
+		
+		<!--商品-->
+
+
+	
+	
+<!--商品头部-->
+		<div id="shop-shangpin">
+			<!--商品左侧-->
+			<!--<div id="shop-shangpin-left">
+				<img src="img/shoppicpath11397543976.jpg" />
+			</div>-->
+			<!--商品中间-->
+			<!--<div id="shop-shangpin-center">
+				<div id="shop-shangpin-center1">魔金 除虱驱螨香波500ml 12周龄以上 狗狗沐浴露</div>
+				<div id="shop-shangpin-center2">
+					<dl>
+						<dt id="shop-shangpin-center21">价钱：</dt>
+						<dd id="shop-shangpin-center22">￥24.00</dd>
+					</dl>
+					<dl>
+						<dt id="shop-shangpin-center23">厂商指导价：</dt>
+						<dd id="shop-shangpin-center24">￥31.20</dd>
+					</dl>
+				</div>
+				<div id="shop-shangpin-center3">
+					<dl>
+						<dt id="shop-shangpin-center31">购买数量：</dt>
+						<dd>
+							<div id="shop-shangpin-center32">
+								<span>-</span>
+								<input type="text" value="1"/>
+								<span>+</span>
+							</div>
+						</dd>
+					</dl>
+					<dl>
+						<dd id="shop-shangpin-center33">
+							<input type="button" value="立即购买"/>
+							<a href="shoppingcart.html" title="加入购物车"></a>
+						</dd>
+					</dl>
+				</div>
+			</div>-->
+			<!--商品右侧-->
+			<!--<div id="shop-shangpin-right">
+				<div id="shop-shangpin-right1">
+					<ul>
+						<li>
+							<img src="img/btn_z.jpg"/><span>100%<br/>正品保障</span>
+						</li>
+						<li>
+							<img src="img/btn_c.jpg"/><span>7省<br/>满59免运费</span>
+						</li>
+						<li>
+							<img src="img/btn_q.jpg"/><span>7天<br/>无忧退换</span>
+						</li>
+					</ul>
+				</div>
+				<div id="shop-shangpin-right2">
+					<dl>
+						<dt>所属品牌：</dt>
+						<dd><a href="">魔金</a></dd>
+					</dl>
+					<dl>
+						<dt>商品编号：</dt>
+						<dd>1614454</dd>
+					</dl>
+					<dl>
+						<dt>已　　售：</dt>
+						<dd style="color: #e53;">1730件</dd>
+					</dl>
+					<dl>
+						<dt>满意指数：</dt>
+						<dd>
+							<div id="shop-shangpin-right2count">
+								<p>
+									<span class="shop-shangpin-right2count1"></span>
+									<span class="shop-shangpin-right2count1"></span>
+									<span class="shop-shangpin-right2count1"></span>
+									<span class="shop-shangpin-right2count1"></span>
+									<span class="shop-shangpin-right2count2"></span>
+								</p>
+								<em style="color: #e53;">4.5分</em>
+							</div>
+							<div id="shop-shangpin-right2pl"><a href="">已有15人评论</a></div>
+						</dd>
+					</dl>
+				</div>
+			</div>-->
+		</div>
+
+
+	
+	
+	
+	
+<!--商品底部信息-->
+		<div id="shop-shangpin-xiangxi">
+			<div>
+				<div id="shop-shangpin-xiangxitop">
+					<a href="#shop-shangpin-jieshaomaodian" id="shop-shangpin-jieshao">商品介绍</a>
+					<a href="#shop-shangpin-pinglunmaodian">商品评论</a>
+					<a href="#shop-shangpin-shouhoumaodian">售后服务</a>
+				</div>
+				<div id="shop-shangpin-xiangxiall">
+						<!--商品介绍-->
+						<div id="shop-shangpin-xiangxip" class="shop-shangpin-xiangxiarr1">
+							<div class="shop-shangpin-xiangxip1">
+								<div class="shop-shangpin-xiangxiptitle">
+									<span>产品信息</span><em>Product Information</em>
+								</div>
+								<div class="shop-shangpin-xiangxipneitong" id="shop-shangpin-xiangxipneitong1">
+								<!--产品名称：魔金 除虱驱螨香波500ml 12周龄以上 狗狗沐浴露<br />
+								适用范围：通用<br />
+								 产品规格：500ml<br />
+								 生产厂家：魔金<br />                            -->
+								</div>
+							</div>
+							<div class="shop-shangpin-xiangxip1">
+								<div class="shop-shangpin-xiangxiptitle">
+									<span>产品优势</span><em>Product Advantage</em>
+								</div>
+								<div class="shop-shangpin-xiangxipneitong" id="shop-shangpin-xiangxipneitong2" style="text-align: center;width: 750px;margin: 15px auto;">
+								                <!--<img src="img/shopimgFile1469609991.jpg" />
+								                <img src="img/shopimgFile1469609995.jpg" />
+								                <img src="img/shopimgFile1469609996.jpg" />
+								                <img src="img/shopimgFile1469609997.jpg"/>
+								                <img src="img/shopimgFile1469609999.jpg" />
+								                <img src="img/shopimgFile1469610000.jpg"/>
+								                <img src="img/shopimgFile1469610002.jpg"/>
+								                <img src="img/shopimgFile1469610003.jpg"/>
+								                <img src="img/shopimgFile1469610004.jpg"/>
+								                <img src="img/shopimgFile1469610006.jpg"/>
+								                <img src="img/shopimgFile1469610007.jpg"/>
+								                <img src="img/shopimgFile1469610009.jpg"/>-->
+								</div>
+							</div>
+						</div>
+						<!--商品评论-->
+						<div id="shop-shangpin-xiangxipinglun" class="shop-shangpin-xiangxiarr1">
+							<div class="shop-shangpin-xiangxipingluntitle">
+								<h2>商品评论</h2>
+							</div>
+							<div id="shop-shangpin-xiangxipinglunneirong">
+								<div id="shop-shangpin-xiangxipinglunneirong1">
+									<div id="shop-shangpin-xiangxipinglunneirong1l">
+										<div id="shop-shangpin-xiangxipinglunneirong1l1">
+											<span style="font-size: 50px;">4.5</span>分
+										</div>
+										<div id="shop-shangpin-xiangxipinglunneirong1l2">
+											<span class="shop-shangpin-pinglunxing1"></span>
+											<span class="shop-shangpin-pinglunxing1"></span>
+											<span class="shop-shangpin-pinglunxing1"></span>
+											<span class="shop-shangpin-pinglunxing1"></span>
+											<span class="shop-shangpin-pinglunxing2"></span>
+										</div>
+										<div id="shop-shangpin-xiangxipinglunneirong1l3">
+											共15人评论
+										</div>
+									</div>
+									<div id="shop-shangpin-xiangxipinglunneirong1c">
+										<dl>
+											<dt>好评（13）:</dt>
+											<dd>
+												<div class="shop-pinglunxian1">
+													<div class="shop-pinglunxian2" style="width: 86.67%;"></div>
+												</div>
+											</dd>
+										</dl>
+										<dl>
+											<dt>中评（1）:</dt>
+											<dd>
+												<div class="shop-pinglunxian1">
+													<div class="shop-pinglunxian2" style="width: 6.67%;"></div>
+												</div>
+											</dd>
+										</dl>
+										<dl>
+											<dt>差评（1）:</dt>
+											<dd>
+												<div class="shop-pinglunxian1">
+													<div class="shop-pinglunxian2" style="width: 6.67%;"></div>
+												</div>
+											</dd>
+										</dl>
+									</div>
+									
+								</div>
+								<div id="shop-shangpin-xiangxipinglunneirong2">
+									<span><a href="javascript:">全部（15）</a></span>
+									<span><a href="javascript:">好评（13）</a></span>
+									<span><a href="javascript:">中评（1）</a></span>
+									<span><a href="javascript:">差评（1）</a></span>
+								</div>
+								<!--全部评论-->
+								<div class="shop-shangpin-xiangxipinglunneirong3">
+									<!--真正的评论-->
+									<div class="shop-pinglunneitong">
+										<!--左侧-->
+										<div class="shop-pinglunneitong-l">
+											<img src="img/none1.gif"/>
+											<p>mo***10</p>
+										</div>
+										<!--右侧-->
+										<div class="shop-pinglunneitong-r">
+											<dl>
+												<dt>评分：</dt>
+												<dd>
+														<span class="shop-shangpin-pinglunxing1"></span>
+														<span class="shop-shangpin-pinglunxing1"></span>
+														<span class="shop-shangpin-pinglunxing1"></span>
+														<span class="shop-shangpin-pinglunxing1"></span>
+														<span class="shop-shangpin-pinglunxing1"></span>
+													<span style="color: #e53;">5分</span>
+												</dd>
+											</dl>
+											<dl>
+												<dt>内容：</dt>
+												<dd>香波味道很好，泡沫也丰富</dd>
+											</dl>
+										</div>
+									</div>
+									<div class="shop-pinglunneitong">
+										<!--左侧-->
+										<div class="shop-pinglunneitong-l">
+											<img src="img/none1.gif"/>
+											<p>mo***10</p>
+										</div>
+										<!--右侧-->
+										<div class="shop-pinglunneitong-r">
+											<dl>
+												<dt>评分：</dt>
+												<dd>
+														<span class="shop-shangpin-pinglunxing1"></span>
+														<span class="shop-shangpin-pinglunxing1"></span>
+														<span class="shop-shangpin-pinglunxing1"></span>
+														<span class="shop-shangpin-pinglunxing1"></span>
+														<span class="shop-shangpin-pinglunxing1"></span>
+													<span style="color: #e53;">5分</span>
+												</dd>
+											</dl>
+											<dl>
+												<dt>内容：</dt>
+												<dd>香波味道很好，泡沫也丰富</dd>
+											</dl>
+										</div>
+									</div>
+									<div class="shop-pinglunneitong">
+										<!--左侧-->
+										<div class="shop-pinglunneitong-l">
+											<img src="img/none1.gif"/>
+											<p>mo***10</p>
+										</div>
+										<!--右侧-->
+										<div class="shop-pinglunneitong-r">
+											<dl>
+												<dt>评分：</dt>
+												<dd>
+														<span class="shop-shangpin-pinglunxing1"></span>
+														<span class="shop-shangpin-pinglunxing1"></span>
+														<span class="shop-shangpin-pinglunxing1"></span>
+														<span class="shop-shangpin-pinglunxing1"></span>
+														<span class="shop-shangpin-pinglunxing1"></span>
+													<span style="color: #e53;">5分</span>
+												</dd>
+											</dl>
+											<dl>
+												<dt>内容：</dt>
+												<dd>香波味道很好，泡沫也丰富</dd>
+											</dl>
+										</div>
+									</div>
+									<div class="shop-pinglunneitong">
+										<!--左侧-->
+										<div class="shop-pinglunneitong-l">
+											<img src="img/none1.gif"/>
+											<p>mo***10</p>
+										</div>
+										<!--右侧-->
+										<div class="shop-pinglunneitong-r">
+											<dl>
+												<dt>评分：</dt>
+												<dd>
+														<span class="shop-shangpin-pinglunxing1"></span>
+														<span class="shop-shangpin-pinglunxing1"></span>
+														<span class="shop-shangpin-pinglunxing1"></span>
+														<span class="shop-shangpin-pinglunxing1"></span>
+														<span class="shop-shangpin-pinglunxing1"></span>
+													<span style="color: #e53;">5分</span>
+												</dd>
+											</dl>
+											<dl>
+												<dt>内容：</dt>
+												<dd>香波味道很好，泡沫也丰富</dd>
+											</dl>
+										</div>
+									</div>
+									<div class="shop-pinglunneitong">
+										<!--左侧-->
+										<div class="shop-pinglunneitong-l">
+											<img src="img/none1.gif"/>
+											<p>mo***10</p>
+										</div>
+										<!--右侧-->
+										<div class="shop-pinglunneitong-r">
+											<dl>
+												<dt>评分：</dt>
+												<dd>
+														<span class="shop-shangpin-pinglunxing1"></span>
+														<span class="shop-shangpin-pinglunxing1"></span>
+														<span class="shop-shangpin-pinglunxing1"></span>
+														<span class="shop-shangpin-pinglunxing1"></span>
+														<span class="shop-shangpin-pinglunxing1"></span>
+													<span style="color: #e53;">5分</span>
+												</dd>
+											</dl>
+											<dl>
+												<dt>内容：</dt>
+												<dd>香波味道很好，泡沫也丰富</dd>
+											</dl>
+										</div>
+									</div>
+									<div class="shop-pinglunneitong">
+										<!--左侧-->
+										<div class="shop-pinglunneitong-l">
+											<img src="img/none1.gif"/>
+											<p>mo***10</p>
+										</div>
+										<!--右侧-->
+										<div class="shop-pinglunneitong-r">
+											<dl>
+												<dt>评分：</dt>
+												<dd>
+														<span class="shop-shangpin-pinglunxing1"></span>
+														<span class="shop-shangpin-pinglunxing1"></span>
+														<span class="shop-shangpin-pinglunxing1"></span>
+														<span class="shop-shangpin-pinglunxing1"></span>
+														<span class="shop-shangpin-pinglunxing1"></span>
+													<span style="color: #e53;">5分</span>
+												</dd>
+											</dl>
+											<dl>
+												<dt>内容：</dt>
+												<dd>香波味道很好，泡沫也丰富</dd>
+											</dl>
+										</div>
+									</div>
+									<div class="shop-pinglunneitong">
+										<!--左侧-->
+										<div class="shop-pinglunneitong-l">
+											<img src="img/none1.gif"/>
+											<p>mo***10</p>
+										</div>
+										<!--右侧-->
+										<div class="shop-pinglunneitong-r">
+											<dl>
+												<dt>评分：</dt>
+												<dd>
+														<span class="shop-shangpin-pinglunxing1"></span>
+														<span class="shop-shangpin-pinglunxing1"></span>
+														<span class="shop-shangpin-pinglunxing1"></span>
+														<span class="shop-shangpin-pinglunxing1"></span>
+														<span class="shop-shangpin-pinglunxing1"></span>
+													<span style="color: #e53;">5分</span>
+												</dd>
+											</dl>
+											<dl>
+												<dt>内容：</dt>
+												<dd>香波味道很好，泡沫也丰富</dd>
+											</dl>
+										</div>
+									</div>
+									<div class="shop-pinglunneitong">
+										<!--左侧-->
+										<div class="shop-pinglunneitong-l">
+											<img src="img/none1.gif"/>
+											<p>mo***10</p>
+										</div>
+										<!--右侧-->
+										<div class="shop-pinglunneitong-r">
+											<dl>
+												<dt>评分：</dt>
+												<dd>
+														<span class="shop-shangpin-pinglunxing1"></span>
+														<span class="shop-shangpin-pinglunxing1"></span>
+														<span class="shop-shangpin-pinglunxing1"></span>
+														<span class="shop-shangpin-pinglunxing1"></span>
+														<span class="shop-shangpin-pinglunxing1"></span>
+													<span style="color: #e53;">5分</span>
+												</dd>
+											</dl>
+											<dl>
+												<dt>内容：</dt>
+												<dd>香波味道很好，泡沫也丰富</dd>
+											</dl>
+										</div>
+									</div>
+									<div class="shop-pinglunneitong">
+										<!--左侧-->
+										<div class="shop-pinglunneitong-l">
+											<img src="img/none1.gif"/>
+											<p>mo***10</p>
+										</div>
+										<!--右侧-->
+										<div class="shop-pinglunneitong-r">
+											<dl>
+												<dt>评分：</dt>
+												<dd>
+														<span class="shop-shangpin-pinglunxing1"></span>
+														<span class="shop-shangpin-pinglunxing1"></span>
+														<span class="shop-shangpin-pinglunxing1"></span>
+														<span class="shop-shangpin-pinglunxing1"></span>
+														<span class="shop-shangpin-pinglunxing1"></span>
+													<span style="color: #e53;">5分</span>
+												</dd>
+											</dl>
+											<dl>
+												<dt>内容：</dt>
+												<dd>香波味道很好，泡沫也丰富</dd>
+											</dl>
+										</div>
+									</div>
+									<div class="shop-pinglunneitong">
+										<!--左侧-->
+										<div class="shop-pinglunneitong-l">
+											<img src="img/none1.gif"/>
+											<p>mo***10</p>
+										</div>
+										<!--右侧-->
+										<div class="shop-pinglunneitong-r">
+											<dl>
+												<dt>评分：</dt>
+												<dd>
+														<span class="shop-shangpin-pinglunxing1"></span>
+														<span class="shop-shangpin-pinglunxing1"></span>
+														<span class="shop-shangpin-pinglunxing1"></span>
+														<span class="shop-shangpin-pinglunxing1"></span>
+														<span class="shop-shangpin-pinglunxing1"></span>
+													<span style="color: #e53;">5分</span>
+												</dd>
+											</dl>
+											<dl>
+												<dt>内容：</dt>
+												<dd>香波味道很好，泡沫也丰富</dd>
+											</dl>
+										</div>
+									</div>
+									<div class="shop-pinglunneitong">
+										<!--左侧-->
+										<div class="shop-pinglunneitong-l">
+											<img src="img/none1.gif"/>
+											<p>mo***10</p>
+										</div>
+										<!--右侧-->
+										<div class="shop-pinglunneitong-r">
+											<dl>
+												<dt>评分：</dt>
+												<dd>
+														<span class="shop-shangpin-pinglunxing1"></span>
+														<span class="shop-shangpin-pinglunxing1"></span>
+														<span class="shop-shangpin-pinglunxing1"></span>
+														<span class="shop-shangpin-pinglunxing1"></span>
+														<span class="shop-shangpin-pinglunxing1"></span>
+													<span style="color: #e53;">5分</span>
+												</dd>
+											</dl>
+											<dl>
+												<dt>内容：</dt>
+												<dd>香波味道很好，泡沫也丰富</dd>
+											</dl>
+										</div>
+									</div>
+									<div class="shop-pinglunneitong">
+										<!--左侧-->
+										<div class="shop-pinglunneitong-l">
+											<img src="img/none1.gif"/>
+											<p>mo***10</p>
+										</div>
+										<!--右侧-->
+										<div class="shop-pinglunneitong-r">
+											<dl>
+												<dt>评分：</dt>
+												<dd>
+														<span class="shop-shangpin-pinglunxing1"></span>
+														<span class="shop-shangpin-pinglunxing1"></span>
+														<span class="shop-shangpin-pinglunxing1"></span>
+														<span class="shop-shangpin-pinglunxing1"></span>
+														<span class="shop-shangpin-pinglunxing1"></span>
+													<span style="color: #e53;">5分</span>
+												</dd>
+											</dl>
+											<dl>
+												<dt>内容：</dt>
+												<dd>香波味道很好，泡沫也丰富</dd>
+											</dl>
+										</div>
+									</div>
+									<div class="shop-pinglunneitong">
+										<!--左侧-->
+										<div class="shop-pinglunneitong-l">
+											<img src="img/none1.gif"/>
+											<p>mo***10</p>
+										</div>
+										<!--右侧-->
+										<div class="shop-pinglunneitong-r">
+											<dl>
+												<dt>评分：</dt>
+												<dd>
+														<span class="shop-shangpin-pinglunxing1"></span>
+														<span class="shop-shangpin-pinglunxing1"></span>
+														<span class="shop-shangpin-pinglunxing1"></span>
+														<span class="shop-shangpin-pinglunxing1"></span>
+														<span class="shop-shangpin-pinglunxing1"></span>
+													<span style="color: #e53;">5分</span>
+												</dd>
+											</dl>
+											<dl>
+												<dt>内容：</dt>
+												<dd>香波味道很好，泡沫也丰富</dd>
+											</dl>
+										</div>
+									</div>
+									<div class="shop-pinglunneitong">
+										<!--左侧-->
+										<div class="shop-pinglunneitong-l">
+											<img src="img/none1.gif"/>
+											<p>mo***10</p>
+										</div>
+										<!--右侧-->
+										<div class="shop-pinglunneitong-r">
+											<dl>
+												<dt>评分：</dt>
+												<dd>
+														<span class="shop-shangpin-pinglunxing1"></span>
+														<span class="shop-shangpin-pinglunxing1"></span>
+														<span class="shop-shangpin-pinglunxing1"></span>
+														<span class="shop-shangpin-pinglunxing1"></span>
+														<span class="shop-shangpin-pinglunxing1"></span>
+													<span style="color: #e53;">5分</span>
+												</dd>
+											</dl>
+											<dl>
+												<dt>内容：</dt>
+												<dd>香波味道很好，泡沫也丰富</dd>
+											</dl>
+										</div>
+									</div>
+									<div class="shop-pinglunneitong">
+										<!--左侧-->
+										<div class="shop-pinglunneitong-l">
+											<img src="img/none1.gif"/>
+											<p>mo***10</p>
+										</div>
+										<!--右侧-->
+										<div class="shop-pinglunneitong-r">
+											<dl>
+												<dt>评分：</dt>
+												<dd>
+														<span class="shop-shangpin-pinglunxing1"></span>
+														<span class="shop-shangpin-pinglunxing1"></span>
+														<span class="shop-shangpin-pinglunxing1"></span>
+														<span class="shop-shangpin-pinglunxing1"></span>
+														<span class="shop-shangpin-pinglunxing1"></span>
+													<span style="color: #e53;">5分</span>
+												</dd>
+											</dl>
+											<dl>
+												<dt>内容：</dt>
+												<dd>香波味道很好，泡沫也丰富</dd>
+											</dl>
+										</div>
+									</div>
+								</div>
+								<!--好评-->
+								<div class="shop-shangpin-xiangxipinglunneirong3" style="display: none;">
+									<!--真正的评论-->
+									<div class="shop-pinglunneitong">
+										<!--左侧-->
+										<div class="shop-pinglunneitong-l">
+											<img src="img/none1.gif"/>
+											<p>mo***10</p>
+										</div>
+										<!--右侧-->
+										<div class="shop-pinglunneitong-r">
+											<dl>
+												<dt>评分：</dt>
+												<dd>
+														<span class="shop-shangpin-pinglunxing1"></span>
+														<span class="shop-shangpin-pinglunxing1"></span>
+														<span class="shop-shangpin-pinglunxing1"></span>
+														<span class="shop-shangpin-pinglunxing1"></span>
+														<span class="shop-shangpin-pinglunxing1"></span>
+													<span style="color: #e53;">5分</span>
+												</dd>
+											</dl>
+											<dl>
+												<dt>内容：</dt>
+												<dd>香波味道很好，泡沫也丰富1</dd>
+											</dl>
+										</div>
+									</div>
+									<div class="shop-pinglunneitong">
+										<!--左侧-->
+										<div class="shop-pinglunneitong-l">
+											<img src="img/none1.gif"/>
+											<p>mo***10</p>
+										</div>
+										<!--右侧-->
+										<div class="shop-pinglunneitong-r">
+											<dl>
+												<dt>评分：</dt>
+												<dd>
+														<span class="shop-shangpin-pinglunxing1"></span>
+														<span class="shop-shangpin-pinglunxing1"></span>
+														<span class="shop-shangpin-pinglunxing1"></span>
+														<span class="shop-shangpin-pinglunxing1"></span>
+														<span class="shop-shangpin-pinglunxing1"></span>
+													<span style="color: #e53;">5分</span>
+												</dd>
+											</dl>
+											<dl>
+												<dt>内容：</dt>
+												<dd>香波味道很好，泡沫也丰富2</dd>
+											</dl>
+										</div>
+									</div>
+									<div class="shop-pinglunneitong">
+										<!--左侧-->
+										<div class="shop-pinglunneitong-l">
+											<img src="img/none1.gif"/>
+											<p>mo***10</p>
+										</div>
+										<!--右侧-->
+										<div class="shop-pinglunneitong-r">
+											<dl>
+												<dt>评分：</dt>
+												<dd>
+														<span class="shop-shangpin-pinglunxing1"></span>
+														<span class="shop-shangpin-pinglunxing1"></span>
+														<span class="shop-shangpin-pinglunxing1"></span>
+														<span class="shop-shangpin-pinglunxing1"></span>
+														<span class="shop-shangpin-pinglunxing1"></span>
+													<span style="color: #e53;">5分</span>
+												</dd>
+											</dl>
+											<dl>
+												<dt>内容：</dt>
+												<dd>香波味道很好，泡沫也丰富3</dd>
+											</dl>
+										</div>
+									</div>
+									<div class="shop-pinglunneitong">
+										<!--左侧-->
+										<div class="shop-pinglunneitong-l">
+											<img src="img/none1.gif"/>
+											<p>mo***10</p>
+										</div>
+										<!--右侧-->
+										<div class="shop-pinglunneitong-r">
+											<dl>
+												<dt>评分：</dt>
+												<dd>
+														<span class="shop-shangpin-pinglunxing1"></span>
+														<span class="shop-shangpin-pinglunxing1"></span>
+														<span class="shop-shangpin-pinglunxing1"></span>
+														<span class="shop-shangpin-pinglunxing1"></span>
+														<span class="shop-shangpin-pinglunxing1"></span>
+													<span style="color: #e53;">5分</span>
+												</dd>
+											</dl>
+											<dl>
+												<dt>内容：</dt>
+												<dd>香波味道很好，泡沫也丰富4</dd>
+											</dl>
+										</div>
+									</div>
+									<div class="shop-pinglunneitong">
+										<!--左侧-->
+										<div class="shop-pinglunneitong-l">
+											<img src="img/none1.gif"/>
+											<p>mo***10</p>
+										</div>
+										<!--右侧-->
+										<div class="shop-pinglunneitong-r">
+											<dl>
+												<dt>评分：</dt>
+												<dd>
+														<span class="shop-shangpin-pinglunxing1"></span>
+														<span class="shop-shangpin-pinglunxing1"></span>
+														<span class="shop-shangpin-pinglunxing1"></span>
+														<span class="shop-shangpin-pinglunxing1"></span>
+														<span class="shop-shangpin-pinglunxing1"></span>
+													<span style="color: #e53;">5分</span>
+												</dd>
+											</dl>
+											<dl>
+												<dt>内容：</dt>
+												<dd>香波味道很好，泡沫也丰富5</dd>
+											</dl>
+										</div>
+									</div>
+									<div class="shop-pinglunneitong">
+										<!--左侧-->
+										<div class="shop-pinglunneitong-l">
+											<img src="img/none1.gif"/>
+											<p>mo***10</p>
+										</div>
+										<!--右侧-->
+										<div class="shop-pinglunneitong-r">
+											<dl>
+												<dt>评分：</dt>
+												<dd>
+														<span class="shop-shangpin-pinglunxing1"></span>
+														<span class="shop-shangpin-pinglunxing1"></span>
+														<span class="shop-shangpin-pinglunxing1"></span>
+														<span class="shop-shangpin-pinglunxing1"></span>
+														<span class="shop-shangpin-pinglunxing1"></span>
+													<span style="color: #e53;">5分</span>
+												</dd>
+											</dl>
+											<dl>
+												<dt>内容：</dt>
+												<dd>香波味道很好，泡沫也丰富6</dd>
+											</dl>
+										</div>
+									</div>
+									<div class="shop-pinglunneitong">
+										<!--左侧-->
+										<div class="shop-pinglunneitong-l">
+											<img src="img/none1.gif"/>
+											<p>mo***10</p>
+										</div>
+										<!--右侧-->
+										<div class="shop-pinglunneitong-r">
+											<dl>
+												<dt>评分：</dt>
+												<dd>
+														<span class="shop-shangpin-pinglunxing1"></span>
+														<span class="shop-shangpin-pinglunxing1"></span>
+														<span class="shop-shangpin-pinglunxing1"></span>
+														<span class="shop-shangpin-pinglunxing1"></span>
+														<span class="shop-shangpin-pinglunxing1"></span>
+													<span style="color: #e53;">5分</span>
+												</dd>
+											</dl>
+											<dl>
+												<dt>内容：</dt>
+												<dd>香波味道很好，泡沫也丰富7</dd>
+											</dl>
+										</div>
+									</div>
+									<div class="shop-pinglunneitong">
+										<!--左侧-->
+										<div class="shop-pinglunneitong-l">
+											<img src="img/none1.gif"/>
+											<p>mo***10</p>
+										</div>
+										<!--右侧-->
+										<div class="shop-pinglunneitong-r">
+											<dl>
+												<dt>评分：</dt>
+												<dd>
+														<span class="shop-shangpin-pinglunxing1"></span>
+														<span class="shop-shangpin-pinglunxing1"></span>
+														<span class="shop-shangpin-pinglunxing1"></span>
+														<span class="shop-shangpin-pinglunxing1"></span>
+														<span class="shop-shangpin-pinglunxing1"></span>
+													<span style="color: #e53;">5分</span>
+												</dd>
+											</dl>
+											<dl>
+												<dt>内容：</dt>
+												<dd>香波味道很好，泡沫也丰富8</dd>
+											</dl>
+										</div>
+									</div>
+									<div class="shop-pinglunneitong">
+										<!--左侧-->
+										<div class="shop-pinglunneitong-l">
+											<img src="img/none1.gif"/>
+											<p>mo***10</p>
+										</div>
+										<!--右侧-->
+										<div class="shop-pinglunneitong-r">
+											<dl>
+												<dt>评分：</dt>
+												<dd>
+														<span class="shop-shangpin-pinglunxing1"></span>
+														<span class="shop-shangpin-pinglunxing1"></span>
+														<span class="shop-shangpin-pinglunxing1"></span>
+														<span class="shop-shangpin-pinglunxing1"></span>
+														<span class="shop-shangpin-pinglunxing1"></span>
+													<span style="color: #e53;">5分</span>
+												</dd>
+											</dl>
+											<dl>
+												<dt>内容：</dt>
+												<dd>香波味道很好，泡沫也丰富9</dd>
+											</dl>
+										</div>
+									</div>
+									<div class="shop-pinglunneitong">
+										<!--左侧-->
+										<div class="shop-pinglunneitong-l">
+											<img src="img/none1.gif"/>
+											<p>mo***10</p>
+										</div>
+										<!--右侧-->
+										<div class="shop-pinglunneitong-r">
+											<dl>
+												<dt>评分：</dt>
+												<dd>
+														<span class="shop-shangpin-pinglunxing1"></span>
+														<span class="shop-shangpin-pinglunxing1"></span>
+														<span class="shop-shangpin-pinglunxing1"></span>
+														<span class="shop-shangpin-pinglunxing1"></span>
+														<span class="shop-shangpin-pinglunxing1"></span>
+													<span style="color: #e53;">5分</span>
+												</dd>
+											</dl>
+											<dl>
+												<dt>内容：</dt>
+												<dd>香波味道很好，泡沫也丰富10</dd>
+											</dl>
+										</div>
+									</div>
+									<div class="shop-pinglunneitong">
+										<!--左侧-->
+										<div class="shop-pinglunneitong-l">
+											<img src="img/none1.gif"/>
+											<p>mo***10</p>
+										</div>
+										<!--右侧-->
+										<div class="shop-pinglunneitong-r">
+											<dl>
+												<dt>评分：</dt>
+												<dd>
+														<span class="shop-shangpin-pinglunxing1"></span>
+														<span class="shop-shangpin-pinglunxing1"></span>
+														<span class="shop-shangpin-pinglunxing1"></span>
+														<span class="shop-shangpin-pinglunxing1"></span>
+														<span class="shop-shangpin-pinglunxing1"></span>
+													<span style="color: #e53;">5分</span>
+												</dd>
+											</dl>
+											<dl>
+												<dt>内容：</dt>
+												<dd>香波味道很好，泡沫也丰富11</dd>
+											</dl>
+										</div>
+									</div>
+									<div class="shop-pinglunneitong">
+										<!--左侧-->
+										<div class="shop-pinglunneitong-l">
+											<img src="img/none1.gif"/>
+											<p>mo***10</p>
+										</div>
+										<!--右侧-->
+										<div class="shop-pinglunneitong-r">
+											<dl>
+												<dt>评分：</dt>
+												<dd>
+														<span class="shop-shangpin-pinglunxing1"></span>
+														<span class="shop-shangpin-pinglunxing1"></span>
+														<span class="shop-shangpin-pinglunxing1"></span>
+														<span class="shop-shangpin-pinglunxing1"></span>
+														<span class="shop-shangpin-pinglunxing1"></span>
+													<span style="color: #e53;">5分</span>
+												</dd>
+											</dl>
+											<dl>
+												<dt>内容：</dt>
+												<dd>香波味道很好，泡沫也丰富12</dd>
+											</dl>
+										</div>
+									</div>
+									<div class="shop-pinglunneitong">
+										<!--左侧-->
+										<div class="shop-pinglunneitong-l">
+											<img src="img/none1.gif"/>
+											<p>mo***10</p>
+										</div>
+										<!--右侧-->
+										<div class="shop-pinglunneitong-r">
+											<dl>
+												<dt>评分：</dt>
+												<dd>
+														<span class="shop-shangpin-pinglunxing1"></span>
+														<span class="shop-shangpin-pinglunxing1"></span>
+														<span class="shop-shangpin-pinglunxing1"></span>
+														<span class="shop-shangpin-pinglunxing1"></span>
+														<span class="shop-shangpin-pinglunxing1"></span>
+													<span style="color: #e53;">5分</span>
+												</dd>
+											</dl>
+											<dl>
+												<dt>内容：</dt>
+												<dd>香波味道很好，泡沫也丰富13</dd>
+											</dl>
+										</div>
+									</div>
+								</div>
+								<!--中评-->
+								<div class="shop-shangpin-xiangxipinglunneirong3" style="display: none;">
+									<!--真正的评论-->
+									<div class="shop-pinglunneitong">
+										<!--左侧-->
+										<div class="shop-pinglunneitong-l">
+											<img src="img/none1.gif"/>
+											<p>mo***10</p>
+										</div>
+										<!--右侧-->
+										<div class="shop-pinglunneitong-r">
+											<dl>
+												<dt>评分：</dt>
+												<dd>
+														<span class="shop-shangpin-pinglunxing1"></span>
+														<span class="shop-shangpin-pinglunxing1"></span>
+														<span class="shop-shangpin-pinglunxing1"></span>
+														<span class="shop-shangpin-pinglunxing1"></span>
+														<span class="shop-shangpin-pinglunxing1"></span>
+													<span style="color: #e53;">5分</span>
+												</dd>
+											</dl>
+											<dl>
+												<dt>内容：</dt>
+												<dd>香波味道很好，泡沫也丰富14</dd>
+											</dl>
+										</div>
+									</div>
+								</div>
+								<!--差评-->
+								<div class="shop-shangpin-xiangxipinglunneirong3" style="display: none;">
+									<!--真正的评论-->
+									<div class="shop-pinglunneitong">
+										<!--左侧-->
+										<div class="shop-pinglunneitong-l">
+											<img src="img/none1.gif"/>
+											<p>mo***10</p>
+										</div>
+										<!--右侧-->
+										<div class="shop-pinglunneitong-r">
+											<dl>
+												<dt>评分：</dt>
+												<dd>
+														<span class="shop-shangpin-pinglunxing1"></span>
+														<span class="shop-shangpin-pinglunxing1"></span>
+														<span class="shop-shangpin-pinglunxing1"></span>
+														<span class="shop-shangpin-pinglunxing1"></span>
+														<span class="shop-shangpin-pinglunxing1"></span>
+													<span style="color: #e53;">5分</span>
+												</dd>
+											</dl>
+											<dl>
+												<dt>内容：</dt>
+												<dd>香波味道很好，泡沫也丰富15</dd>
+											</dl>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--售后服务-->
+						<div id="shop-shangpin-shouhou" class="shop-shangpin-xiangxiarr1">
+							<div class="shop-shangpin-xiangxipingluntitle">
+								<h2>售后服务</h2>
+							</div>
+							<div id="shop-shangpin-shouhouneirong">
+								<dl>
+									<dt id="shop-shangpin-shouhoutubiao1"></dt>
+									<dd class="shop-shangpin-shouhouneirong1">正品保障</dd>
+									<dd class="shop-shangpin-shouhouneirong2">精选挑选供货商，严格审核产品质量和源头，承诺假一罚十。</dd>
+								</dl>
+								<dl>
+									<dt id="shop-shangpin-shouhoutubiao2"></dt>
+									<dd class="shop-shangpin-shouhouneirong1">7天免费退换货</dd>
+									<dd class="shop-shangpin-shouhouneirong2">商品存在质量、外包装、性能上的问题，7天无条件退换货。</dd>
+								</dl>
+								<dl>
+									<dt id="shop-shangpin-shouhoutubiao3"></dt>
+									<dd class="shop-shangpin-shouhouneirong1">正规发票</dd>
+									<dd class="shop-shangpin-shouhouneirong2">爱宠网为所有客户开具发票，作为客户质保凭证，请顾客自行保留原件作为后续质保之需。</dd>
+								</dl>
+								<dl>
+									<dd class="shop-shangpin-shouhouneirong1">退换货运费规定</dd>
+									<dd class="shop-shangpin-shouhouneirong2">① 凡是由商品质量问题导致的退换货，相应产生的运费由波奇网承担。</dd>
+									<dd class="shop-shangpin-shouhouneirong2">② 非质量问题的商品退换货，运费由客户承担。</dd>
+									<dd class="shop-shangpin-shouhouneirong2">③ 退货而产生的运费会在商品退款时扣除。</dd>
+								</dl>
+								<dl>
+									<dd class="shop-shangpin-shouhouneirong1">温馨提示</dd>
+									<dd class="shop-shangpin-shouhouneirong2">由于部分商品包装更换较为频繁，因此您收到的货品有可能与图片不完全一致，请您以收到的商品实物为准，同时我们会尽量做到及时更新。由此给您带来的不便请多多谅解，谢谢！</dd>
+								</dl>
+							</div>
+						</div>
+				</div>
+			</div>
+		</div>
+
+
+	
+	
+	
+	
+	
+	
+<!--侧边购物车-->
+		<div id="shop-righttitle">
+			<!--菜单按钮-->
+			<div id="shop-righttitle-nav">
+				<ul>
+					<li id="shop-rightli1"><a href="#"><i></i></a></li>
+					<li id="shop-rightli2"><a onclick="shopgouwucheanniu()">
+						<i id="shop-rightli2-1"></i>
+						<span>购物车</span>
+						<i id="shop-rightli2-2">0</i>
+					</a></li>
+				</ul>
+			</div>
+			
+			<!--TOP按钮-->
+			<div id="shop-right-top">
+				<a href="#">
+					<i></i>
+					<span>TOP</span>
+				</a>
+			</div>
+		</div>
+		
+		
+		<!--底部-->
+		<footer id="footer"></footer>
+	</body>
+</html>

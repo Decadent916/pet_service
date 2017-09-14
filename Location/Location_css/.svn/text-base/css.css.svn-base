@@ -1,0 +1,62 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+.Location_box{
+	width: 1349px;	
+	height: 1000px;
+	background-color:lightcyan;
+	position: relative;
+}
+.Location_guide{
+	width: 1349px;
+	height: 38px;
+	background-color: #41A0CC;
+}
+.Location_hunt{
+	width: 1349px;
+	height: 108px;
+	background-color:antiquewhite;
+}
+.Location_hunt_centre{
+	width: 1180px;
+	height: 108px;
+	background-color:#BDDDF4;
+	/*margin: auto;*/
+	position: absolute;
+	left: 85px;
+	
+}
+.Location_hunt_centre img{
+	/*width: 108px;*/
+	height: 108px;
+	/*margin-left: 20px;*/
+}
+.Location_hunt_centre input{
+	width: 400px;
+	height: 37px;
+	color: gray;
+	border: 1px rgb(204,204,204) solid;
+	position: absolute;
+	top: 35px;
+	left: 280px;
+	
+}
+.Location_hunt_centre button{
+	border: 1px rgb(204,204,204) solid;
+	background-color: rgb(241,241,241);
+	font-size: 20px;
+	color: gray;
+	width: 80px;
+	height:39px;
+	position: absolute;
+	top:35px;
+	left:681px ;
+	
+}
+.Location_hunt_scentre_right{
+	position: absolute;
+	top:0px;
+	right: 0px;
+}
+

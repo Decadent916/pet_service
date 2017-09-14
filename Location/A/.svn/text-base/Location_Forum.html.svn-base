@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="Location_Forum.css">
+		<link rel="stylesheet" href="../../css/Home.css" />
+		<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=jrOvD7XmcpYEPG8mppeO7IFHheo5Fbwt">
+		</script>
+		<script type="text/javascript" src="../Location_js/jquery-1.8.0.min.js" ></script>
+		
+	</head>
+	<body>
+<!-- --><!--最外层的盒子-->
+		<div class="LocForum_box">
+			
+			<!--页面顶部引导栏-->
+			<header id="header">
+				
+			</header>
+				
+<!--     --><!--最左侧盒子-->
+			<div class="LocForum_Left">
+			
+			
+			
+			
+			
+			
+			
+			
+<!--     --><!--水平旋转线-->
+			<hr class="LocForum_hrA" />
+			<hr class="LocForum_hrB"/>	
+				
+<!--    	 --><!--最左侧盒子上部搜索栏-->				
+				<div class="LocForum_Left_seek">
+					<input type="text" />
+					<button>搜索</button>
+				</div>
+				
+<!--    	--> <!--最左侧论坛消息-->	
+				<div class="LocForum_Left_mesQueue">
+					
+					<ul class="mesQueue_ul">
+						
+					</ul>			
+			
+			<div class="LocForum_LeftRight">
+				
+				<center><p style="font-size: 30px; color: #000000;padding-top:20px;">确定要发布吗？</p></center>
+				
+				<font class="LocForum_LeftRight_font1">YES</font>
+				<font class="LocForum_LeftRight_font2" style="position: absolute;left: 150px;">NO</font>
+				
+			</div>
+							
+				</div>
+				
+<!--    		--><!--左箭头-->					
+					<div class="LocForum_Left_leftArrows">
+						<img src="../Location_img/箭头左.png" >
+					</div>
+<!--    		--><!--右箭头-->					
+					<div class="LocForum_Left_rightArrows">
+						<img src="../Location_img/箭头右.png" >
+					</div>			
+			
+			
+<!--   			--><!--搜索时出来的框-->
+					<div class="LocForum_Left_seek_two">
+						
+						<div class="LocForum_Left_seek_circle">
+							<font class="LocForum_Left_seek_circle_font1">Search</font>
+							<font class="LocForum_Left_seek_circle_font2">Result</font>
+							<font class="LocForum_Left_seek_circle_font3">This is you to find data</font>
+						</div>
+						
+						<!--搜索时出来的内容-->
+						<div class="LocForum_Left_seek_content">
+							
+							<div class="LocForum_Left_seek_content_one">
+							<table class="table_one">
+								<!--<tr>
+									<td>fasdfasdfas</td>
+								</tr>-->
+							</table>
+							</div>
+						</div>
+						
+						
+				
+					</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			</div>
+			
+<!--     --><!--最右侧盒子-->
+			<div class="LocForum_Right">
+			<img src="../Location_img/垂柳2.jpg" style="position: absolute;left: 90px;">	
+				
+<!--         --><!--最右侧盒子上部用户名-->				
+				<div class="LocForum_Right_userName">
+					<p>Compellation</p>					
+				</div>
+				
+<!--         --><!--最右侧发表内容的框-->			
+				<div class="LocForum_Right_publish">
+					<textarea></textarea>				
+				</div>
+				
+<!--         --><!--最右侧发表内容后提交按钮-->			
+				<div class="LocForum_Right_refer">
+					<button>提交</button>
+				</div>
+
+<!--         --><!--最右侧发表内容后历史发布-->				
+				<div class="LocForum_Right_history">
+					<font>历史发布</font>
+				</div>
+			
+<!--         --><!--最右侧发表内容后历史信息-->	
+				<div class="LocForum_Right_hisInfo">
+					<ul>
+						<!--<li>-->
+							<!--<font></font>-->
+							<!--<hr style="margin: auto; width: 90%;" />-->
+						<!--</li>-->
+					</ul>
+				</div>
+			
+			
+			
+			<img style="width:130px;height:130px;position: absolute;top:820px;left:290px; " src="../Location_img/树.png">
+			
+			</div>			
+
+
+			
+<!--     --><!--论坛Loge-->			
+			<div class="LocForum_Loge">
+				
+				<p class="LocForum_Loge_p1" style="color: ;">REL</p>
+				<p class="LocForum_Loge_p2">-EASE</p>
+				
+			</div>			
+	
+<!-- 	 --><!--进页面的指示箭头-->			
+			<div class="LocForum_box_direction">
+				<img src="../Location_img/指示箭头.png">								
+			</div>			
+
+		</div>
+		<footer id="footer">
+
+		</footer>	
+	</body>
+	<script src="../Location_js/Location_Forum.js"></script>
+	<script type="text/javascript" src="../../js/Home_header_one.js" ></script>
+	<script type="text/javascript" src="../../js/Home_footer.js" ></script>
+</html>

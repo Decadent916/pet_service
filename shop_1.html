@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>宠物店界面</title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			.face_bg{
+				width: 100%;
+				height: 440px;
+				background-color: #EEECEC;
+				border-top: 1px #EEECEC solid;
+			}
+			.nav{
+				width: 1190px;
+				height: 20px;
+				margin-top: 15px;
+				margin-left: 80px;
+				/*border: 1px black solid;*/
+			}
+			#content{
+				width: 1190px;
+				height: 350px;
+				margin: 0 auto;
+				margin-top: 15px;
+				background-color: white;
+			}
+			.cont1{
+				width: 450px;
+				height: 300px;
+				float: left;
+				margin-left: 15px;
+				margin-top: 15px;
+				/*background-image: url(img/shop_1.jpg);*/
+			}
+			.cont2{
+				width: 680px;
+				height: 235px;
+				float: left;
+				margin-left: 15px;
+				margin-top: 15px;
+				border-bottom: 1px #DDDADA dashed;
+			}
+			.cont2_1{
+				width: 680px;
+				height:30px;
+				float: left;
+				/*border: 1px black solid;*/
+			}
+			.cont2_1 .span1{
+				/*width: 93px;*/
+				height:30px;
+				float: left;
+			}
+			.cont2_1 img{
+				width: 26px;
+				height:28px;
+				float: left;
+				margin-top: 2px;
+			}
+			.cont2_2{
+				width: 680px;
+				height:40px;
+				float: left;
+				/*border: 1px black solid;*/
+			}
+			.cont2_2 .span1{
+				width: 74px;
+				height: 20px;
+				float: left;
+				margin-top: 10px;
+			}
+			.cont2_2 .span2{
+				width: 80px;
+				height: 20px;
+				float: left;
+				margin-top: 10px;
+				font-size: 14px;
+				color: #24B4E1;
+			}
+			.cont2_2 .span3{
+				width: 80px;
+				height: 20px;
+				float: left;
+				margin-top: 10px;
+				margin-left: 30px;
+				font-size: 14px;
+			}
+			.cont2_3{
+				width: 680px;
+				height: 52px;
+				float: left;
+				font-size: 14px;
+			}
+			.cont2_3_1{
+				width: 75px;
+				height: 52px;
+				float: left;
+			}
+			.cont2_3_1 .span1{
+				width: 75px;
+				height: 22px;
+				float: left;
+			}
+			.cont2_3_2{
+				width: 600px;
+				height: 26px;
+				float: left;
+			}
+			.cont2_3_3{
+				width: 600px;
+				height: 22px;
+				float: left;
+			}
+			.cont2_3_3 a{
+				text-decoration: none;
+				color: #0099CC;
+			}
+			.cont2_3_3 a:hover{
+				text-decoration: underline;
+			}
+			.cont2_3_4,.cont2_3_5,.cont2_3_6,.cont2_3_7{
+				width: 680px;
+				height: 26px;
+				float: left;
+				/*border: 1px black solid;*/
+			}
+			.cont2_3_4 .span1{
+				width: 75px;
+				height: 26px;
+				float: left;
+			}
+			.cont2_3_5 .span1{
+				width: 75px;
+				height: 26px;
+				float: left;
+			}
+			.cont2_3_6 .span1{
+				width: 75px;
+				height: 26px;
+				float: left;
+			}
+			.cont2_3_7 .span1{
+				width: 75px;
+				height: 26px;
+				float: left;
+			}
+			.cont2_3_4 .span2{
+				width: 600px;
+				height: 26px;
+				float: left;
+			}
+			.cont2_3_5 .span2{
+				width: 600px;
+				height: 26px;
+				float: left;
+			}
+			.cont2_3_6 .span2{
+				width: 600px;
+				height: 26px;
+				float: left;
+			}
+			.cont2_3_7 .span2{
+				width: 600px;
+				height: 26px;
+				float: left;
+			}
+			.cont3{
+				width: 680px;
+				height: 27px;
+				float: left;
+				margin-top: 15px;
+				margin-left: 15px;
+				/*border: 1px black solid;*/
+				color: #EE4D38;
+				font-size: 12px;
+			}
+			.cont3 .span1{
+				width: 21px;
+				height: 20px;
+				float: left;
+				margin-top: -3px;
+				background-image: url(img/face_jianjia.jpg);
+			}
+			.cont4{
+				width: 200px;
+				height: 25px;
+				float: left;
+				margin-top: 13px;
+				margin-left: 500px;
+			}
+			.cont4 .span1{
+				width: 55px;
+				height: 18px;
+				float: left;
+				margin-top: 3px;
+				font-size: 13px;
+			}
+			.cont4 .span2{
+				width: 140px;
+				height: 20px;
+				float: left;
+				margin-top: 3px;
+				background-image: url(img/face_fenxiang.jpg);
+			}
+		</style>
+		<link rel="stylesheet" type="text/css" href="css/Home.css"/>
+	    <script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	    <script src="js/Home.js" type="text/javascript" charset="utf-8"></script>
+	    <script src="js/Home_footer.js" type="text/javascript" charset="utf-8"></script>
+	    <script src="js/market.js" type="text/javascript" charset="utf-8"></script>
+	    <script src="js/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
+	    <script src="js/jquery.tmpl.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/Home_header_one.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<header id="header"></header>
+		<div class="face_bg">
+			<div class="nav"><font>北京商户 > 乐晶宠物</font></div>
+			<div id="content"></div>
+		</div>
+		<footer id="footer"></footer>
+		<script type="text/x-jquery-tmpl" id="copy">
+			<div class="cont1"><img src="${picture_1}"style="width: 450px;height: 300px;"/></div>
+				<div class="cont2">
+					<div class="cont2_1">
+						<span class="span1"><font style="font-size: 23px;">${name}</font></span>
+						<span class="span2"><img src="img/face_star.jpg"/></span>
+					</div>
+					<div class="cont2_2">
+						<span class="span1"><img src="img/face_stars.jpg"/></span>
+						<span class="span2"><font>${eatimate}</font></span>
+						<span class="span3"><font style="color: #999999;">专业：</font>
+							<font style="color: #FF8800;">${major}</font></span>
+						<span class="span3"><font style="color: #999999;">环境：</font>
+							<font style="color: #FF8800;">${environment}</font></span>
+						<span class="span3"><font style="color: #999999;">态度：</font>
+							<font style="color: #FF8800;">${attitude}</font></span>
+					</div>
+					<div class="cont2_3">
+						<div class="cont2_3_1">
+							<span class="span1"><font>地&nbsp;&nbsp;址：</font></span>
+						</div>
+						<div class="cont2_3_2">${location}</div>
+						<div class="cont2_3_3">
+							<a href="javascript:;">查看地图</a>&nbsp;<font>/</font>&nbsp;<a href="javascript:;">周边街景</a>
+						</div>
+						<div class="cont2_3_4">
+							<span class="span1"><font>电&nbsp;&nbsp;话：</font></span>
+							<span class="span2">${phone}</span>
+						</div>
+						<div class="cont2_3_5">
+							<span class="span1"><font>营业时间：</font></span>
+							<span class="span2">${time}</span>
+						</div>
+						<div class="cont2_3_6">
+							<span class="span1"><font>停&nbsp;&nbsp;车：</font></span>
+							<span class="span2">${park}</span>
+						</div>
+						<div class="cont2_3_7">
+							<span class="span1"><font>网&nbsp;&nbsp;络：</font></span>
+							<span class="span2">${internet}</span>
+						</div>
+					</div>
+				</div>
+				<div class="cont3">
+					<span class="span1"></span>
+					<span class="span2"><font>满额立减长期优惠！ (手机端专享)</font></span>
+				</div>	
+				<div class="cont4">
+					<span class="span1"><font>分享到：</font></span>
+					<span class="span2"></span>
+				</div>
+		</script>
+	</body>
+</html>

@@ -1,0 +1,374 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+img{
+	margin: 0 3px -3px 0;
+}
+ul{
+	list-style: none;
+}
+/*html{
+	overflow-x: hidden;					
+}*/
+.LocForum_box{
+	width: 1349px;	
+	height: 1000px;
+	position: relative;
+}
+.LocForum_box_direction img{	
+	width: 200px;
+	height: 50px;
+	position: absolute;
+	top:0px;
+	left: 660px;
+	
+}
+.LocForum_guide{
+	width: 1349px;
+	height: 38px;
+	background-color:white;
+}
+
+.LocForum_hrA{
+	width:1480px;
+	border: 1px white solid;
+    position: absolute;
+    top:10px;
+	/*z-index: 100;*/
+	-webkit-transform:rotate(24deg);
+	-moz-transform:rotate(24deg);
+	-o-transform:rotate(24deg);
+	transform:rotate(24deg);
+	transform-origin: -50px -10px;
+}
+.LocForum_hrB{
+	width:379px;
+	 position: absolute;
+	 top:0px;
+	/*z-index: 100;*/
+	border: 1px white solid;
+	-webkit-transform:rotate(330deg);
+	-moz-transform:rotate(330deg);
+	-o-transform:rotate(330deg);
+	transform:rotate(330deg);
+	transform-origin:300px 300px;
+}
+.LocForum_Loge .LocForum_Loge_p1{
+	font-size:70px;
+	font-weight: bold;
+	/*z-index:100;*/
+	position: absolute;
+	top:80px;
+	left:100px;
+}
+
+.LocForum_Loge .LocForum_Loge_p2{
+	font-size:70px;
+	font-weight: bold;
+	/*z-index:100;*/
+	position: absolute;
+	top:140px;
+	left:50px;
+}
+
+.LocForum_Left{
+	color: white;
+	width: 940px;
+	height: 926px;
+	background-color:rgb(237,244,192);
+	position: absolute;
+	top:38px;
+	left: 0;
+}
+
+.LocForum_Left_seek input{
+	width: 350px;
+	height: 50px;
+	font-size:20px;
+	background-color: white;
+	border:none;
+	position: absolute;
+	top:40px;
+	left:380px;
+}
+.LocForum_Left_seek button{
+	width: 80px;
+	height: 50px;
+	font-size:20px;
+	background-color: white;
+	border:1px gainsboro solid;
+	position: absolute;
+	top:40px;
+	left:738px; 
+}
+
+.LocForum_Right{
+	color: black;
+	width: 409px;
+	height:926px;
+	background-color: rgb(253,253,253);
+	position: absolute;
+	top:38px;
+	right: 0;
+}
+
+.LocForum_Right_userName{
+	position: absolute;
+	top:130px; 
+	left:30px;
+}
+ .LocForum_Right_userName p{
+	font-weight: bold;
+	font-size: 30px;
+}
+.LocForum_Right_publish{
+	width:409px ;
+	height:160px;
+	position: absolute;
+	top:180px; 	
+	border-radius: 5px;;
+}
+.LocForum_Right_publish textarea{
+	width:378px ;
+	height:150px ;
+	resize: none;
+	border: 1px black solid;
+	border-radius: 5px;
+	margin-left: 15px;
+	font-size: 20px;
+}
+.LocForum_Right_refer button{
+	width:120px;
+	height: 30px;
+	background-color: white;
+	border: 1px black solid;
+	font-size: 20px;
+	border-radius: 5px;
+	margin-left: 15px;
+	font-weight: bold;
+	position: absolute;
+	top:350px; 
+}
+.LocForum_LeftRight{
+	width: 300px;
+	height: 150px;	
+	background-color: rgba(255,255,255,0.9);
+	display: none;
+	position: absolute;
+	left:480px;
+	/*top: 50px;*/
+	/*z-index: 100;*/
+	
+}
+.LocForum_LeftRight font{
+	font-size: 30px;
+	text-shadow: 1px 1px;
+	color: black;
+	cursor: pointer;
+	position: absolute;
+	top:80px;
+	left: 80px;	
+}
+.LocForum_Right_history {
+	position:absolute;
+	top:400px;
+	left: 30px;
+}
+.LocForum_Right_history font{
+	font-weight: bold;
+	font-size: 30px;
+}
+.LocForum_Right_hisInfo{
+	width:370px ;
+	height:450px ;
+	/*background-color: #BDDDF4;*/
+	overflow:hidden;
+	position:absolute;
+	top:450px;
+	left:20px;
+}
+.LocForum_Right_hisInfo ul{
+	margin-top:0px;
+	margin-left: 10px;
+	list-style: none;
+	font-size:15px;
+	
+}
+.LocForum_Right_hisInfo hr{
+	margin: auto;
+	width: 90%;
+}
+.LocForum_Right_hisInfo p{
+	padding-right: 0px;
+}
+.bsc{
+	color: white;
+}
+.LocForum_Left_mesQueue{
+	width: 900px;
+	height:650px;
+	/*background-color: #BDDDF4;*/
+	margin:200px auto;
+	overflow: hidden;
+	position: absolute;
+	left: 15px;
+	
+}
+.mesQueue_ul{
+	position: absolute;
+	
+}
+.mesQueue_ul_addLi{
+	font-size: 15px;
+	border: 1px black solid;
+	margin-top: 10px;
+	background-color: rgba(0,0,0,0.2);
+}
+.Loc_replyBtn{
+	width: 50px;
+	height: 20px;
+	display: inline-block;	
+	background-color:white;
+	border:1px gainsboro solid;
+}
+.Loc_userNmae{
+	font-size: 30px;
+}
+
+/* ///////////////////////////////////////////// 涓存椂鍒嗙晫绾�    */
+#temporary_a{
+	font-size: 15px;
+	border: 1px black solid;
+	margin-top: 10px;
+	background-color: rgba(0,0,0,0.2);
+}
+#temporary_b{
+font-size: 30px;"
+}
+#temporary_c{
+font-size:18px;
+background-color:rgba(0,0,0,0.3);
+}
+
+.temporary_d{
+	font-size: 15px;
+	float: right;
+}
+#temporary_e{
+	width: 50px;
+	height: 20px;
+	display: inline-block;	
+	background-color:white;
+	border:1px gainsboro solid;
+}
+/* ///////////////////////////////////////////// 涓存椂 鍒嗙晫绾�   */
+
+
+.LocForum_Left_leftArrows img{
+	width: 90px;
+	height: 30px;
+	position: absolute;
+	left:376px;
+	top: 861px;
+}
+.LocForum_Left_rightArrows img{
+	width: 90px;
+	height:30px;
+	position: absolute;
+	left: 450px;
+	top: 862px;
+}
+footer{
+	position: absolute;
+	top: 950px;
+}
+.reply{
+	width:800px;
+	height:30px;
+	border:1px black solid;
+	background-color: rgba(0, 0, 0, 0.3);
+	margin-top:5px;
+	border-radius:10px ;
+	font-size: 20px;
+	color: white;
+	outline:none;
+	resize:none;	
+}
+.bTn{
+	width:30px;
+	height:30px;
+	border-radius:15px;
+	background-color: rgba(0, 0, 0, 0.3);
+	border:1px black solid;
+	margin-left: 2px;
+	
+}
+.LocForum_Left_seek_two{
+	width: 250px;
+	height:800px;
+	/*border: 2px solid black;*/
+	background-color:rgb(245,245,245);
+	z-index: 100;
+	box-shadow: 2px 1px rgb(153,151,138);
+	position: absolute;
+	left: -350px;
+}
+
+.LocForum_Left_seek_circle{
+	width: 300px;
+	height: 260px;
+	/*border-radius:100px;*/
+	background-color:rgb(245,245,245);
+	box-shadow: -5px 0 rgba(0,0,0,0.1) inset; 
+	border: 10px white solid;
+	border-bottom-right-radius:130px;
+	border-top-right-radius:130px;
+	border-left: none;
+	border-top: none;
+	border-bottom: none;
+	position: absolute;
+	top:30px;
+	
+	
+}
+.LocForum_Left_seek_circle_font1{
+	position: absolute;
+	top:60px;
+	left:50px;
+	font-size:40px;
+	font-weight:900;
+	color:rgb(250,3,0);
+} 
+.LocForum_Left_seek_circle_font2{
+	position: absolute;
+	top:100px;
+	left:120px;
+	font-size:40px;
+	font-weight:900;
+	color: black;
+}
+.LocForum_Left_seek_circle_font3{
+	color:rgb(220,220,220);
+	position: absolute;
+	top:150px;
+	left:45px;
+}
+.LocForum_Left_seek_content_one{
+	width:250px;
+	height:480px;
+	overflow: hidden;
+	position: absolute;
+	top:300px;
+	left:0px;
+}
+.table_one{
+	width:250px;
+	height:480px;
+	color: black;
+	overflow: hidden;
+	position: absolute;
+	top:0px;
+	left:0px;
+}
+

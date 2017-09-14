@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			body{
+				background-color: #f3f3f3;
+			}
+			ul{
+				list-style-type: none;
+			}
+			a{
+				text-decoration: none;
+			}
+			#shoppingcart-all{
+				width: 990px;
+				margin: auto;
+				margin-bottom: 20px;
+				font-size: 12px;
+				font-family: simsun;
+				display: block;
+			}
+			#shopcart-empty{
+				width: 990px;
+				display: block;
+			}
+			#shopcart-empty1{
+				width: 990px;
+				border: 1px solid #dddddd;
+				border-top: 2px solid #e53;
+				background-color: white;
+				display: block;
+			}
+			#shopcart-empty-tips{
+				margin-left: 280px;
+				margin-top: 95px;
+				font-size: 18px;
+			}
+			#shopcart-empty-tips i{
+				width: 45px;
+				height: 40px;
+				background: url(img/list_icon.png) -60px -272px no-repeat;
+				display: inline-block;
+				vertical-align: middle;
+			}
+			#shopcart-empty1 p{
+				text-align: center;
+				margin-top: 60px;
+				margin-bottom: 50px;
+				display: block;
+			}
+			#shopcart-empty1 a{
+				padding: 5px 12px;
+				background-color: #e53;
+				border: 1px solid #e53;
+				border-radius: 4px;
+				color: white;
+			}
+			#shopcart-foot{
+				width: 966px;
+				height: 41px;
+				border: 1px solid #DDDDDD;
+				padding: 20px 12px;
+				padding-bottom: 10px;
+				background-color: white;
+				margin: auto;
+				font-size: 12px;
+				display: block;
+			}
+			#shopcart-foot-check{
+				background: url(img/list_icon.png) -10px -183px no-repeat;
+				padding-left: 20px;
+				vertical-align: middle;
+				color: black;
+			}
+			#shopcart-foot-delete{
+				margin: 0 24px;
+				vertical-align: middle;
+				color: black;
+			}
+			#shopcart-foot-clear{
+				vertical-align: middle;
+				color: black;
+			}
+			#shopcart-foot-jiesuan{
+				float: right;
+				font-family: simsun;
+				font-size: 12px;
+				margin-top: -10px;
+			}
+			#shopcart-foot-info{
+				float: left;
+				margin-top: -5px;
+			}
+			#shopcart-foot-jiesuananniu{
+				float: left;
+				margin-top: 10px;
+			}
+			#shopcart-foot-info p{
+				color: #999999;
+				text-align: left;
+				font-family: arial;
+				text-align: right;
+			}
+			#shopcart-foot-info strong{
+				color: #e53;
+				font-weight: bold;
+			}
+			#shopcart-foot-info em{
+				color: #e53;
+				font-size: 20px;
+				font-weight: bold;
+				font-style: normal;
+			}
+			#shopcart-foot-jiesuananniu a{
+				background-color: #e53;
+				color: whitesmoke;
+				font-size: 22px;
+				padding: 4px 20px;
+				margin-left: 18px;
+			}
+			#shopcart-full-header{
+				border-top: 3px solid #EE5533;
+				background: #efefef;
+				display: block;
+				overflow: auto;
+			}
+			#shopcart-full-header1{
+				text-align: left;
+				border-left: 1px solid #DDDDDD;
+				font-size: 12px;
+				color: #666666;
+				padding: 10px 0;
+				width: 113px;
+				padding-left: 10px;
+				float: left;
+			}
+			#shopcart-full-header1 a{
+				margin-left: 5px;
+				padding-left: 20px;
+				vertical-align: middle;
+				background: url(img/list_icon.png) -10px -183px no-repeat;
+				display: inline-block;
+				color: black;
+			}
+			#shopcart-full-header2{
+				padding: 10px 0;
+				width: 250px;
+				text-align: center;
+				float: left;
+			}
+			#shopcart-full-header3{
+				padding: 10px 0;
+				width: 68px;
+				text-align: right;
+				float: left;
+			}
+			#shopcart-full-header4{
+				padding: 10px 0;
+				width: 110px;
+				text-align: center;
+				float: left;
+			}
+			#shopcart-full-header5{
+				padding: 10px 0;
+				width: 92px;
+				text-align: left;
+				float: left;
+			}
+			#shopcart-full-header6{
+				padding: 10px 0;
+				width: 95px;
+				text-align: center;
+				float: left;
+			}
+			#shopcart-full-header7{
+				padding: 10px 0;
+				width: 95px;
+				text-align: center;
+				float: left;
+			}
+			#shopcart-full-header8{
+				padding: 10px 0;
+				width: 155px;
+				text-align: center;
+				float: left;
+				border-right: 1px solid #ddd;
+			}
+			
+			#shopcart-full-shangpin{
+				background: white;
+				border: 1px solid #ddd;
+			}
+			#shopcart-full-shangpinlist{
+				padding: 15px 0;
+				border-bottom: 1px solid #E6E6E6;
+				overflow: auto;
+			}
+			#shopcart-full-shangpinlist1{
+				width: 113px;
+				padding-left: 10px;
+				float: left;
+			}
+			#shopcart-full-shangpinlist1 i{
+				background: url(img/list_icon.png) -10px -183px no-repeat;
+				width: 15px;
+				height: 15px;
+				margin-right: 10px;
+				vertical-align: middle;
+				display: inline-block;
+			}
+			#shopcart-full-shangpinlist1 img{
+				width: 80px;
+				height: 80px;
+				border: 1px solid #E6E6E6;
+				padding: 3px 0;
+				text-align: center;
+				display: inline-block;
+				vertical-align: middle;
+			}
+			#shopcart-full-shangpinlist2{
+				width: 239px;
+				margin-left: 10px;
+				text-align: left;
+				float: left;
+			}
+			#shopcart-full-shangpinlist2 a{
+				color: #333333;
+				line-height: 22px;
+				height: 55px;
+				margin-bottom: 10px;
+			}
+			#shopcart-full-shangpinlist3{
+				width: 68px;
+				text-align: right;
+				float: left;
+			}
+			#shopcart-full-shangpinlist4{
+				width: 110px;
+				text-align:center;
+				float: left;
+				color: #e53;
+			}
+			#shopcart-full-shangpinlist5{
+				width: 92px;
+				text-align:left;
+				float: left;
+				height: 14px;
+			}
+			#shopcart-full-shangpinlist6{
+				/*width: 95px;*/
+				text-align:center;
+				float: left;
+			}
+			#shopcart-full-shangpinlist6 div{
+				/*width: 78px;*/
+				/*border: 1px solid #cccccc;*/
+				text-align: center;
+				overflow: auto;
+			}
+			#shopcart-full-shangpinlist6jian{
+				width: 17px;
+				height: 20px;
+				line-height: 20px;
+				font-size: 14px;
+				float: left;
+			}
+			#shopcart-full-shangpinlist6jia{
+				width: 17px;
+				height: 20px;
+				line-height: 20px;
+				font-size: 14px;
+				float: left;
+			}
+			#shopcart-full-shangpinlist6 span{
+				width: 78px;
+				height: 20px;
+				text-align: center;
+				line-height: 20px;
+				font-size: 12px;
+				float: left;
+			}
+			#shopcart-full-shangpinlist7{
+				width: 95px;
+				text-align:center;
+				float: left;
+				color: #EE5533;
+			}
+			#shopcart-full-shangpinlist8{
+				width: 155px;
+				text-align:center;
+				float: left;
+			}
+			#shopcart-full-shangpinlist8 a{
+				margin-bottom: 5px;
+				padding-left: 10px;
+				color: #999999;
+			}
+		</style>
+	</head>
+	<link rel="stylesheet" type="text/css" href="css/Home.css"/>
+	<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/Shop_header.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/shopcommon.js" type="text/javascript" charset="UTF-8"></script>
+	<script type="text/javascript">
+		$(function(){
+			if(document.cookie.length>0){
+//				获取用户信息
+				var users=JSON.parse(document.cookie);
+				console.log(users);
+				shoppingCartDetail(users);
+//				var data = {};
+//				data.userId = users.user_ID;
+//				var jsonStr=JSON.stringify(data);
+//				$.ajax({
+//					type: "post",
+//					url: "php/getshoppingcart.php",
+//					async: true,
+//					contentType: 'application/json',
+//					dataType: 'json',
+//					data: jsonStr,
+//					success: function(datas) {
+//						if(datas.length>0){
+//							$("#shopcart-empty").css('display','none');
+//							$("#shopcart-full").css('display','none');
+//							$("#shopcart-full").css('display','block');
+//							var str = "";
+//							$.each(datas, function(index, item) {
+//								str += '<li id="shopcart-full-shangpinlist"><div id="shopcart-full-shangpinlist1"><i></i><a href=""><img src="'+item.img1+'"/></a></div><div id="shopcart-full-shangpinlist2"><a href="">'+item.name+'</a></div><div id="shopcart-full-shangpinlist3"><span>'+item.zhongliang+'</span></div><div id="shopcart-full-shangpinlist4"><span>'+item.danjia+'</span></div><div id="shopcart-full-shangpinlist5"><span> </span></div><div id="shopcart-full-shangpinlist6"><div><a href="" id="shopcart-full-shangpinlist6jian">-</a><input type="text" value="'+item.shuliang+'"/><a href="" id="shopcart-full-shangpinlist6jia">+</a></div></div><div id="shopcart-full-shangpinlist7"><strong>'+item.danjia+'</strong></div><div id="shopcart-full-shangpinlist8"><a href="">删除</a></div></li>';
+//							});
+//							$("#shopcart-full-shangpin").append(str);
+//						}else{
+//							$("#shopcart-empty").css('display','none');
+//							$("#shopcart-full").css('display','none');
+//							$("#shopcart-empty").css('display','block');
+//						}
+//						
+//					}
+//				});
+			}
+		})
+	</script>
+	<body>
+		<!--头部-->
+		<header id="header"></header>
+		
+		<!--购物车主体-->
+		<div id="shoppingcart-all">
+			<div id="shopcart-empty">			<!--购物车为空时的div-->
+				<div id="shopcart-empty1">		<!--从这里开始有用的div之前的我也不知道是干什么用的-->
+					<div id="shopcart-empty-tips">	<!--提示-->
+						<i></i>						<!--购物车图标-->
+						您的购物车还是空的，赶紧给爱宠挑点什么吧！	<!--提示语-->
+					</div>
+					<p>
+						<a href="shop.html">返回首页</a>
+					</p>
+				</div>
+			</div>
+			
+			<!--购物车有物品时-->
+			<div id="shopcart-full">
+				<div id="shopcart-full1">
+					<div id="shopcart-full-header">			<!--购物车选项-->
+						<div id="shopcart-full-header1"><!--<a href="#">全选</a>--></div>
+						<div id="shopcart-full-header2">商品</div>
+						<div id="shopcart-full-header3">重量</div>
+						<div id="shopcart-full-header4">价钱（元）</div>
+						<div id="shopcart-full-header5">优惠</div>
+						<div id="shopcart-full-header6">数量</div>
+						<div id="shopcart-full-header7">小计（元）</div>
+						<div id="shopcart-full-header8">操作</div>
+					</div>
+					<ul id="shopcart-full-shangpin">
+						<!--<li id="shopcart-full-shangpinlist">
+							<div id="shopcart-full-shangpinlist1">
+								<i></i>
+								<a href=""><img src="img/shoppicpath11397543976_thumb.jpg"/></a>
+							</div>
+							<div id="shopcart-full-shangpinlist2"><a href="">
+            魔金 除虱驱螨香波500ml 12周龄以上 狗狗沐浴露</a></div>
+            				<div id="shopcart-full-shangpinlist3"><span>0.57Kg</span></div>
+            				<div id="shopcart-full-shangpinlist4"><span>24.00</span></div>
+            				<div id="shopcart-full-shangpinlist5"><span> </span></div>
+            				<div id="shopcart-full-shangpinlist6">
+            					<div>
+            						<a href="" id="shopcart-full-shangpinlist6jian">-</a>
+            						<input type="text" value="1"/>
+            						<a href="" id="shopcart-full-shangpinlist6jia">+</a>
+            					</div>
+            				</div>
+            				<div id="shopcart-full-shangpinlist7"><strong>24.00</strong></div>
+            				<div id="shopcart-full-shangpinlist8">
+            					<a href="">删除</a>
+            				</div>
+						</li>-->
+					</ul>
+				</div>
+			</div>
+			
+			
+		</div>
+		
+		<!--购物车结算部-->
+		<div id="shopcart-foot">
+			<!--<a href="" id="shopcart-foot-check">全选</a>
+			<a href="" id="shopcart-foot-delete"><strong>删除选中的商品</strong></a>
+			<a href="" id="shopcart-foot-clear"><strong>清空购物车</strong></a>-->
+			<div id="shopcart-foot-jiesuan">
+				<div id="shopcart-foot-info">
+					<p>已选择<strong id="shopzongshuliang">0</strong>件商品（总重<span id="shopzongzhongliang">0.00</span>Kg），总价（不含运费）：<em>￥<span id="shopjiesuanzongjia">0.00</span></em></p>
+					<p style="text-align: right;">已节省：￥0.00</p>
+					<p>总价=商品总价：￥0.00+全球购商品税费：￥0</p>
+				</div>
+				<div id="shopcart-foot-jiesuananniu">
+					<a href="">去结算</a>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

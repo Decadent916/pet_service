@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>爱宠服务站，宠物的家</title>
+	</head>
+		<link rel="stylesheet" type="text/css" href="css/Home.css"/>	
+		<link rel="stylesheet" type="text/css" href="css/Home_Seek.css"/>
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/Home_header_one.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/Home_Seek.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/Home_footer_last.js" type="text/javascript" charset="utf-8"></script>
+		
+		
+		<script type="text/javascript">
+			$(function(){
+				$.get("Home_header_two.html",function(data){
+				$("#header").append(data);
+				var btn = document.getElementById("Home_top_auto_btn");
+				var tet = document.getElementById("Home_top_auto_text");
+				btn.onclick=function()
+				{
+					var a = tet.value;
+					var b = encodeURI(a);
+					location.href='Home_Seek.html?keyword='+b;
+				}
+				header();
+				});	
+				$.get("Home_footer_last.html",function(data){
+					$("#footer_last").append(data);
+					footer_last();
+				});	
+			})			
+		</script>
+		
+		
+	<body>
+		<header id="header"></header>
+		
+		<!--搜索详细页面导航-->
+		<div class="Home_Seek_GPS">
+			<div class="Home_Seek_GPS_neirong">
+				<a class="Home_Seek_GPS_info" href="Home.html">首页</a>
+				<div class="Home_Seek_GPS_fuhao">&nbsp;></div>
+				<div class="Home_Seek_GPS_wenzi">搜索</div>
+				<span class="Home_Seek_GPS_foot">"爱宠食品"</span>
+			</div>	
+		</div>
+		
+		<!--搜索详细页面搜索左页面-->
+		<div class="Home_Seek_left">
+			<div class="Home_Seek_GPS_Result1">
+				<div class="Home_Seek_GPS_Result">搜索结果：</div>
+				<span class="Home_Seek_GPS_Result_foot">爱宠食品</span>				
+			</div>
+			<div class="Home_Seek_left_commodity" id="Home_getServer">
+			
+			</div>	
+		
+		</div>
+		
+		
+		<!--搜索详细页面搜索右页面-->
+		<div class="Home_Seek_right">
+			<a href="shop.html">
+			<div class="Home_Seek_right_one">商城推荐</div></a>	
+			<ul class="Home_Seek_right_ul">
+				<li><a href="shop.html"><img src="img/Home_Seek_right_one_ul1.jpg"/></a></li>
+				<li><a href="shop.html"><img src="img/Home_Seek_right_one_ul2.jpg"/></a></li>
+				<li><a href="shop.html"><img src="img/Home_Seek_right_one_ul3.jpg"/></a></li>
+				<li><a href="shop.html"><img src="img/Home_Seek_right_one_ul4.jpg"/></a></li>
+			</ul>
+		</div>
+		<div class="Home_Seek_right_last">
+			<a href="Location/A/Location_Forum.html"><div class="Home_Seek_right_last_one">论坛推荐</div></a>
+			<div class="Home_Seek_right_last_img">
+				<a href="Location/A/Location_Forum.html"><img src="img/Home_Seek_right_last_img.jpg"/></a>
+			</div>
+		</div>
+		
+		<footer id="footer_last"></footer>
+	</body>
+		
+</html>

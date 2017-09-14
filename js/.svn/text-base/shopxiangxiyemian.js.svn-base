@@ -1,0 +1,22 @@
+$(function(){
+	var str=location.search;
+	str=str.substr(str.indexOf("?id=")+4);
+	var data={};
+	data.id=str;
+	var jsonStr=JSON.stringify(data);
+	$.ajax({
+		type:"post",
+		url:"php/shopxiangxiyemian.php",
+		async:true,
+		contentType:'application/json',
+		dataType:'json',
+		data:jsonStr,
+		success:function(data){
+			$.tmpl(shoptmpl,data).appendTo("#shop-shangpin");
+			$.tmpl(shoptmpl2,data).appendTo("#shop-shangpin-xiangxipneitong1");
+			$.tmpl(shoptmpl3,data).appendTo("#shop-shangpin-xiangxipneitong2");
+			console.log(data);
+		},
+		error:function(){}
+	});
+});

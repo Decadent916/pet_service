@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>登录界面</title>
+		<link rel="stylesheet" href="../Location_css/login_1.css" />
+		<script src="../Location_js/jquery-1.8.0.min.js"></script>
+		<link rel="stylesheet" href="../../css/Home.css" />
+	</head>
+	<body>
+		<!--页面顶部引导栏-->
+			<header id="header">
+				
+			</header>
+			
+		<!--中间的主要的登录页面-->	
+			<div class="centreBox">
+				
+			<!--页面中的3个旋转正方形样式-->	
+				<div class="centreBox_rotateA"></div>
+				<div class="centreBox_rotateB"></div>
+				<div class="centreBox_rotateC"></div>
+			
+			<!--登录框输入密码的小div-->
+				<div class="centreBox_middle">
+					<!--Welcome-->
+					<p style="color: white;font-size: 50px;padding-left: 90px;">Welcome</p>
+					<!--输入用户名-->
+					<input type="text" value="Username" id="centInput_ID1" class="centreBox_middle_input"/>
+					<!--输入密码-->					
+					<input type="text" value="Password" id="centInput_ID2" class="centreBox_middle_input"/>
+					<input type="password" id="centInput_ID2_2" class="centreBox_middle_input" style="display: none;"/>
+					<!--登录按钮-->
+					<!-- <a href="../../Home.html"> -->
+					<button class="centreBox_middle_btn" onclick="Login()" >Login</button>
+					<!-- </a> -->								
+					<!--超链接注册页面-->
+					<a href="login_register_1.html"><p style="float: right;color:white;"><u>没有账号？注册一个吧</u></p></a>
+					
+				</div>
+			
+			
+			
+			
+			</div>
+			
+		
+	<footer id="footer">
+
+		</footer>	
+		
+	</body>
+	<script src="../Location_js/Login_1.js"></script>
+	<script type="text/javascript" src="../../js/Home_header_one.js" ></script>
+	<script type="text/javascript" src="../../js/Home_footer.js" ></script>
+	
+</html>

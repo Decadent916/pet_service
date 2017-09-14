@@ -1,0 +1,93 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+img{
+	margin: 0 3px -3px 0;
+}
+body{
+	width: 1349px;	
+	height:1000px;
+	position: relative;
+	/*background-color: #DDDDDD;*/
+}
+.centreBox{
+	width: 1349px;	
+    height:750px;
+    /*background-color: #000000;*/
+    background-image: url(../Location_img/Login_background1.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.centreBox_rotateA{
+	width:250px;
+	height: 250px;
+	background-color: rgba(255,255,255,0.1);
+    position: absolute;
+    top:200px;
+    left:350px;
+	-webkit-transform:rotate(24deg);
+	-moz-transform:rotate(24deg);
+	-o-transform:rotate(24deg);
+	transform:rotate(24deg);
+	transform-origin: -50px -10px;
+}
+.centreBox_rotateB{
+	width:80px;
+	height:80px;
+	background-color: rgba(255,255,255,0.3);
+    position: absolute;
+    top:180px;
+    left:50px;
+	-webkit-transform:rotate(-14deg);
+	-moz-transform:rotate(-14deg);
+	-o-transform:rotate(-14deg);
+	transform:rotate(-14deg);
+	transform-origin: -50px -10px;
+}
+.centreBox_rotateC{
+	width:20px;
+	height:20px;
+	background-color: rgba(255,255,255,0.4);
+    position: absolute;
+    top:400px;
+    left:60px;
+	-webkit-transform:rotate(-14deg);
+	-moz-transform:rotate(-14deg);
+	-o-transform:rotate(-14deg);
+	transform:rotate(-14deg);
+	transform-origin: -50px -10px;
+}
+.centreBox_middle{
+	width:400px ;
+	height:400px;
+	/*background-color: #D3D3D3;*/
+	/*margin: auto;*/
+	position: absolute;
+	top: 150px;
+	left:480px;
+}
+.centreBox_middle_input{
+	width:400px ;
+	height:80px;
+	margin-top: 25px;
+	background-color: rgba(255,255,255,0.3);
+	border-radius: 5px;
+	border: 1px white solid;
+	font-size: 30px;
+	color: white;
+	text-align: center;
+}
+.centreBox_middle_btn{
+	width:402px ;
+	height:50px;
+	margin-top:15px;
+	background-color: rgb(255,255,255);
+	border-radius: 5px;
+	border: 1px white solid;
+	font-size: 25px;
+	/*给字设成透明*/
+	/*color:transparent;*/
+	color: rgb(254,180,193);
+}
+

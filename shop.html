@@ -1,0 +1,3927 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			* {
+				margin: 0px;
+				padding: 0px;
+			}
+			
+			a {
+				text-decoration: none;
+				color: #666;
+			}
+			ul{
+				list-style-type: none;
+			}
+			/*商城总体*/
+			
+			#shop-all {}
+			/*商城分类*/
+			
+			#shop-title {
+				width: 100%;
+				height: 35px;
+				background-color: #EE5533;
+			}
+			
+			#shop-title-1 {
+				margin: auto;
+				width: 800px;
+				height: 35px;
+				list-style-type: none;
+			}
+			
+			#shop-title-1 li {
+				width: 150px;
+				height: 35px;
+				line-height: 35px;
+				text-align: center;
+				float: left;
+			}
+			
+			#shop-title-1 a {
+				width: 150px;
+				height: 35px;
+				text-decoration: none;
+				color: white;
+				font-family: "微软雅黑";
+				font-size: 18px;
+			}
+			
+			#shop-title-1 li:hover {
+				background-color: #9A0000;
+			}
+			/*商城轮播*/
+			#shop-lunbo-bag{
+				width: 1190px;
+				height: 380px;
+				margin: auto;
+			}
+			#shop-lunbo {
+				width: 1190px;
+				height: 380px;
+				margin: auto;
+				overflow: hidden;
+				position: relative;
+			}
+			
+			#shop-lunbo-1 {
+				width: 7140px;
+				height: 380px;
+				list-style-type: none;
+				position: absolute;
+			}
+			
+			#shop-lunbo-1 li {
+				width: 1190px;
+				height: 380px;
+				float: left;
+			}
+			
+			#shop-lunbo-1 a {
+				text-decoration: none;
+			}
+			#shop-lunbo-dibiao{
+				left: 100px;
+				top: 520px;
+				position: absolute;
+				list-style-type: none;
+			}
+			#shop-lunbo-dibiao li{
+				float: left;
+				width: 25px;
+				height: 25px;
+				background-color: white;
+				line-height: 25px;
+				text-align: center;
+				border-radius: 50%;
+				margin-left: 10px;
+				font-family: "微软雅黑";
+				color: black;
+				font-size: 15px;
+				cursor: pointer;
+			}
+				/*轮播右侧*/
+			#shop-lunbo-right{
+				width: 200px;
+				position: absolute;
+				top: 200px;
+				left: 1000px;
+			}
+			/*商品列表*/
+			
+			.shop-dog-shangpin {
+				width: 1190px;
+				height: 422px;
+				margin: auto;
+				margin-top: 30px;
+			}
+			/*商品列表左侧菜单*/
+			.shop-dog-left {
+				width: 188px;
+				height: 421px;
+				border: 1px solid #e6e6e6;
+				float: left;
+				position: relative;
+			}
+			.shop-dog-l-f{
+				width: 37px;
+				height: 42px;
+				padding-left: 5px;
+				left: -1px;
+				background:url(img/btn.png) no-repeat -285px 0;
+				color: #fff;
+				font-size: 14px;
+				line-height: 32px;
+				font-family: "微软雅黑";
+				position: absolute;
+			}
+			.shop-dog-left-title{
+				width: 170px;
+				height: 72px;
+				padding-left: 20px;
+				margin: 0px -1px;
+				background-color: #f90;
+				text-align: center;
+				font-size: 22px;
+				line-height: 72px;
+				font-family:  "微软雅黑";
+			}
+			.shop-dog-left ul{
+				width: 189px;
+				/*height: 205px;*/
+				border-left: 1px solid #E6E6E6;	
+			}
+			.shop-dog-left a img{
+				width: 189px;
+				height: 144px;
+			}
+			.shop-dog-fenlei{
+				width: 188px;
+				height: 40px;
+				background: #f3f3f3;
+				border-top: 1px solid #E6E6E6;
+				border-right: 1px solid #E6E6E6;
+				text-align: center;
+			}
+			.shop-dog-fenlei a{
+				width: 188px;
+				height: 40px;
+				font: 16px/40px "微软雅黑";
+				color: #333;
+				display: block;
+			}
+			.shop-dog-fenlei a:hover{
+				color: #e53;
+				background-color: white;
+			}
+			.shop-dog-center {
+				width: 995px;
+				height: 420px;
+				border-top: 2px solid #f90;
+				float: left;
+				display: none;
+			}
+			.shop-dog-center dl {
+				width: 175px;
+				height: 174px;
+				padding: 20px 12px 15px;
+				float: left;
+			}
+			.shop-dog-center dt {
+				width: 175px;
+				height: 120px;
+			}
+			.shop-dog-center dt img {
+				width: 120px;
+				height: 120px;
+				margin-left: 28px;
+			}
+			.shop-dog-center dd {
+				width: 175px;
+				height: 19px;
+				padding-top: 7px;
+				font-family: arial, "微软雅黑";
+				font-size: 14px;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				white-space: nowrap;
+			}
+			.l {
+				width: 87.5px;
+				height: 16px;
+				float: left;
+				color: #e53;
+				font-size: 14px;
+				font-family: arial, simsun;
+			}
+			.r {
+				width: 87.5px;
+				height: 16px;
+				float: right;
+				color: #666;
+				font-size: 14px;
+				font-family: arial, simsun;
+				text-align: right;
+			}
+			/*狗医疗样式*/
+			#shop-dog-yiliao .shop-dog-l-f{
+				background:url(img/btn.png) no-repeat -285px -50px;
+			}
+			#shop-dog-yiliao .shop-dog-left-title{
+				background-color: #00b0cf;
+			}
+			#shop-dog-yiliao .shop-dog-center{
+				border-top: 2px solid #00b0cf;
+			}
+			/*狗生活样式*/
+			#shop-dog-shenghuo .shop-dog-l-f{
+				background:url(img/btn.png) no-repeat -285px -99px;
+			}
+			#shop-dog-shenghuo .shop-dog-left-title{
+				background-color: #f86f7c;
+			}
+			#shop-dog-shenghuo .shop-dog-center{
+				border-top: 2px solid #f86f7c;
+			}
+			/*狗清洁卫生样式*/
+			#shop-dog-qingjie .shop-dog-l-f{
+				background:url(img/btn.png) no-repeat -285px -149px;
+			}
+			#shop-dog-qingjie .shop-dog-left-title{
+				background-color: #4aa3ff;
+			}
+			#shop-dog-qingjie .shop-dog-center{
+				border-top: 2px solid #4aa3ff;
+			}
+			/*猫医疗样式*/
+			#shop-cat-yiliao .shop-dog-l-f{
+				background:url(img/btn.png) no-repeat -285px -50px;
+			}
+			#shop-cat-yiliao .shop-dog-left-title{
+				background-color: #00b0cf;
+			}
+			#shop-cat-yiliao .shop-dog-center{
+				border-top: 2px solid #00b0cf;
+			}
+			/*猫生活样式*/
+			#shop-cat-shenghuo .shop-dog-l-f{
+				background:url(img/btn.png) no-repeat -285px -99px;
+			}
+			#shop-cat-shenghuo .shop-dog-left-title{
+				background-color: #f86f7c;
+			}
+			#shop-cat-shenghuo .shop-dog-center{
+				border-top: 2px solid #f86f7c;
+			}
+			/*猫清洁卫生样式*/
+			#shop-cat-qingjie .shop-dog-l-f{
+				background:url(img/btn.png) no-repeat -285px -149px;
+			}
+			#shop-cat-qingjie .shop-dog-left-title{
+				background-color: #4aa3ff;
+			}
+			#shop-cat-qingjie .shop-dog-center{
+				border-top: 2px solid #4aa3ff;
+			}
+			
+			/*右侧导航栏*/
+			#shop-righttitle{
+				width: 36px;
+				height: 100%;
+				background-color: black;
+				position: fixed;
+				right: 0;
+				top: 0;
+				opacity: 0.95;
+			}
+			#shop-righttitle-nav{
+				width: 36px;
+				height: 407px;
+				top: 50%;
+				margin-top: -168.5px;
+				position: absolute;
+				font-size: 12px;
+				font-family: "微软雅黑";
+			}
+			#shop-right-top{
+				width: 36px;
+				height: 57px;
+				bottom: 100px;
+				position: absolute;
+				font-size: 12px;
+				font-family: "微软雅黑";
+			}
+			#shop-right-top a{
+				border-bottom: 1px solid rgb(52,52,52);
+				border-top: 1px solid rgb(52,52,52);
+				color: #999;
+				display: block;
+			}
+			#shop-right-top i{
+				width: 36px;
+				height: 30px;
+				background: url(img/sbar_ico.png) 0 -288px no-repeat;
+				display: block;
+			}
+			#shop-right-top span{
+				text-align: center;
+				width: 70%;
+				padding-bottom: 9px;
+				margin:0 auto;
+				display: block;
+			}
+			#shop-rightli1{
+				width: 36px;
+				height: 36px;
+				border-top: 1px solid rgb(52,52,52);
+			}
+			#shop-rightli1 i{
+				background: url(img/sbar_ico.png) no-repeat;
+				width: 36px;
+				height: 36px;
+				margin: 0 auto;
+				display: block;
+			}
+			#shop-rightli2{
+				width: 36px;
+				height: 120px;
+				border-top: 1px solid rgb(52,52,52);
+			}
+			#shop-rightli2-1{
+				display: block;
+				width: 36px;
+				height: 36px;
+				background: url(img/sbar_ico.png) 0 -36px no-repeat;
+			}
+			#shop-rightli2 span{
+				width: 12px;
+				height: 48px;
+				font-size: 12px;
+				font-family: "微软雅黑";
+				margin-left: 12px;
+				margin-right: 12px;
+				text-align: center;
+				display: block;
+			}
+			#shop-rightli2-2{
+				width: 36px;
+				height: 36px;
+				display: block;
+				background: url(img/sbar_ico.png) 0 -249px no-repeat;
+				color: white;
+				font-size: 12px;
+				font-family: "微软雅黑";
+				line-height: 36px;
+				text-align: center;
+				font-style: normal;
+				font-weight: bold;
+			}
+		</style>
+		<script type="text/javascript">
+			window.onload = function() {
+				//商城轮播
+				var oShoplunboul = document.getElementById("shop-lunbo-1");
+				var oShoplunbodibiao=document.getElementById("shop-lunbo-dibiao");
+				var oShoplunbodibiaoarr=oShoplunbodibiao.getElementsByTagName("li");
+				var juli = 0;
+				var timer;
+
+				function yidong() {
+					clearInterval(timer);
+					timer = setInterval(function() {
+						if((juli < -1170 && juli > -1190) || (juli < -2360 && juli > -2380) || (juli < -3550 && juli > -3570) || (juli < -4740 && juli > -4760)) {
+							clearInterval(timer);
+							juli = juli - 10;
+							oShoplunboul.style.left = juli + "px";
+						} else if(juli < -5950) {
+							clearInterval(timer);
+							juli = 0;
+							oShoplunboul.style.left = juli;
+						} else {
+							juli = juli - 10;
+							oShoplunboul.style.left = juli + "px";
+						};
+						
+//						底标变色
+						if(juli <-1170 && juli > -1210){
+							for(var n=0;n<oShoplunbodibiaoarr.length;n++){
+								oShoplunbodibiaoarr[n].style.backgroundColor="white";
+								oShoplunbodibiaoarr[n].style.color="black";
+							}
+							oShoplunbodibiaoarr[0].style.backgroundColor="#ff6655";
+							oShoplunbodibiaoarr[0].style.color="white";
+						}else if(juli < -2360 && juli > -2400){
+							for(var n=0;n<oShoplunbodibiaoarr.length;n++){
+								oShoplunbodibiaoarr[n].style.backgroundColor="white";
+								oShoplunbodibiaoarr[n].style.color="black";
+							}
+							oShoplunbodibiaoarr[1].style.backgroundColor="#ff6655";
+							oShoplunbodibiaoarr[1].style.color="white";
+						}else if(juli < -3550 && juli > -3590){
+							for(var n=0;n<oShoplunbodibiaoarr.length;n++){
+								oShoplunbodibiaoarr[n].style.backgroundColor="white";
+								oShoplunbodibiaoarr[n].style.color="black";
+							}
+							oShoplunbodibiaoarr[2].style.backgroundColor="#ff6655";
+							oShoplunbodibiaoarr[2].style.color="white";
+						}else if(juli < -4740 && juli > -4780){
+							for(var n=0;n<oShoplunbodibiaoarr.length;n++){
+								oShoplunbodibiaoarr[n].style.backgroundColor="white";
+								oShoplunbodibiaoarr[n].style.color="black";
+							}
+							oShoplunbodibiaoarr[3].style.backgroundColor="#ff6655";
+							oShoplunbodibiaoarr[3].style.color="white";
+						}else if(juli < -5930 && juli > -5970){
+							for(var n=0;n<oShoplunbodibiaoarr.length;n++){
+								oShoplunbodibiaoarr[n].style.backgroundColor="white";
+								oShoplunbodibiaoarr[n].style.color="black";
+							}
+							oShoplunbodibiaoarr[4].style.backgroundColor="#ff6655";
+							oShoplunbodibiaoarr[4].style.color="white";
+						}
+					}, 5);
+				};
+				var timer2=setInterval(yidong, 4000);
+				for(var i=0;i<oShoplunbodibiaoarr.length;i++){
+					oShoplunbodibiaoarr[i].index=i;
+					oShoplunbodibiaoarr[i].onmouseover=function(){
+						juli=-1190*(this.index);
+					}
+					oShoplunbodibiaoarr[i].onmouseout=function(){
+						yidong();
+					}
+				}
+				
+//				商品类型切换
+//				狗粮食类
+				var oShopdogliangshi=document.getElementById("shop-dog-liangshi");
+				var oShopdogfenlei1=oShopdogliangshi.getElementsByClassName("shop-dog-fenlei");
+				var oShopdogcenter1=oShopdogliangshi.getElementsByClassName("shop-dog-center");
+				for(var i=0;i<oShopdogfenlei1.length;i++){
+					oShopdogfenlei1[i].index=i;
+					oShopdogfenlei1[i].onmouseover=function(){
+						for(var j=0;j<oShopdogcenter1.length;j++){
+							oShopdogcenter1[j].index=j;
+							oShopdogcenter1[j].style.display="none";
+						}
+						oShopdogcenter1[this.index].style.display="block";
+					}
+					oShopdogfenlei1[i].onmouseout=function(){
+					}
+				}
+//				狗医疗类
+				var oShopdogyiliao=document.getElementById("shop-dog-yiliao");
+				var oShopdogfenlei2=oShopdogyiliao.getElementsByClassName("shop-dog-fenlei");
+				var oShopdogcenter2=oShopdogyiliao.getElementsByClassName("shop-dog-center");
+				for(var i=0;i<oShopdogfenlei2.length;i++){
+					oShopdogfenlei2[i].index=i;
+					oShopdogfenlei2[i].onmouseover=function(){
+						for(var j=0;j<oShopdogcenter2.length;j++){
+							oShopdogcenter2[j].index=j;
+							oShopdogcenter2[j].style.display="none";
+						}
+						oShopdogcenter2[this.index].style.display="block";
+					}
+					oShopdogfenlei2[i].onmouseout=function(){
+					}
+				}
+//				狗生活类
+				var oShopdogshenghuo=document.getElementById("shop-dog-shenghuo");
+				var oShopdogfenlei3=oShopdogshenghuo.getElementsByClassName("shop-dog-fenlei");
+				var oShopdogcenter3=oShopdogshenghuo.getElementsByClassName("shop-dog-center");
+				for(var i=0;i<oShopdogfenlei3.length;i++){
+					oShopdogfenlei3[i].index=i;
+					oShopdogfenlei3[i].onmouseover=function(){
+						for(var j=0;j<oShopdogcenter3.length;j++){
+							oShopdogcenter3[j].index=j;
+							oShopdogcenter3[j].style.display="none";
+						}
+						oShopdogcenter3[this.index].style.display="block";
+					}
+					oShopdogfenlei3[i].onmouseout=function(){
+					}
+				}
+//				狗清洁卫生类
+				var oShopdogqingjie=document.getElementById("shop-dog-qingjie");
+				var oShopdogfenlei4=oShopdogqingjie.getElementsByClassName("shop-dog-fenlei");
+				var oShopdogcenter4=oShopdogqingjie.getElementsByClassName("shop-dog-center");
+				for(var i=0;i<oShopdogfenlei4.length;i++){
+					oShopdogfenlei4[i].index=i;
+					oShopdogfenlei4[i].onmouseover=function(){
+						for(var j=0;j<oShopdogcenter4.length;j++){
+							oShopdogcenter4[j].index=j;
+							oShopdogcenter4[j].style.display="none";
+						}
+						oShopdogcenter4[this.index].style.display="block";
+					}
+					oShopdogfenlei4[i].onmouseout=function(){
+					}
+				}
+				//猫粮食类
+				var oShopcatliangshi=document.getElementById("shop-cat-liangshi");
+				var oShopcatfenlei1=oShopcatliangshi.getElementsByClassName("shop-dog-fenlei");
+				var oShopcatcenter1=oShopcatliangshi.getElementsByClassName("shop-dog-center");
+				for(var i=0;i<oShopcatfenlei1.length;i++){
+					oShopcatfenlei1[i].index=i;
+					oShopcatfenlei1[i].onmouseover=function(){
+						for(var j=0;j<oShopcatcenter1.length;j++){
+							oShopcatcenter1[j].index=j;
+							oShopcatcenter1[j].style.display="none";
+						}
+						oShopcatcenter1[this.index].style.display="block";
+					}
+					oShopcatfenlei1[i].onmouseout=function(){
+					}
+				}
+//				猫医疗类
+				var oShopcatyiliao=document.getElementById("shop-cat-yiliao");
+				var oShopcatfenlei2=oShopcatyiliao.getElementsByClassName("shop-dog-fenlei");
+				var oShopcatcenter2=oShopcatyiliao.getElementsByClassName("shop-dog-center");
+				for(var i=0;i<oShopcatfenlei2.length;i++){
+					oShopcatfenlei2[i].index=i;
+					oShopcatfenlei2[i].onmouseover=function(){
+						for(var j=0;j<oShopcatcenter2.length;j++){
+							oShopcatcenter2[j].index=j;
+							oShopcatcenter2[j].style.display="none";
+						}
+						oShopcatcenter2[this.index].style.display="block";
+					}
+					oShopcatfenlei2[i].onmouseout=function(){
+					}
+				}
+//				猫生活类
+				var oShopcatshenghuo=document.getElementById("shop-cat-shenghuo");
+				var oShopcatfenlei3=oShopcatshenghuo.getElementsByClassName("shop-dog-fenlei");
+				var oShopcatcenter3=oShopcatshenghuo.getElementsByClassName("shop-dog-center");
+				for(var i=0;i<oShopcatfenlei3.length;i++){
+					oShopcatfenlei3[i].index=i;
+					oShopcatfenlei3[i].onmouseover=function(){
+						for(var j=0;j<oShopcatcenter3.length;j++){
+							oShopcatcenter3[j].index=j;
+							oShopcatcenter3[j].style.display="none";
+						}
+						oShopcatcenter3[this.index].style.display="block";
+					}
+					oShopcatfenlei3[i].onmouseout=function(){
+					}
+				}
+//				猫清洁卫生类
+				var oShopcatqingjie=document.getElementById("shop-cat-qingjie");
+				var oShopcatfenlei4=oShopcatqingjie.getElementsByClassName("shop-dog-fenlei");
+				var oShopcatcenter4=oShopcatqingjie.getElementsByClassName("shop-dog-center");
+				for(var i=0;i<oShopcatfenlei4.length;i++){
+					oShopcatfenlei4[i].index=i;
+					oShopcatfenlei4[i].onmouseover=function(){
+						for(var j=0;j<oShopcatcenter4.length;j++){
+							oShopcatcenter4[j].index=j;
+							oShopcatcenter4[j].style.display="none";
+						}
+						oShopcatcenter4[this.index].style.display="block";
+					}
+					oShopcatfenlei4[i].onmouseout=function(){
+					}
+				}
+				
+				
+				/*猫狗分类按钮*/
+				var oShoptitledog=document.getElementById("shop-title-dog");
+				var oShoptitlecat=document.getElementById("shop-title-cat");
+				var oShopdog=document.getElementById("shop-dog");
+				var oShopcat=document.getElementById("shop-cat");
+				oShoptitledog.onclick=function(){
+					oShopdog.style.display="none";
+					oShopcat.style.display="none";
+					oShopdog.style.display="block";
+				}
+				oShoptitlecat.onclick=function(){
+					oShopdog.style.display="none";
+					oShopcat.style.display="none";
+					oShopcat.style.display="block";
+				}
+				
+				
+//				TOP按钮
+
+				var oShoprighttop=document.getElementById("shop-right-top");
+				oShoprighttop.onclick=function(){
+					document.documentElement.scrollTop = document.body.scrollTop =0;
+				};
+			}
+		</script>
+	</head>
+	<link rel="stylesheet" type="text/css" href="css/Home.css"/>
+	<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/Home_header_one.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/Shop_header.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/Home_footer.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/shop.js" type="text/javascript" charset="utf-8"></script>
+	<body>
+		<header id="header"></header>
+			
+		<!--商城总体div-->
+		<div id="shop-all">
+			<!--商城分类-->
+			<div id="shop-title">
+				<ul id="shop-title-1">
+					<li>
+						<a href="Home.html">首页</a>
+					</li>
+					<li>
+						<a href="#" id="shop-title-dog">狗狗用品</a>
+					</li>
+					<li>
+						<a href="#" id="shop-title-cat">猫猫用品</a>
+					</li>
+				</ul>
+			</div>
+			<!--商城轮播-->
+			<div id="shop-lunbo-bag">
+				<div id="shop-lunbo">
+					<ul id="shop-lunbo-1">
+						<li>
+							<a href="petshow.html"><img src="img/img1.jpg"/></a>
+						</li>
+						<li>
+							<a href="#"><img src="img/img2.jpg"/></a>
+						</li>
+						<li>
+							<a href="Location/A/Location_Look.html"><img src="img/img3.jpg"/></a>
+						</li>
+						<li>
+							<a href="aichong.html"><img src="img/img4.jpg"/></a>
+						</li>
+						<li>
+							<a href="shop.html"><img src="img/img5.jpg"/></a>
+						</li>
+						<li>
+							<a href="petshow.html"><img src="img/img1.jpg"/></a>
+						</li>
+					</ul>
+				</div>
+				<!--轮播底标-->
+				<ul id="shop-lunbo-dibiao">
+					<li>1</li>
+					<li>2</li>
+					<li>3</li>
+					<li>4</li>
+					<li style="background-color: #ff6655;color: white;">5</li>
+				</ul>
+				<!--轮播右侧-->
+				<div id="shop-lunbo-right">
+					<a href="shangpinxiangxi.html?id=10"><img src="img/shoppicpath1454037687.jpg"/></a>
+					<a href="shangpinxiangxi.html?id=16"><img src="img/shoppicpath1454037617.jpg"/></a>
+					<a href="shangpinxiangxi.html?id=6"><img src="img/shoppicpath1454037526.jpg"/></a>
+				</div>
+			</div>
+			
+			<!--狗狗商品分类-->
+			<div id="shop-dog">
+				<!--粮食专区-->
+				<div class="shop-dog-shangpin" id="shop-dog-liangshi">
+					<div class="shop-dog-left">
+						<div class="shop-dog-l-f">1F</div>
+						<div class="shop-dog-left-title">
+							<a href="#" style="color: white;">粮食专区》</a>
+						</div>
+						<ul id="shop-dog-1">
+							<li class="shop-dog-fenlei"><a href="javascript:">博美犬粮</a></li>
+							<li class="shop-dog-fenlei"><a href="javascript:">贵宾比熊犬粮</a></li>
+							<li class="shop-dog-fenlei"><a href="javascript:">萨摩犬粮</a></li>
+							<li class="shop-dog-fenlei"><a href="javascript:">金毛犬粮</a></li>
+							<li class="shop-dog-fenlei"><a href="javascript:">全犬犬粮</a></li>
+						</ul>
+						<a href="shangpinxiangxi.html"><img src="img/shoppicpath1477557781_y.jpg"/></a>
+					</div>
+					<!--博美犬粮详细-->
+					<div class="shop-dog-center" style="display: block;" id="baomeiquanliang">
+						<!--<dl>
+							<dt><a href="shangpinxiangxi.html"><img src="img/shoppicpath11468895148_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="shangpinxiangxi.html">比瑞吉 博美成犬粮天然狗粮2kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11468895148_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">比瑞吉 博美成犬粮天然狗粮2kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11468895148_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">比瑞吉 博美成犬粮天然狗粮2kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11468895148_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">比瑞吉 博美成犬粮天然狗粮2kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11468895148_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">比瑞吉 博美成犬粮天然狗粮2kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11468895148_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">比瑞吉 博美成犬粮天然狗粮2kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11468895148_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">比瑞吉 博美成犬粮天然狗粮2kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11468895148_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">比瑞吉 博美成犬粮天然狗粮2kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>-->
+					</div>
+					<!--贵宾比熊犬粮详细-->
+					<div class="shop-dog-center" id="guibinbixiongquanliang">
+						<!--<dl>
+							<dt><a href="#"><img src="img/shoppicpath11486348292_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">怡亲 比熊贵宾专用成犬粮2.5kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11486348292_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">怡亲 比熊贵宾专用成犬粮2.5kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11486348292_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">怡亲 比熊贵宾专用成犬粮2.5kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11486348292_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">怡亲 比熊贵宾专用成犬粮2.5kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11486348292_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">怡亲 比熊贵宾专用成犬粮2.5kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11486348292_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">怡亲 比熊贵宾专用成犬粮2.5kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11486348292_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">怡亲 比熊贵宾专用成犬粮2.5kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11486348292_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">怡亲 比熊贵宾专用成犬粮2.5kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>-->
+					</div>
+					<!--萨摩犬粮-->
+					<div class="shop-dog-center" id="samoquanliang">
+						<!--<dl>
+							<dt><a href="#"><img src="img/shoppicpath11395636943_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">豪爵 萨摩成犬粮专用天然狗粮10kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11395636943_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">豪爵 萨摩成犬粮专用天然狗粮10kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11395636943_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">豪爵 萨摩成犬粮专用天然狗粮10kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11395636943_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">豪爵 萨摩成犬粮专用天然狗粮10kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11395636943_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">豪爵 萨摩成犬粮专用天然狗粮10kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11395636943_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">豪爵 萨摩成犬粮专用天然狗粮10kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11395636943_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">豪爵 萨摩成犬粮专用天然狗粮10kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11395636943_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">豪爵 萨摩成犬粮专用天然狗粮10kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>-->
+					</div>
+					<!--金毛犬粮-->
+					<div class="shop-dog-center" id="jinmaoquanliang">
+						<!--<dl>
+							<dt><a href="#"><img src="img/shoppicpath11426559761_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">好主人 金毛/拉布拉多幼犬专用粮2.5kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11426559761_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">好主人 金毛/拉布拉多幼犬专用粮2.5kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11426559761_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">好主人 金毛/拉布拉多幼犬专用粮2.5kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11426559761_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">好主人 金毛/拉布拉多幼犬专用粮2.5kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11426559761_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">好主人 金毛/拉布拉多幼犬专用粮2.5kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11426559761_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">好主人 金毛/拉布拉多幼犬专用粮2.5kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11426559761_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">好主人 金毛/拉布拉多幼犬专用粮2.5kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11426559761_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">好主人 金毛/拉布拉多幼犬专用粮2.5kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>-->
+					</div>
+					<!--全犬犬粮-->
+					<div class="shop-dog-center" id="quanquanquanliang">
+						<!--<dl>
+							<dt><a href="#"><img src="img/shoppicpath11478595361_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">美国咖比 全犬期原味配方狗粮 44磅(19.9kg)</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11478595361_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">美国咖比 全犬期原味配方狗粮 44磅(19.9kg)</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11478595361_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">美国咖比 全犬期原味配方狗粮 44磅(19.9kg)</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11478595361_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">美国咖比 全犬期原味配方狗粮 44磅(19.9kg)</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11478595361_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">美国咖比 全犬期原味配方狗粮 44磅(19.9kg)</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11478595361_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">美国咖比 全犬期原味配方狗粮 44磅(19.9kg)</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11478595361_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">美国咖比 全犬期原味配方狗粮 44磅(19.9kg)</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11478595361_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">美国咖比 全犬期原味配方狗粮 44磅(19.9kg)</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>-->
+					</div>
+					
+				</div>
+				<!--医疗保健-->
+				<div class="shop-dog-shangpin" id="shop-dog-yiliao">
+					<div class="shop-dog-left">
+						<div class="shop-dog-l-f">2F</div>
+						<div class="shop-dog-left-title">
+							<a href="#" style="color: white;">医疗保健》</a>
+						</div>
+						<ul id="shop-dog-1">
+							<li class="shop-dog-fenlei"><a href="javascript:">跳骚蛔虫</a></li>
+							<li class="shop-dog-fenlei"><a href="javascript:">泪痕口臭</a></li>
+							<li class="shop-dog-fenlei"><a href="javascript:">真菌螨虫</a></li>
+							<li class="shop-dog-fenlei"><a href="javascript:">感冒腹泻</a></li>
+							<li class="shop-dog-fenlei"><a href="javascript:">缺钙脱毛</a></li>
+						</ul>
+						<a href="shangpinxiangxi.html"><img src="img/shoppicpath1489490331_y.jpg"/></a>
+					</div>
+					<!--跳骚蛔虫-->
+					<div class="shop-dog-center" style="display: block;" id="goutiaosaohuicong">
+						<!--<dl>
+							<dt><a href="#"><img src="img/shoppicpath11468895148_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">比瑞吉 博美成犬粮天然狗粮2kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11468895148_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">比瑞吉 博美成犬粮天然狗粮2kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11468895148_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">比瑞吉 博美成犬粮天然狗粮2kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11468895148_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">比瑞吉 博美成犬粮天然狗粮2kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11468895148_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">比瑞吉 博美成犬粮天然狗粮2kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11468895148_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">比瑞吉 博美成犬粮天然狗粮2kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11468895148_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">比瑞吉 博美成犬粮天然狗粮2kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11468895148_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">比瑞吉 博美成犬粮天然狗粮2kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>-->
+					</div>
+					<!--泪痕口臭-->
+					<div class="shop-dog-center" id="gouleihenkouchou">
+						<!--<dl>
+							<dt><a href="#"><img src="img/shoppicpath11486348292_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">怡亲 比熊贵宾专用成犬粮2.5kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11486348292_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">怡亲 比熊贵宾专用成犬粮2.5kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11486348292_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">怡亲 比熊贵宾专用成犬粮2.5kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11486348292_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">怡亲 比熊贵宾专用成犬粮2.5kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11486348292_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">怡亲 比熊贵宾专用成犬粮2.5kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11486348292_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">怡亲 比熊贵宾专用成犬粮2.5kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11486348292_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">怡亲 比熊贵宾专用成犬粮2.5kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11486348292_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">怡亲 比熊贵宾专用成犬粮2.5kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>-->
+					</div>
+					<!--真菌螨虫-->
+					<div class="shop-dog-center" id="gouzhenjunmanchong">
+						<!--<dl>
+							<dt><a href="#"><img src="img/shoppicpath11395636943_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">豪爵 萨摩成犬粮专用天然狗粮10kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11395636943_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">豪爵 萨摩成犬粮专用天然狗粮10kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11395636943_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">豪爵 萨摩成犬粮专用天然狗粮10kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11395636943_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">豪爵 萨摩成犬粮专用天然狗粮10kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11395636943_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">豪爵 萨摩成犬粮专用天然狗粮10kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11395636943_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">豪爵 萨摩成犬粮专用天然狗粮10kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11395636943_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">豪爵 萨摩成犬粮专用天然狗粮10kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11395636943_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">豪爵 萨摩成犬粮专用天然狗粮10kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>-->
+					</div>
+					<!--感冒腹泻-->
+					<div class="shop-dog-center" id="gouganmaofuxie">
+						<!--<dl>
+							<dt><a href="#"><img src="img/shoppicpath11426559761_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">好主人 金毛/拉布拉多幼犬专用粮2.5kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11426559761_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">好主人 金毛/拉布拉多幼犬专用粮2.5kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11426559761_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">好主人 金毛/拉布拉多幼犬专用粮2.5kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11426559761_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">好主人 金毛/拉布拉多幼犬专用粮2.5kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11426559761_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">好主人 金毛/拉布拉多幼犬专用粮2.5kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11426559761_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">好主人 金毛/拉布拉多幼犬专用粮2.5kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11426559761_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">好主人 金毛/拉布拉多幼犬专用粮2.5kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11426559761_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">好主人 金毛/拉布拉多幼犬专用粮2.5kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>-->
+					</div>
+					<!--缺钙脱毛-->
+					<div class="shop-dog-center" id="gouquegaituomao">
+						<!--<dl>
+							<dt><a href="#"><img src="img/shoppicpath11478595361_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">美国咖比 全犬期原味配方狗粮 44磅(19.9kg)</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11478595361_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">美国咖比 全犬期原味配方狗粮 44磅(19.9kg)</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11478595361_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">美国咖比 全犬期原味配方狗粮 44磅(19.9kg)</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11478595361_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">美国咖比 全犬期原味配方狗粮 44磅(19.9kg)</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11478595361_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">美国咖比 全犬期原味配方狗粮 44磅(19.9kg)</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11478595361_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">美国咖比 全犬期原味配方狗粮 44磅(19.9kg)</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11478595361_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">美国咖比 全犬期原味配方狗粮 44磅(19.9kg)</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11478595361_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">美国咖比 全犬期原味配方狗粮 44磅(19.9kg)</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>-->
+					</div>
+				
+				</div>
+				<!--生活品质-->
+				<div class="shop-dog-shangpin" id="shop-dog-shenghuo">
+					<div class="shop-dog-left">
+						<div class="shop-dog-l-f">3F</div>
+						<div class="shop-dog-left-title">
+							<a href="#" style="color: white;">生活品质》</a>
+						</div>
+						<ul id="shop-dog-1">
+							<li class="shop-dog-fenlei"><a href="javascript:">窝笼服饰</a></li>
+							<li class="shop-dog-fenlei"><a href="javascript:">牵引装备</a></li>
+							<li class="shop-dog-fenlei"><a href="javascript:">喂食器具</a></li>
+							<li class="shop-dog-fenlei"><a href="javascript:">美容造型</a></li>
+							<li class="shop-dog-fenlei"><a href="javascript:">玩具乐园</a></li>
+						</ul>
+						<a href="shangpinxiangxi.html"><img src="img/shoppicpath1435809454_y.jpg"/></a>
+					</div>
+					<!--窝笼服饰-->
+					<div class="shop-dog-center" style="display: block;" id="gouwolongfushi">
+						<!--<dl>
+							<dt><a href="#"><img src="img/shoppicpath11468895148_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">比瑞吉 博美成犬粮天然狗粮2kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11468895148_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">比瑞吉 博美成犬粮天然狗粮2kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11468895148_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">比瑞吉 博美成犬粮天然狗粮2kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11468895148_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">比瑞吉 博美成犬粮天然狗粮2kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11468895148_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">比瑞吉 博美成犬粮天然狗粮2kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11468895148_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">比瑞吉 博美成犬粮天然狗粮2kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11468895148_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">比瑞吉 博美成犬粮天然狗粮2kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11468895148_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">比瑞吉 博美成犬粮天然狗粮2kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>-->
+					</div>
+					<!--牵引装备-->
+					<div class="shop-dog-center" id="gouqianyinzhuangbei">
+						<!--<dl>
+							<dt><a href="#"><img src="img/TB2hPB1aqi5V1BjSszbXXb0hVXa_!!2182801231.jpg_b.jpg"/></a></dt>
+							<dd>
+								<a href="#">曼昆K2宠物定位器金毛贵宾犬猎犬gps定位追踪器狗狗防丢智能项圈</a>
+							</dd>
+							<dd>
+								<span class="l">￥383.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11486348292_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">怡亲 比熊贵宾专用成犬粮2.5kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11486348292_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">怡亲 比熊贵宾专用成犬粮2.5kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11486348292_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">怡亲 比熊贵宾专用成犬粮2.5kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11486348292_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">怡亲 比熊贵宾专用成犬粮2.5kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11486348292_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">怡亲 比熊贵宾专用成犬粮2.5kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11486348292_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">怡亲 比熊贵宾专用成犬粮2.5kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11486348292_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">怡亲 比熊贵宾专用成犬粮2.5kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>-->
+					</div>
+					<!--喂食器具-->
+					<div class="shop-dog-center" id="gouweishiqiju">
+						<!--<dl>
+							<dt><a href="#"><img src="img/shoppicpath11395636943_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">豪爵 萨摩成犬粮专用天然狗粮10kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11395636943_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">豪爵 萨摩成犬粮专用天然狗粮10kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11395636943_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">豪爵 萨摩成犬粮专用天然狗粮10kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11395636943_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">豪爵 萨摩成犬粮专用天然狗粮10kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11395636943_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">豪爵 萨摩成犬粮专用天然狗粮10kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11395636943_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">豪爵 萨摩成犬粮专用天然狗粮10kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11395636943_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">豪爵 萨摩成犬粮专用天然狗粮10kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11395636943_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">豪爵 萨摩成犬粮专用天然狗粮10kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>-->
+					</div>
+					<!--美容造型-->
+					<div class="shop-dog-center" id="goumeirongzaoxing">
+						<!--<dl>
+							<dt><a href="#"><img src="img/shoppicpath11426559761_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">好主人 金毛/拉布拉多幼犬专用粮2.5kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11426559761_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">好主人 金毛/拉布拉多幼犬专用粮2.5kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11426559761_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">好主人 金毛/拉布拉多幼犬专用粮2.5kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11426559761_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">好主人 金毛/拉布拉多幼犬专用粮2.5kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11426559761_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">好主人 金毛/拉布拉多幼犬专用粮2.5kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11426559761_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">好主人 金毛/拉布拉多幼犬专用粮2.5kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11426559761_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">好主人 金毛/拉布拉多幼犬专用粮2.5kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11426559761_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">好主人 金毛/拉布拉多幼犬专用粮2.5kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>-->
+					</div>
+					<!--玩具乐园-->
+					<div class="shop-dog-center" id="gouwanjuleyuan">
+						<!--<dl>
+							<dt><a href="#"><img src="img/shoppicpath11478595361_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">美国咖比 全犬期原味配方狗粮 44磅(19.9kg)</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11478595361_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">美国咖比 全犬期原味配方狗粮 44磅(19.9kg)</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11478595361_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">美国咖比 全犬期原味配方狗粮 44磅(19.9kg)</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11478595361_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">美国咖比 全犬期原味配方狗粮 44磅(19.9kg)</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11478595361_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">美国咖比 全犬期原味配方狗粮 44磅(19.9kg)</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11478595361_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">美国咖比 全犬期原味配方狗粮 44磅(19.9kg)</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11478595361_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">美国咖比 全犬期原味配方狗粮 44磅(19.9kg)</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11478595361_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">美国咖比 全犬期原味配方狗粮 44磅(19.9kg)</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>-->
+					</div>
+				
+				</div>
+				<!--清洁卫生-->
+				<div class="shop-dog-shangpin" id="shop-dog-qingjie">
+					<div class="shop-dog-left">
+						<div class="shop-dog-l-f">4F</div>
+						<div class="shop-dog-left-title">
+							<a href="#" style="color: white;">清洁卫生》</a>
+						</div>
+						<ul id="shop-dog-1">
+							<li class="shop-dog-fenlei"><a href="javascript:">排便用品</a></li>
+							<li class="shop-dog-fenlei"><a href="javascript:">电推剪/吹风机</a></li>
+							<li class="shop-dog-fenlei"><a href="javascript:">香波/沐浴露</a></li>
+							<li class="shop-dog-fenlei"><a href="javascript:">消毒除臭</a></li>
+						</ul>
+						<a href="shangpinxiangxi.html"><img src="img/shoppicpath1473245407_y.jpg"/ style="height: 184px;"></a>
+					</div>
+					<!--排便用品-->
+					<div class="shop-dog-center" style="display: block;" id="goupaibianyongpin">
+						<!--<dl>
+							<dt><a href="#"><img src="img/shoppicpath11468895148_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">比瑞吉 博美成犬粮天然狗粮2kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11468895148_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">比瑞吉 博美成犬粮天然狗粮2kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11468895148_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">比瑞吉 博美成犬粮天然狗粮2kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11468895148_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">比瑞吉 博美成犬粮天然狗粮2kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11468895148_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">比瑞吉 博美成犬粮天然狗粮2kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11468895148_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">比瑞吉 博美成犬粮天然狗粮2kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11468895148_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">比瑞吉 博美成犬粮天然狗粮2kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11468895148_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">比瑞吉 博美成犬粮天然狗粮2kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>-->
+					</div>
+					<!--电推剪/吹风机-->
+					<div class="shop-dog-center" id="goudiantuijian">
+						<!--<dl>
+							<dt><a href="#"><img src="img/shoppicpath11486348292_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">怡亲 比熊贵宾专用成犬粮2.5kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11486348292_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">怡亲 比熊贵宾专用成犬粮2.5kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11486348292_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">怡亲 比熊贵宾专用成犬粮2.5kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11486348292_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">怡亲 比熊贵宾专用成犬粮2.5kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11486348292_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">怡亲 比熊贵宾专用成犬粮2.5kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11486348292_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">怡亲 比熊贵宾专用成犬粮2.5kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11486348292_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">怡亲 比熊贵宾专用成犬粮2.5kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11486348292_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">怡亲 比熊贵宾专用成犬粮2.5kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>-->
+					</div>
+					<!--香波/沐浴露-->
+					<div class="shop-dog-center" id="gouxiangbo">
+						<!--<dl>
+							<dt><a href="#"><img src="img/shoppicpath11395636943_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">豪爵 萨摩成犬粮专用天然狗粮10kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11395636943_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">豪爵 萨摩成犬粮专用天然狗粮10kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11395636943_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">豪爵 萨摩成犬粮专用天然狗粮10kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11395636943_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">豪爵 萨摩成犬粮专用天然狗粮10kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11395636943_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">豪爵 萨摩成犬粮专用天然狗粮10kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11395636943_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">豪爵 萨摩成犬粮专用天然狗粮10kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11395636943_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">豪爵 萨摩成犬粮专用天然狗粮10kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11395636943_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">豪爵 萨摩成犬粮专用天然狗粮10kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>-->
+					</div>
+					<!--消毒除臭-->
+					<div class="shop-dog-center" id="gouxiaodu">
+						<!--<dl>
+							<dt><a href="#"><img src="img/shoppicpath11426559761_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">好主人 金毛/拉布拉多幼犬专用粮2.5kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11426559761_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">好主人 金毛/拉布拉多幼犬专用粮2.5kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11426559761_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">好主人 金毛/拉布拉多幼犬专用粮2.5kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11426559761_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">好主人 金毛/拉布拉多幼犬专用粮2.5kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11426559761_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">好主人 金毛/拉布拉多幼犬专用粮2.5kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11426559761_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">好主人 金毛/拉布拉多幼犬专用粮2.5kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11426559761_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">好主人 金毛/拉布拉多幼犬专用粮2.5kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11426559761_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">好主人 金毛/拉布拉多幼犬专用粮2.5kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>-->
+					</div>
+				</div>
+				
+			</div>
+			<!--猫猫商品分类-->
+			<div id="shop-cat" style="display: none;">
+				<!--粮食专区-->
+				<div class="shop-dog-shangpin" id="shop-cat-liangshi">
+					<div class="shop-dog-left">
+						<div class="shop-dog-l-f">1F</div>
+						<div class="shop-dog-left-title">
+							<a href="#" style="color: white;">粮食专区》</a>
+						</div>
+						<ul id="shop-dog-1">
+							<li class="shop-dog-fenlei"><a href="javascript:">进口猫粮</a></li>
+							<li class="shop-dog-fenlei"><a href="javascript:">国产猫粮</a></li>
+							<li class="shop-dog-fenlei"><a href="javascript:">功能性猫粮</a></li>
+							<li class="shop-dog-fenlei"><a href="javascript:">猫罐头/妙鲜包</a></li>
+							<li class="shop-dog-fenlei"><a href="javascript:">猫猫零食</a></li>
+						</ul>
+						<a href="shangpinxiangxi.html"><img src="img/shoppicpath1440234793_y.jpg"/></a>
+					</div>
+					<!--进口猫粮-->
+					<div class="shop-dog-center" style="display: block;" id="jinkoumaoliang">
+						<!--<dl>
+							<dt><a href="#"><img src="img/shoppicpath11468895148_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">比瑞吉 博美成犬粮天然狗粮2kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11468895148_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">比瑞吉 博美成犬粮天然狗粮2kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11468895148_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">比瑞吉 博美成犬粮天然狗粮2kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11468895148_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">比瑞吉 博美成犬粮天然狗粮2kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11468895148_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">比瑞吉 博美成犬粮天然狗粮2kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11468895148_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">比瑞吉 博美成犬粮天然狗粮2kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11468895148_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">比瑞吉 博美成犬粮天然狗粮2kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11468895148_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">比瑞吉 博美成犬粮天然狗粮2kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>-->
+					</div>
+					<!--国产猫粮-->
+					<div class="shop-dog-center" id="guochangmaoliang">
+						<!--<dl>
+							<dt><a href="#"><img src="img/shoppicpath11486348292_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">怡亲 比熊贵宾专用成犬粮2.5kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11486348292_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">怡亲 比熊贵宾专用成犬粮2.5kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11486348292_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">怡亲 比熊贵宾专用成犬粮2.5kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11486348292_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">怡亲 比熊贵宾专用成犬粮2.5kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11486348292_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">怡亲 比熊贵宾专用成犬粮2.5kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11486348292_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">怡亲 比熊贵宾专用成犬粮2.5kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11486348292_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">怡亲 比熊贵宾专用成犬粮2.5kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11486348292_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">怡亲 比熊贵宾专用成犬粮2.5kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>-->
+					</div>
+					<!--功能性猫粮-->
+					<div class="shop-dog-center" id="gongnengxingmaoliang">
+						<!--<dl>
+							<dt><a href="#"><img src="img/shoppicpath11395636943_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">豪爵 萨摩成犬粮专用天然狗粮10kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11395636943_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">豪爵 萨摩成犬粮专用天然狗粮10kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11395636943_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">豪爵 萨摩成犬粮专用天然狗粮10kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11395636943_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">豪爵 萨摩成犬粮专用天然狗粮10kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11395636943_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">豪爵 萨摩成犬粮专用天然狗粮10kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11395636943_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">豪爵 萨摩成犬粮专用天然狗粮10kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11395636943_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">豪爵 萨摩成犬粮专用天然狗粮10kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11395636943_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">豪爵 萨摩成犬粮专用天然狗粮10kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>-->
+					</div>
+					<!--猫罐头/妙鲜包-->
+					<div class="shop-dog-center" id="maoguantou">
+						<!--<dl>
+							<dt><a href="#"><img src="img/shoppicpath11426559761_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">好主人 金毛/拉布拉多幼犬专用粮2.5kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11426559761_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">好主人 金毛/拉布拉多幼犬专用粮2.5kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11426559761_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">好主人 金毛/拉布拉多幼犬专用粮2.5kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11426559761_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">好主人 金毛/拉布拉多幼犬专用粮2.5kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11426559761_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">好主人 金毛/拉布拉多幼犬专用粮2.5kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11426559761_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">好主人 金毛/拉布拉多幼犬专用粮2.5kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11426559761_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">好主人 金毛/拉布拉多幼犬专用粮2.5kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11426559761_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">好主人 金毛/拉布拉多幼犬专用粮2.5kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>-->
+					</div>
+					<!--猫猫零食-->
+					<div class="shop-dog-center" id="maomaolingshi">
+						<!--<dl>
+							<dt><a href="#"><img src="img/shoppicpath11478595361_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">美国咖比 全犬期原味配方狗粮 44磅(19.9kg)</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11478595361_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">美国咖比 全犬期原味配方狗粮 44磅(19.9kg)</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11478595361_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">美国咖比 全犬期原味配方狗粮 44磅(19.9kg)</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11478595361_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">美国咖比 全犬期原味配方狗粮 44磅(19.9kg)</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11478595361_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">美国咖比 全犬期原味配方狗粮 44磅(19.9kg)</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11478595361_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">美国咖比 全犬期原味配方狗粮 44磅(19.9kg)</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11478595361_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">美国咖比 全犬期原味配方狗粮 44磅(19.9kg)</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11478595361_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">美国咖比 全犬期原味配方狗粮 44磅(19.9kg)</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>-->
+					</div>
+					
+				</div>
+				<!--医疗保健-->
+				<div class="shop-dog-shangpin" id="shop-cat-yiliao">
+					<div class="shop-dog-left">
+						<div class="shop-dog-l-f">2F</div>
+						<div class="shop-dog-left-title">
+							<a href="#" style="color: white;">医疗保健》</a>
+						</div>
+						<ul id="shop-dog-1">
+							<li class="shop-dog-fenlei"><a href="javascript:">跳骚蛔虫</a></li>
+							<li class="shop-dog-fenlei"><a href="javascript:">泪痕口臭</a></li>
+							<li class="shop-dog-fenlei"><a href="javascript:">真菌螨虫</a></li>
+							<li class="shop-dog-fenlei"><a href="javascript:">感冒腹泻</a></li>
+							<li class="shop-dog-fenlei"><a href="javascript:">缺钙脱毛</a></li>
+						</ul>
+						<a href="shangpinxiangxi.html"><img src="img/shoppicpath1435818209_y.jpg"/></a>
+					</div>
+					<!--跳骚蛔虫-->
+					<div class="shop-dog-center" style="display: block;" id="maotiaosaohuichong">
+						<!--<dl>
+							<dt><a href="#"><img src="img/shoppicpath11468895148_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">比瑞吉 博美成犬粮天然狗粮2kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11468895148_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">比瑞吉 博美成犬粮天然狗粮2kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11468895148_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">比瑞吉 博美成犬粮天然狗粮2kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11468895148_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">比瑞吉 博美成犬粮天然狗粮2kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11468895148_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">比瑞吉 博美成犬粮天然狗粮2kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11468895148_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">比瑞吉 博美成犬粮天然狗粮2kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11468895148_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">比瑞吉 博美成犬粮天然狗粮2kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11468895148_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">比瑞吉 博美成犬粮天然狗粮2kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>-->
+					</div>
+					<!--泪痕口臭-->
+					<div class="shop-dog-center" id="maoleihenkouchou">
+						<!--<dl>
+							<dt><a href="#"><img src="img/shoppicpath11486348292_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">怡亲 比熊贵宾专用成犬粮2.5kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11486348292_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">怡亲 比熊贵宾专用成犬粮2.5kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11486348292_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">怡亲 比熊贵宾专用成犬粮2.5kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11486348292_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">怡亲 比熊贵宾专用成犬粮2.5kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11486348292_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">怡亲 比熊贵宾专用成犬粮2.5kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11486348292_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">怡亲 比熊贵宾专用成犬粮2.5kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11486348292_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">怡亲 比熊贵宾专用成犬粮2.5kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11486348292_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">怡亲 比熊贵宾专用成犬粮2.5kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>-->
+					</div>
+					<!--真菌螨虫-->
+					<div class="shop-dog-center" id="maozhenjunmanchong">
+						<!--<dl>
+							<dt><a href="#"><img src="img/shoppicpath11395636943_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">豪爵 萨摩成犬粮专用天然狗粮10kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11395636943_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">豪爵 萨摩成犬粮专用天然狗粮10kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11395636943_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">豪爵 萨摩成犬粮专用天然狗粮10kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11395636943_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">豪爵 萨摩成犬粮专用天然狗粮10kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11395636943_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">豪爵 萨摩成犬粮专用天然狗粮10kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11395636943_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">豪爵 萨摩成犬粮专用天然狗粮10kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11395636943_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">豪爵 萨摩成犬粮专用天然狗粮10kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11395636943_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">豪爵 萨摩成犬粮专用天然狗粮10kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>-->
+					</div>
+					<!--感冒腹泻-->
+					<div class="shop-dog-center" id="maoganmaoguxie">
+						<!--<dl>
+							<dt><a href="#"><img src="img/shoppicpath11426559761_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">好主人 金毛/拉布拉多幼犬专用粮2.5kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11426559761_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">好主人 金毛/拉布拉多幼犬专用粮2.5kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11426559761_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">好主人 金毛/拉布拉多幼犬专用粮2.5kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11426559761_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">好主人 金毛/拉布拉多幼犬专用粮2.5kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11426559761_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">好主人 金毛/拉布拉多幼犬专用粮2.5kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11426559761_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">好主人 金毛/拉布拉多幼犬专用粮2.5kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11426559761_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">好主人 金毛/拉布拉多幼犬专用粮2.5kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11426559761_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">好主人 金毛/拉布拉多幼犬专用粮2.5kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>-->
+					</div>
+					<!--缺钙脱毛-->
+					<div class="shop-dog-center" id="maoquegaituomao">
+						<!--<dl>
+							<dt><a href="#"><img src="img/shoppicpath11478595361_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">美国咖比 全犬期原味配方狗粮 44磅(19.9kg)</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11478595361_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">美国咖比 全犬期原味配方狗粮 44磅(19.9kg)</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11478595361_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">美国咖比 全犬期原味配方狗粮 44磅(19.9kg)</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11478595361_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">美国咖比 全犬期原味配方狗粮 44磅(19.9kg)</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11478595361_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">美国咖比 全犬期原味配方狗粮 44磅(19.9kg)</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11478595361_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">美国咖比 全犬期原味配方狗粮 44磅(19.9kg)</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11478595361_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">美国咖比 全犬期原味配方狗粮 44磅(19.9kg)</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11478595361_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">美国咖比 全犬期原味配方狗粮 44磅(19.9kg)</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>-->
+					</div>
+				
+				</div>
+				<!--生活品质-->
+				<div class="shop-dog-shangpin" id="shop-cat-shenghuo">
+					<div class="shop-dog-left">
+						<div class="shop-dog-l-f">3F</div>
+						<div class="shop-dog-left-title">
+							<a href="#" style="color: white;">生活品质》</a>
+						</div>
+						<ul id="shop-dog-1">
+							<li class="shop-dog-fenlei"><a href="javascript:">冬季窝笼</a></li>
+							<li class="shop-dog-fenlei"><a href="javascript:">喂食器具</a></li>
+							<li class="shop-dog-fenlei"><a href="javascript:">美容造型</a></li>
+							<li class="shop-dog-fenlei"><a href="javascript:">猫咪玩具</a></li>
+						</ul>
+						<a href="shangpinxiangxi.html"><img src="img/shoppicpath1473245260_y.jpg"/></a>
+					</div>
+					<!--冬季窝笼-->
+					<div class="shop-dog-center" style="display: block;" id="maodongjiwolong">
+						<!--<dl>
+							<dt><a href="#"><img src="img/shoppicpath11468895148_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">比瑞吉 博美成犬粮天然狗粮2kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11468895148_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">比瑞吉 博美成犬粮天然狗粮2kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11468895148_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">比瑞吉 博美成犬粮天然狗粮2kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11468895148_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">比瑞吉 博美成犬粮天然狗粮2kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11468895148_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">比瑞吉 博美成犬粮天然狗粮2kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11468895148_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">比瑞吉 博美成犬粮天然狗粮2kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11468895148_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">比瑞吉 博美成犬粮天然狗粮2kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11468895148_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">比瑞吉 博美成犬粮天然狗粮2kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>-->
+					</div>
+					<!--喂食器具-->
+					<div class="shop-dog-center" id="maoweishiqiju">
+						<!--<dl>
+							<dt><a href="#"><img src="img/shoppicpath11395636943_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">豪爵 萨摩成犬粮专用天然狗粮10kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11395636943_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">豪爵 萨摩成犬粮专用天然狗粮10kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11395636943_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">豪爵 萨摩成犬粮专用天然狗粮10kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11395636943_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">豪爵 萨摩成犬粮专用天然狗粮10kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11395636943_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">豪爵 萨摩成犬粮专用天然狗粮10kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11395636943_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">豪爵 萨摩成犬粮专用天然狗粮10kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11395636943_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">豪爵 萨摩成犬粮专用天然狗粮10kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11395636943_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">豪爵 萨摩成犬粮专用天然狗粮10kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>-->
+					</div>
+					<!--美容造型-->
+					<div class="shop-dog-center" id="maomeirongzaoxing">
+						<!--<dl>
+							<dt><a href="#"><img src="img/shoppicpath11426559761_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">好主人 金毛/拉布拉多幼犬专用粮2.5kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11426559761_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">好主人 金毛/拉布拉多幼犬专用粮2.5kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11426559761_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">好主人 金毛/拉布拉多幼犬专用粮2.5kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11426559761_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">好主人 金毛/拉布拉多幼犬专用粮2.5kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11426559761_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">好主人 金毛/拉布拉多幼犬专用粮2.5kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11426559761_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">好主人 金毛/拉布拉多幼犬专用粮2.5kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11426559761_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">好主人 金毛/拉布拉多幼犬专用粮2.5kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11426559761_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">好主人 金毛/拉布拉多幼犬专用粮2.5kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>-->
+					</div>
+					<!--猫咪玩具-->
+					<div class="shop-dog-center" id="maowanju">
+						<!--<dl>
+							<dt><a href="#"><img src="img/shoppicpath11478595361_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">美国咖比 全犬期原味配方狗粮 44磅(19.9kg)</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11478595361_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">美国咖比 全犬期原味配方狗粮 44磅(19.9kg)</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11478595361_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">美国咖比 全犬期原味配方狗粮 44磅(19.9kg)</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11478595361_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">美国咖比 全犬期原味配方狗粮 44磅(19.9kg)</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11478595361_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">美国咖比 全犬期原味配方狗粮 44磅(19.9kg)</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11478595361_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">美国咖比 全犬期原味配方狗粮 44磅(19.9kg)</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11478595361_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">美国咖比 全犬期原味配方狗粮 44磅(19.9kg)</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11478595361_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">美国咖比 全犬期原味配方狗粮 44磅(19.9kg)</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>-->
+					</div>
+				
+				</div>
+				<!--清洁卫生-->
+				<div class="shop-dog-shangpin" id="shop-cat-qingjie">
+					<div class="shop-dog-left">
+						<div class="shop-dog-l-f">4F</div>
+						<div class="shop-dog-left-title">
+							<a href="#" style="color: white;">清洁卫生》</a>
+						</div>
+						<ul id="shop-dog-1">
+							<li class="shop-dog-fenlei"><a href="javascript:">猫砂</a></li>
+							<li class="shop-dog-fenlei"><a href="javascript:">猫砂盆</a></li>
+							<li class="shop-dog-fenlei"><a href="javascript:">沐浴香波</a></li>
+							<li class="shop-dog-fenlei"><a href="javascript:">消毒除臭</a></li>
+						</ul>
+						<a href="shangpinxiangxi.html"><img src="img/shoppicpath1491034500_y.jpg"style="height: 184px;"/></a>
+					</div>
+					<!--猫砂-->
+					<div class="shop-dog-center" style="display: block;" id="maosha">
+						<!--<dl>
+							<dt><a href="#"><img src="img/shoppicpath11468895148_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">比瑞吉 博美成犬粮天然狗粮2kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11468895148_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">比瑞吉 博美成犬粮天然狗粮2kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11468895148_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">比瑞吉 博美成犬粮天然狗粮2kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11468895148_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">比瑞吉 博美成犬粮天然狗粮2kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11468895148_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">比瑞吉 博美成犬粮天然狗粮2kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11468895148_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">比瑞吉 博美成犬粮天然狗粮2kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11468895148_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">比瑞吉 博美成犬粮天然狗粮2kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11468895148_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">比瑞吉 博美成犬粮天然狗粮2kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>-->
+					</div>
+					<!--猫砂盆-->
+					<div class="shop-dog-center" id="maoshapeng">
+						<!--<dl>
+							<dt><a href="#"><img src="img/shoppicpath11486348292_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">怡亲 比熊贵宾专用成犬粮2.5kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11486348292_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">怡亲 比熊贵宾专用成犬粮2.5kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11486348292_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">怡亲 比熊贵宾专用成犬粮2.5kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11486348292_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">怡亲 比熊贵宾专用成犬粮2.5kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11486348292_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">怡亲 比熊贵宾专用成犬粮2.5kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11486348292_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">怡亲 比熊贵宾专用成犬粮2.5kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11486348292_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">怡亲 比熊贵宾专用成犬粮2.5kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11486348292_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">怡亲 比熊贵宾专用成犬粮2.5kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>-->
+					</div>
+					<!--沐浴香波-->
+					<div class="shop-dog-center" id="maomuyu">
+						<!--<dl>
+							<dt><a href="#"><img src="img/shoppicpath11395636943_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">豪爵 萨摩成犬粮专用天然狗粮10kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11395636943_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">豪爵 萨摩成犬粮专用天然狗粮10kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11395636943_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">豪爵 萨摩成犬粮专用天然狗粮10kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11395636943_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">豪爵 萨摩成犬粮专用天然狗粮10kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11395636943_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">豪爵 萨摩成犬粮专用天然狗粮10kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11395636943_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">豪爵 萨摩成犬粮专用天然狗粮10kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11395636943_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">豪爵 萨摩成犬粮专用天然狗粮10kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11395636943_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">豪爵 萨摩成犬粮专用天然狗粮10kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>-->
+					</div>
+					<!--消毒除臭-->
+					<div class="shop-dog-center" id="maoxiaodu">
+						<!--<dl>
+							<dt><a href="#"><img src="img/shoppicpath11426559761_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">好主人 金毛/拉布拉多幼犬专用粮2.5kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11426559761_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">好主人 金毛/拉布拉多幼犬专用粮2.5kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11426559761_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">好主人 金毛/拉布拉多幼犬专用粮2.5kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11426559761_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">好主人 金毛/拉布拉多幼犬专用粮2.5kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11426559761_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">好主人 金毛/拉布拉多幼犬专用粮2.5kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11426559761_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">好主人 金毛/拉布拉多幼犬专用粮2.5kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11426559761_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">好主人 金毛/拉布拉多幼犬专用粮2.5kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt><a href="#"><img src="img/shoppicpath11426559761_thumb.jpg"/></a></dt>
+							<dd>
+								<a href="#">好主人 金毛/拉布拉多幼犬专用粮2.5kg</a>
+							</dd>
+							<dd>
+								<span class="l">￥114.00</span>
+								<span class="r">已售1703</span>
+							</dd>
+						</dl>-->
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		
+		<!--右侧导航栏-->
+		<div id="shop-righttitle">
+			<!--菜单按钮-->
+			<div id="shop-righttitle-nav">
+				<ul>
+					<li id="shop-rightli1"><a href="#"><i></i></a></li>
+					<li id="shop-rightli2"><a href="shoppingcart.html">
+						<i id="shop-rightli2-1"></i>
+						<span>购物车</span>
+						<i id="shop-rightli2-2">0</i>
+					</a></li>
+				</ul>
+			</div>
+			
+			<!--TOP按钮-->
+			<div id="shop-right-top">
+				<a href="#">
+					<i></i>
+					<span>TOP</span>
+				</a>
+			</div>
+		</div>
+		<footer id="footer"></footer>
+	</body>
+
+</html>

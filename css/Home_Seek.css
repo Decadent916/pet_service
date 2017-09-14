@@ -1,0 +1,206 @@
+.Home_Seek_GPS{
+	width: 1349px;
+	height: 34px;
+	background-color: #f3f3f3;
+}
+.Home_Seek_GPS_info{
+	text-decoration: none;
+	color: black;
+	font-family: "微软雅黑";
+	font-size: 14px;
+	float: left;
+}
+.Home_Seek_GPS_fuhao{
+	font-family: "微软雅黑";
+	float: left
+}
+.Home_Seek_GPS_wenzi{
+	font-family: "微软雅黑";
+	font-size: 14px;
+	float: left;
+	color: grey;
+}
+.Home_Seek_GPS_foot{
+	font-family: "微软雅黑";
+	font-size: 14px;
+	color: grey;
+}
+.Home_Seek_GPS_Result_foot{
+	width: 160px;
+	height: 37px;
+	background-color: white;
+	font-family: "微软雅黑";
+	font-size: 14px;
+	line-height: 36px;
+	margin-top: -38px;
+	margin-left: 82px;
+	border-top: 1px #dddddd solid;
+	border-right: 1px #dddddd solid;
+	text-align: center;
+	float: left;
+	color: #ff667a;
+	
+}
+.Home_Seek_GPS_neirong{
+	margin-left: 75px;
+	padding-top: 6px;
+}
+
+/*搜索详细页面搜索左页面*/
+.Home_Seek_left{
+	width: 950px;
+	height: 1229px;
+	margin-left: 75px;
+	margin-top: 18px;
+	float: left;
+}
+.Home_Seek_GPS_Result{
+	width: 80px;
+	height: 36px;
+	background-color: #f3f3f3;
+	font-family: "微软雅黑";
+	font-size: 14px;
+	line-height: 36px;
+	margin-top: 0;
+	border: 1px #dddddd solid;
+	text-align: center;
+	float: left;
+}
+.Home_Seek_GPS_Result1{
+	width: 200px;
+	height: 37px;
+}
+.Home_Seek_left_commodity{
+	width: 950px;
+	height: 1179px;
+	border-top: 3px solid #dddddd;
+	margin-top: 10px;
+}
+.Home_Seek_left_commodity_lump1{
+	width: 230px;
+	height: 329px;
+	margin-top: 10px;
+	border: 1px solid #dddddd; 
+	float: left;
+	margin-left: 5px;
+}
+.Home_Seek_left_commodity_lump1 a{
+	text-decoration: none;
+	color: black;
+}
+.Home_Seek_left_commodity_lump1_dl{
+	width: 230px;
+	height: 292px;
+	position: relative;
+}
+.Home_Seek_left_commodity_lump1_dl dt img{
+	width: 210px;
+	height: 210px;
+	margin-left: 9px;
+}
+.Home_Seek_left_commodity_lump1_dd1{
+	font-family: "微软雅黑";
+	font-size: 13px;
+	position: absolute;
+	left: 5px;
+	top: 215px;
+	
+}
+.Home_Seek_left_commodity_lump1_dd2{
+	font-family: "微软雅黑";
+	font-size: 13px;
+	color: #ff667a;
+	position: absolute;
+	left: 5px;
+	top: 260px;
+}
+.Home_Seek_left_commodity_lump1_bottom{
+	width: 230px;
+	height: 35px;
+	background-color: #f3f3f3;
+	position: relative;
+	border-top: 1px solid #dddddd;
+}
+.Home_Seek_left_commodity_lump1_left{
+	width: 104px;
+	height: 34px;
+	line-height: 34px;
+	font-family: "微软雅黑";
+	font-size: 10px;
+	text-align: center;
+	position:absolute;
+	left: 3px;
+}
+.Home_Seek_left_commodity_lump1_right{
+	width: 104px;
+	height: 34px;
+	line-height: 34px;
+	font-family: "微软雅黑";
+	font-size: 10px;
+	text-align: center;
+	position: absolute;
+	right: 3px;
+}
+
+
+/*搜索详细页面搜索右页面*/
+.Home_Seek_right{
+	width: 219px;
+	height: 881px;
+	float: left;
+	margin-left: 25px;
+	margin-top: 18px;
+	border: 1px solid #dddddd;
+}
+.Home_Seek_right a{
+	text-decoration: none;
+	color: black;
+}
+.Home_Seek_right_one{
+	font-family: "微软雅黑";
+	font-size: 15px;
+	width: 219px;
+	height: 38px;
+	line-height: 38px;
+	text-align: center;
+	background-color: #F3F3F3;
+}
+.Home_Seek_right_ul li{
+	list-style: none;
+	margin-top: 6px;
+	margin-left: 10px;
+}
+.Home_Seek_right_ul li img{
+	width: 200px;
+	height: 200px;
+}
+.Home_Seek_right_last{
+	width: 219px;
+	height: 328px;
+	border: 1px solid #DDDDDD;
+	margin-top: 915px;
+	margin-left: 1050px;
+}
+.Home_Seek_right_last a{
+	text-decoration: none;
+	line-height: 34px;
+	font-family: "微软雅黑";
+	font-size: 15px;
+	text-align: center;
+	color: #000000;
+}
+.Home_Seek_right_last_img img{
+	width: 200px;
+	height: 275px;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+.Home_Seek_right_last_one{
+	width: 219px;
+	height: 34px;
+	background-color: #f3f3f3;
+}
+#footer_last{
+	position: absolute;
+	top: 1415px;
+}
